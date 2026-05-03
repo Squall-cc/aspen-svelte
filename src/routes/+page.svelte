@@ -1,8 +1,8 @@
 <script>
   const tabs = [
-    { id: 1, label: 'tab', content: 'tab' },
-    { id: 2, label: 'tab', content: 'tab' },
-    { id: 3, label: 'tab', content: 'tab' },
+    { id: 1, label: 'tab', content: 'tab' }, // add iframes somehow later
+    { id: 2, label: 'tab', content: 'tab' }, // add iframes somehow later
+    { id: 3, label: 'tab', content: 'tab' }, // add iframes somehow later
   ];
 
   let openTab = $state(null);
