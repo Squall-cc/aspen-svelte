@@ -6,4 +6,4 @@ stack:
 bun
 unocss with tailwind4 preset ithink
 sveltekit
-civet.dev (soon)
+civet.dev, it works fine but formatting is broken so im making a pr to its vscode ext

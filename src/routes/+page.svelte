@@ -1,19 +1,14 @@
-<script>
-  const tabs = [
-    { id: 1, label: 'tab', content: 'tab' }, // add iframes somehow later
-    { id: 2, label: 'tab', content: 'tab' }, // add iframes somehow later
-    { id: 3, label: 'tab', content: 'tab' }, // add iframes somehow later
-  ];
+<script lang="civet">
+  tabs := [
+    { id: 1, label: 'tab', content: 'tab' }
+    { id: 2, label: 'tab', content: 'tab' }
+    { id: 3, label: 'tab', content: 'tab' }
+  ]
 
-  let openTab = $state(null);
+  let openTab = $state(null)
 
-  function toggle(id) {
-    if (openTab === id) {
-      openTab = null; // dont switch tabs if current tab = tab id
-    } else {
-      openTab = id; // switch, mayb animate later
-    }
-  }
+  toggle := (id) =>
+    openTab = if openTab is id then null else id // civet so weird
 </script>
 
 <div class="flex flex-col h-screen bg-ef-bg text-ef-text">
