@@ -64,11 +64,11 @@
         loadProxy(tab.content)
 </script>
 
-<div class="flex flex-col h-screen bg-ef-bg text-ef-text">
-  <div class="flex gap-1 p-2 bg-ef-bg-deep items-center border-b border-ef-border">
+<div class="flex flex-col h-screen text-ef-text relative">
+  <div class="flex gap-1 p-2 items-center border-b border-ef-border">
     {#each tabs as tab}
       <button
-        class="px-4 py-2 border border-ef-border font-medium text-ef-text-dim"
+        class="px-4 py-2 border-2 border-ef-text-dim font-medium text-ef-text-dim"
         class:bg-ef-tab-active={openTab === tab.id}
         class:text-ef-text={openTab === tab.id}
         class:bg-ef-bg={openTab !== tab.id}
@@ -78,12 +78,12 @@
       </button>
     {/each}
     <button
-      class="ml-auto px-3 py-2 bg-ef-bg border border-ef-border text-ef-text font-medium leading-none hover:bg-ef-tab-active"
+      class="ml-auto px-3 py-2 bg-ef-bg border-2 border-ef-text-dim text-ef-text font-medium leading-none hover:bg-ef-tab-active"
       onclick={() => {console.log("tab created")}}
     >+</button>
   </div>
 
-  <div class="bg-ef-bg grow relative">
+  <div class="grow relative">
     <div bind:this={frameContainer} class="absolute inset-0" class:hidden={openTab === null}></div>
     {#if openTab === null}
       <p class="text-ef-text-muted p-4">no tab open</p>
