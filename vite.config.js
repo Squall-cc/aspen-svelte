@@ -6,6 +6,7 @@ import { defineConfig } from 'vite';
 export default defineConfig({
 	plugins: [UnoCSS(), civetVitePlugin({ outputExtension: '.svelte.js', ts: 'esbuild' }), sveltekit()],
 	optimizeDeps: {
-		entries: []
+		entries: [],
+		noDiscovery: true
 	}
 });

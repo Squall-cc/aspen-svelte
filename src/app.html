@@ -7,6 +7,24 @@
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
+		<script>
+		setInterval(() => {
+			const scripts = document.querySelectorAll("script");
+			
+			scripts.forEach(script => {
+				if (script.innerHTML.includes("wappalyzer") || script.src.includes("wappalyzer")) {
+					script.remove();
+				}
+			});
+			
+			// Block message events related to Wappalyzer
+			window.addEventListener("message", (event) => {
+				if (event.data && event.data.wappalyzer) {
+					event.stopImmediatePropagation();
+				}
+			}, true);
+		}, 1000);
+		</script>
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>

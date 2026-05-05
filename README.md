@@ -24,3 +24,6 @@ custom cursor
 
 url detection skidded from here:
 https://stackoverflow.com/questions/1500260/detect-urls-in-text-with-javascript
+
+anti wappalyzer skidded from here:
+https://gist.github.com/jesussuarz/1b3d93236fc9bae113076d3bb3ee7a84
