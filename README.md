@@ -19,7 +19,6 @@ also i switched to epoxy and i dont remember why, it has webkit support tho ig
 todo:
 make script to download scramjet + baremux + libcurl + epoxy and put it in  static folder
 get animations for switching tabs
-custom cursor
 
 
 url detection skidded from here:
@@ -27,3 +26,8 @@ https://stackoverflow.com/questions/1500260/detect-urls-in-text-with-javascript
 
 anti wappalyzer skidded from here:
 https://gist.github.com/jesussuarz/1b3d93236fc9bae113076d3bb3ee7a84
+
+cursor is from https://github.com/talwat/everforest-cursors/blob/master/assets/svg/24/default/col-resize.svg except width+height is 40 instead of 24
+
+gg sw bypass hopefully skidded:
+https://github.com/Hydra-Network/GalaxyV6/commit/19623319e94610f218eb5171f20bf8e50d9164c4

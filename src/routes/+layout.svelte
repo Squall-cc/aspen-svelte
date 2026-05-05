@@ -28,6 +28,10 @@
 <style>
 	:global(html, body) {
 		font-family: 'Readex Pro', system-ui, sans-serif;
+		cursor: url('/cursor.svg'), auto;
+	}
+	:global(button, a, [role='button']) {
+		cursor: url('/cursor.svg'), pointer;
 	}
 </style>
 
