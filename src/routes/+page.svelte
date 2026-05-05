@@ -4,7 +4,7 @@
   import { registerSW } from '$lib/registerSW.js'
 
   tabs := [
-    { id: 1, label: 'ddg', content: 'https://duckduckgo.com' }
+    { id: 1, label: 'ddg', content: 'https://searx.namejeff.xyz/' }
     { id: 2, label: 'wiki', content: 'https://wikipedia.org' }
     { id: 3, label: 'example', content: 'https://example.com' }
   ]
