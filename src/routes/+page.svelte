@@ -113,9 +113,9 @@
       <div class="flex border-2 border-ef-text-dim rounded-lg overflow-hidden">
         <button
           class="px-4 py-2 font-medium text-ef-text-dim"
-          class:bg-ef-bg={openTab === tab.id}
+          class:bg-ef-tab-active={openTab === tab.id}
           class:text-ef-text={openTab === tab.id}
-          class:bg-ef-tab-active={openTab !== tab.id}
+          class:bg-ef-bg={openTab !== tab.id}
           onclick={() => toggle(tab.id)}
         >
           {tab.label}
