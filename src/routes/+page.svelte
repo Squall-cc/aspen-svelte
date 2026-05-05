@@ -17,12 +17,13 @@
   onMount =>
     { ScramjetController } := (window as any).$scramjetLoadController()
     scramjet = new ScramjetController
+      prefix: '/~/'
       files:
-        wasm: '/scram/scramjet.wasm.wasm'
-        all: '/scram/scramjet.all.js'
-        sync: '/scram/scramjet.sync.js'
+        wasm: '/static/wasm.wasm'
+        all: '/static/all.js'
+        sync: '/static/sync.js'
     scramjet.init()
-    connection = new (window as any).BareMux.BareMuxConnection('/baremux/worker.js')
+    connection = new (window as any).BareMux.BareMuxConnection('/io/worker.js')
 
   loadProxy := async (rawUrl: string) =>
     if not swReady
@@ -34,7 +35,7 @@
     transportType := 'epoxy'
     localStorage.setItem('transport', transportType)
 
-    transportPath := if transportType is 'epoxy' then '/epoxy/index.mjs' else '/libcurl/index.mjs'
+    transportPath := if transportType is 'epoxy' then '/net/index.mjs' else '/curl/index.mjs'
     transportConfig := if transportType is 'epoxy'
       [{ wisp: wispUrl }]
     else
@@ -134,6 +135,7 @@
   </div>
 
   <div class="grow relative bg-cover bg-center" style="background-image: url('/bg.png')">
+    <div class="absolute inset-0 flex items-center justify-center text-ef-accent text-3xl font-bold">loading...</div>
     <div bind:this={frameContainer} class="absolute inset-0 bg-ef-bg" class:hidden={!activeTab?.content}></div>
     {#if openTab === null}
       <div class="absolute inset-0 flex items-center justify-center">
