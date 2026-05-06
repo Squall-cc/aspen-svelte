@@ -11,6 +11,7 @@
   let scramjet: any
   let connection: any
   let swReady = false
+  let frameLoading = $state(false)
 
   searchEngine := 'https://duckduckgo.com/?q=%s'
 
@@ -19,11 +20,11 @@
     scramjet = new ScramjetController
       prefix: '/~/'
       files:
-        wasm: '/static/wasm.wasm'
-        all: '/static/all.js'
-        sync: '/static/sync.js'
+        wasm: './static/wasm.wasm'
+        all: './static/all.js'
+        sync: './static/sync.js'
     scramjet.init()
-    connection = new (window as any).BareMux.BareMuxConnection('/io/worker.js')
+    connection = new (window as any).BareMux.BareMuxConnection('./io/worker.js')
 
   loadProxy := async (rawUrl: string) =>
     if not swReady
@@ -35,7 +36,7 @@
     transportType := 'epoxy'
     localStorage.setItem('transport', transportType)
 
-    transportPath := if transportType is 'epoxy' then '/net/index.mjs' else '/curl/index.mjs'
+    transportPath := if transportType is 'epoxy' then './net/index.mjs' else './curl/index.mjs'
     transportConfig := if transportType is 'epoxy'
       [{ wisp: wispUrl }]
     else
@@ -50,6 +51,8 @@
     frame.frame.style.height = '100%'
     frame.frame.style.border = 'none'
     frameContainer.appendChild(frame.frame)
+    frameLoading = true
+    frame.frame.addEventListener 'load', => frameLoading = false
     frame.go(url)
 
   toggle := (id: number) =>
@@ -134,9 +137,11 @@
     >+</button>
   </div>
 
-  <div class="grow relative bg-cover bg-center" style="background-image: url('/bg.png')">
-    <div class="absolute inset-0 flex items-center justify-center text-ef-accent text-3xl font-bold">loading...</div>
+  <div class="grow relative bg-cover bg-center" style="background-image: url('./bg.png')">
     <div bind:this={frameContainer} class="absolute inset-0 bg-ef-bg" class:hidden={!activeTab?.content}></div>
+    {#if frameLoading && activeTab?.content}
+      <div class="absolute inset-0 flex items-center justify-center bg-ef-bg text-ef-accent text-3xl font-bold pointer-events-none">loading...</div>
+    {/if}
     {#if openTab === null}
       <div class="absolute inset-0 flex items-center justify-center">
         <div
