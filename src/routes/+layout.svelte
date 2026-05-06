@@ -25,16 +25,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200..700&display=swap" rel="stylesheet" />
 	<script src="./static/all.js"></script>
 	<script src="./io/index.js"></script>
+	{@html `<style>html,body{font-family:'Readex Pro',system-ui,sans-serif;cursor:url(./cursor.svg),auto}button,a,[role=button]{cursor:url(./cursor.svg),pointer}</style>`}
 </svelte:head>
-
-<style>
-	:global(html, body) {
-		font-family: 'Readex Pro', system-ui, sans-serif;
-		cursor: url('./cursor.svg'), auto;
-	}
-	:global(button, a, [role='button']) {
-		cursor: url('./cursor.svg'), pointer;
-	}
-</style>
 
 {@render children()}

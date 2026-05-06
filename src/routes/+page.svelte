@@ -24,7 +24,8 @@
         all: './static/all.js'
         sync: './static/sync.js'
     scramjet.init()
-    connection = new (window as any).BareMux.BareMuxConnection('./io/worker.js')
+    workerUrl := new URL('./io/worker.js', location.href).href
+    connection = new (window as any).BareMux.BareMuxConnection(workerUrl)
 
   loadProxy := async (rawUrl: string) =>
     if not swReady
@@ -36,7 +37,8 @@
     transportType := 'epoxy'
     localStorage.setItem('transport', transportType)
 
-    transportPath := if transportType is 'epoxy' then './net/index.mjs' else './curl/index.mjs'
+    relPath := if transportType is 'epoxy' then './net/index.mjs' else './curl/index.mjs'
+    transportPath := new URL(relPath, location.href).href
     transportConfig := if transportType is 'epoxy'
       [{ wisp: wispUrl }]
     else

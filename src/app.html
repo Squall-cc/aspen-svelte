@@ -4,6 +4,20 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="text-scale" content="scale" />
+		<script>
+			if (!document.head) {
+				Object.defineProperty(document, 'head', {
+					configurable: true,
+					get: () => document.querySelector('head')
+				});
+			}
+			if (!document.body) {
+				Object.defineProperty(document, 'body', {
+					configurable: true,
+					get: () => document.querySelector('body')
+				});
+			}
+		</script>
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
