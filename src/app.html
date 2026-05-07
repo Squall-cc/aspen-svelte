@@ -17,6 +17,17 @@
 					get: () => document.querySelector('body')
 				});
 			}
+			if (document.documentElement.namespaceURI === 'http://www.w3.org/2000/svg') {
+				const HTML_NS = 'http://www.w3.org/1999/xhtml';
+				const orig = document.createElement.bind(document);
+				document.createElement = function (tag, opts) {
+					try {
+						return document.createElementNS(HTML_NS, tag);
+					} catch (e) {
+						return orig(tag, opts);
+					}
+				};
+			}
 		</script>
 		%sveltekit.head%
 	</head>

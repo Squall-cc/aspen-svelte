@@ -20,12 +20,23 @@
 					get: () => document.querySelector('body')
 				});
 			}
+			if (document.documentElement.namespaceURI === 'http://www.w3.org/2000/svg') {
+				const HTML_NS = 'http://www.w3.org/1999/xhtml';
+				const orig = document.createElement.bind(document);
+				document.createElement = function (tag, opts) {
+					try {
+						return document.createElementNS(HTML_NS, tag);
+					} catch (e) {
+						return orig(tag, opts);
+					}
+				};
+			}
 		
 //]]></script>
-		<link href="./_app/immutable/entry/start.BmXmXzRq.js" rel="modulepreload" />
-		<link href="./_app/immutable/chunks/DU7ashfd.js" rel="modulepreload" />
+		<link href="./_app/immutable/entry/start.7inANJWn.js" rel="modulepreload" />
+		<link href="./_app/immutable/chunks/qurwdKuL.js" rel="modulepreload" />
 		<link href="./_app/immutable/chunks/B0yPW3XJ.js" rel="modulepreload" />
-		<link href="./_app/immutable/entry/app.COm5k-Od.js" rel="modulepreload" />
+		<link href="./_app/immutable/entry/app.B0MSuE6C.js" rel="modulepreload" />
 		<link href="./_app/immutable/chunks/Dj6f-nJM.js" rel="modulepreload" />
 		<link href="./_app/immutable/chunks/DEDqjojZ.js" rel="modulepreload" />
 		<link href="./_app/immutable/nodes/0.Ce3F1ImO.js" rel="modulepreload" />
@@ -61,15 +72,15 @@ html,body{font-family:'Readex Pro',system-ui,sans-serif;cursor:url(./cursor.svg)
 			<script>//<![CDATA[
 
 				{
-					__sveltekit_ikpl3l = {
+					__sveltekit_3pau2g = {
 						base: new URL(".", location).pathname.slice(0, -1)
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("./_app/immutable/entry/start.BmXmXzRq.js"),
-						import("./_app/immutable/entry/app.COm5k-Od.js")
+						import("./_app/immutable/entry/start.7inANJWn.js"),
+						import("./_app/immutable/entry/app.B0MSuE6C.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 2],
