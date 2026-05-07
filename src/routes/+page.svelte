@@ -18,7 +18,7 @@
   onMount =>
     { ScramjetController } := (window as any).$scramjetLoadController()
     scramjet = new ScramjetController
-      prefix: '/~/'
+      prefix: new URL('./~/', location.href).pathname
       files:
         wasm: './static/wasm.wasm'
         all: './static/all.js'
