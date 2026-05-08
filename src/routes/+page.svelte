@@ -17,12 +17,13 @@
 
   onMount =>
     { ScramjetController } := (window as any).$scramjetLoadController()
+    base := new URL('./', location.href).pathname
     scramjet = new ScramjetController
-      prefix: new URL('./~/', location.href).pathname
+      prefix: `${base}~/`
       files:
-        wasm: './static/wasm.wasm'
-        all: './static/all.js'
-        sync: './static/sync.js'
+        wasm: `${base}static/wasm.wasm`
+        all: `${base}static/all.js`
+        sync: `${base}static/sync.js`
     scramjet.init()
     workerUrl := new URL('./io/worker.js', location.href).href
     connection = new (window as any).BareMux.BareMuxConnection(workerUrl)
