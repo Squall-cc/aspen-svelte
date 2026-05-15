@@ -31,7 +31,7 @@
 		"@mercuryworkshop/epoxy-tls": "^2.1.19-1",
 		"@mercuryworkshop/epoxy-transport": "2.1.0",
 		"@mercuryworkshop/libcurl-transport": "1.5.2",
-		"@mercuryworkshop/scramjet": "^2.0.2-alpha",
+		"@mercuryworkshop/scramjet": "^1.1.0",
 		"civet": "^0.0.1",
 		"svelte-preprocess-with-civet": "^6.0.41",
 		"vanilla-tilt-svelte": "^1.0.4"
