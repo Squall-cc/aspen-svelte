@@ -16,15 +16,7 @@
   searchEngine := 'https://duckduckgo.com/?q=%s'
 
   onMount =>
-    { ScramjetController } := (window as any).$scramjetLoadController()
     base := new URL('./', location.href).pathname
-    scramjet = new ScramjetController
-      prefix: `${base}~/`
-      files:
-        wasm: `${base}static/wasm.wasm`
-        all: `${base}static/all.js`
-        sync: `${base}static/sync.js`
-    scramjet.init()
     workerUrl := new URL('./io/worker.js', location.href).href
     connection = new (window as any).BareMux.BareMuxConnection(workerUrl)
 
@@ -49,14 +41,18 @@
       await connection.setTransport(transportPath, transportConfig)
 
     frameContainer.innerHTML = ''
-    frame := scramjet.createFrame()
-    frame.frame.style.width = '100%'
-    frame.frame.style.height = '100%'
-    frame.frame.style.border = 'none'
-    frameContainer.appendChild(frame.frame)
+    base := new URL('./', location.href).pathname
+    prefix := `${base}~/`
+    proxyUrl := `${prefix}${url}`
+    iframe := document.createElement('iframe')
+    iframe.style.width = '100%'
+    iframe.style.height = '100%'
+    iframe.style.border = 'none'
+    frameContainer.appendChild(iframe)
     frameLoading = true
-    frame.frame.addEventListener 'load', => frameLoading = false
-    frame.go(url)
+    iframe.addEventListener 'load', () =>
+      frameLoading = false
+    iframe.src = proxyUrl
 
   toggle := (id: number) =>
     if openTab is id
