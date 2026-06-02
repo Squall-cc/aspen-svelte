@@ -4,7 +4,18 @@ const { ScramjetServiceWorker } = $scramjetLoadWorker();
 const scramjet = new ScramjetServiceWorker();
 
 self.addEventListener('install', () => self.skipWaiting());
-self.addEventListener('activate', (event) => event.waitUntil(self.clients.claim()));
+self.addEventListener('activate', (event) => event.waitUntil(
+	(async () => {
+		await self.clients.claim();
+		try {
+			await new Promise((resolve, reject) => {
+				const req = indexedDB.deleteDatabase('$scramjet');
+				req.onsuccess = resolve;
+				req.onerror = reject;
+			});
+		} catch {}
+	})()
+));
 
 self.addEventListener('fetch', (event) => {
 	event.respondWith(

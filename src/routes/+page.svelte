@@ -3,13 +3,23 @@
   import { search } from '$lib/search.js'
   import { registerSW } from '$lib/registerSW.js'
   import svelteTilt from 'vanilla-tilt-svelte'
+  import Toolbar from '$lib/Toolbar.svelte'
 
   let tabs = $state([])
   let openTab = $state(null)
   let frameContainer: HTMLDivElement
   let connection: any
+  let scramjet: any
+  let activeFrame: any
   let swReady = false
   let frameLoading = $state(false)
+  let skipNextUrlChange = false
+
+  // per-tab history: Map<tabId, { stack: string[], idx: number }>
+  let tabHistories = new Map<number, { stack: string[], idx: number }>()
+  let currentUrl = $state('')
+  let canGoBack = $state(false)
+  let canGoForward = $state(false)
 
   // gamz
   let gamesLoaded = $state(false)
@@ -43,8 +53,25 @@
   searchEngine := 'https://duckduckgo.com/?q=%s'
 
   onMount =>
+    base := new URL('./', location.href).pathname
     workerUrl := new URL('./io/worker.js', location.href).href
-    connection = new (window as any).BareMux.BareMuxConnection(workerUrl)
+
+    initScramjet := =>
+      { ScramjetController } := (window as any).$scramjetLoadController()
+      scramjet = new ScramjetController
+        prefix: `${base}~/`
+        files:
+          wasm: `${base}static/wasm.wasm`
+          all: `${base}static/all.js`
+          sync: `${base}static/sync.js`
+      scramjet.init()
+      connection = new (window as any).BareMux.BareMuxConnection(workerUrl)
+
+    // wipe stale scramjet IDB then init
+    req := indexedDB.deleteDatabase('$scramjet')
+    req.onsuccess = initScramjet
+    req.onerror = initScramjet
+    req.onblocked = initScramjet
 
   loadGames := async () =>
     return if gamesLoaded or gamesLoading
@@ -88,6 +115,11 @@
       activeGame = null
       gameUrl = ''
       frameContainer.innerHTML = '' if frameContainer
+      // scramjet history stuff
+      activeFrame = null
+      currentUrl = ''
+      canGoBack = false
+      canGoForward = false
     loadGames()
 
   loadGame := async (id: string) =>
@@ -108,7 +140,14 @@
   loadProxy := async (rawUrl: string) =>
     if not swReady
       await registerSW()
+      await navigator.serviceWorker.ready
+      if navigator.serviceWorker.controller is null
+        await new Promise<void> (resolve) =>
+          navigator.serviceWorker.addEventListener 'controllerchange', () => resolve(), { once: true }
       swReady = true
+
+    while not connection
+      await new Promise (r) => setTimeout(r, 30)
 
     url := search(rawUrl, searchEngine)
     wispUrl := localStorage.getItem('wispUrl')
@@ -126,31 +165,107 @@
       await connection.setTransport(transportPath, transportConfig)
 
     frameContainer.innerHTML = ''
-    base := new URL('./', location.href).pathname
-    proxyUrl := `${base}~/${url}`
-    iframe := document.createElement('iframe')
+    activeFrame = null
+
+    frame := scramjet.createFrame()
+    iframe := frame.frame as HTMLIFrameElement
     iframe.style.width = '100%'
     iframe.style.height = '100%'
     iframe.style.border = 'none'
     frameContainer.appendChild(iframe)
+    activeFrame = frame
+
+    // push to this tabs history
+    if openTab is not null
+      h := tabHistories.get(openTab) ?? { stack: [], idx: -1 }
+      h.stack = h.stack.slice(0, h.idx + 1)
+      h.stack.push(url)
+      h.idx = h.stack.length - 1
+      tabHistories.set(openTab, h)
+      currentUrl = url
+      canGoBack = h.idx > 0
+      canGoForward = false
+
+    // update current url on in-page navigation
+    frame.addEventListener 'urlchange', (e: any) =>
+      if skipNextUrlChange
+        skipNextUrlChange = false
+        return
+      decoded := scramjet.decodeUrl(e.url)
+      currentUrl = decoded
+      if openTab is not null
+        h := tabHistories.get(openTab)
+        if h
+          if decoded isnt h.stack[h.idx]
+            h.stack = h.stack.slice(0, h.idx + 1)
+            h.stack.push(decoded)
+            h.idx = h.stack.length - 1
+          canGoBack = h.idx > 0
+          canGoForward = h.idx < h.stack.length - 1
+
     frameLoading = true
     iframe.addEventListener 'load', () =>
       frameLoading = false
-    iframe.src = proxyUrl
+    skipNextUrlChange = true
+    frame.go(url)
 
+  goBack := =>
+    return unless openTab is not null
+    h := tabHistories.get(openTab)
+    return unless h and h.idx > 0
+    h.idx--
+    currentUrl = h.stack[h.idx]
+    canGoBack = h.idx > 0
+    canGoForward = true
+    activeFrame?.back()
+
+  goForward := =>
+    return unless openTab is not null
+    h := tabHistories.get(openTab)
+    return unless h and h.idx < h.stack.length - 1
+    h.idx++
+    currentUrl = h.stack[h.idx]
+    canGoBack = true
+    canGoForward = h.idx < h.stack.length - 1
+    activeFrame?.forward()
+
+  reload := =>
+    activeFrame?.reload()
+  
+  logHistory := (entry: string) => // would cookies/localstorage bes faster or somethn
+    existing := JSON.parse(localStorage.getItem('history') ?? '[]')
+    existing.push(entry)
+    localStorage.setItem('history', JSON.stringify(existing))
+
+    
   toggle := (id: number) =>
     if openTab is id
       openTab = null
+      currentUrl = ''
+      canGoBack = false
+      canGoForward = false
     else
       openTab = id
       tab := tabs.find (t) => t.id is id
+      // restore history state for this tab
+      h := tabHistories.get(id)
+      if h
+        currentUrl = h.stack[h.idx] ?? ''
+        canGoBack = h.idx > 0
+        canGoForward = h.idx < h.stack.length - 1
+      else
+        currentUrl = ''
+        canGoBack = false
+        canGoForward = false
       if tab?.type is 'games'
         frameContainer.innerHTML = '' if frameContainer
+        activeFrame = null
         loadGames()
       else if tab?.content and frameContainer
         loadProxy(tab.content)
       else if frameContainer
         frameContainer.innerHTML = ''
+        activeFrame = null
   // regex from stack overflow
   linkRegex := /^(([a-z]+:\/\/)?(([a-z0-9\-]+\.)+([a-z]{2}|aero|arpa|biz|com|coop|edu|gov|info|int|jobs|mil|museum|name|nato|net|org|pro|travel|local|internal))(:[0-9]{1,5})?(\/[a-z0-9_\-\.~]+)*(\/([a-z0-9_\-\.]*)(\?[a-z0-9+_\-\.%=&]*)?)?(#[a-zA-Z0-9!$&'()*+.=\-_~:@\/?]*)?)$/i
 
@@ -195,9 +310,14 @@
     searchInput = ''
 
   closeTab := (id: number) =>
+    tabHistories.delete(id)
     tabs = tabs.filter (t) => t.id is not id
     if openTab is id
       openTab = null
+      activeFrame = null
+      currentUrl = ''
+      canGoBack = false
+      canGoForward = false
       frameContainer.innerHTML = '' if frameContainer
 </script>
 
@@ -230,6 +350,15 @@
       onclick={newTab}
     >+</button>
   </div>
+
+  <Toolbar
+    {currentUrl}
+    {canGoBack}
+    {canGoForward}
+    onback={goBack}
+    onforward={goForward}
+    onreload={reload}
+  />
 
   <!-- content area -->
   <div class="grow relative bg-cover bg-center" style="background-image: url('./bg.png')">
