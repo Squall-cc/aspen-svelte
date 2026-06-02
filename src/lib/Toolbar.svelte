@@ -6,6 +6,7 @@
     onback,
     onforward,
     onreload,
+    onnavigate,
   }: {
     currentUrl?: string
     canGoBack?: boolean
@@ -13,7 +14,21 @@
     onback?: () => void
     onforward?: () => void
     onreload?: () => void
+    onnavigate?: (url: string) => void
   } = $props()
+
+  let inputValue = $state('')
+  let focused = $state(false)
+
+  $effect(() => {
+    if (!focused) inputValue = currentUrl
+  })
+
+  function submit() {
+    const val = inputValue.trim()
+    if (val) onnavigate?.(val)
+    focused = false
+  }
 </script>
 
 <div class="flex items-center gap-1 px-2 py-1 bg-ef-bg-deep border-b border-ef-border min-h-[36px]">
@@ -37,7 +52,17 @@
     aria-label="reload"
   ><i class="fa-solid fa-rotate-right text-sm"></i></button>
 
-  {#if currentUrl}
-    <span class="ml-2 text-xs text-ef-text-muted truncate max-w-xs">{currentUrl}</span>
-  {/if}
+  <form
+    class="flex-1 mx-2"
+    onsubmit={(e) => { e.preventDefault(); submit() }}
+  >
+    <input
+      type="text"
+      bind:value={inputValue}
+      onfocus={() => { focused = true; inputValue = currentUrl }}
+      onblur={() => { focused = false; inputValue = currentUrl }}
+      placeholder="search or url"
+      class="w-full px-3 py-1 bg-ef-bg border border-ef-text-dim rounded-lg text-ef-text text-xs placeholder-ef-text-muted outline-none focus:border-ef-accent"
+    />
+  </form>
 </div>

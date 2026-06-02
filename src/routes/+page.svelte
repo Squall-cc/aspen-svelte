@@ -231,6 +231,16 @@
 
   reload := =>
     activeFrame?.reload()
+
+  // toolbar searchbar
+  navigateToolbar := (raw: string) =>
+    url := if linkRegex.test(raw) then raw else `${searxUrl}${encodeURIComponent(raw)}`
+    tab := tabs.find (t) => t.id is openTab
+    if tab
+      tab.content = url
+      tab.label = labelFor(url)
+      tab.type = 'browser'
+    loadProxy(url) if frameContainer
   
   logHistory := (entry: string) => // would cookies/localstorage bes faster or somethn
     existing := JSON.parse(localStorage.getItem('history') ?? '[]')
@@ -358,6 +368,7 @@
     onback={goBack}
     onforward={goForward}
     onreload={reload}
+    onnavigate={navigateToolbar}
   />
 
   <!-- content area -->
