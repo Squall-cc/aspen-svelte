@@ -356,7 +356,7 @@
       </div>
     {/each}
     <button
-      class="ml-auto px-3 py-2 bg-ef-bg border-2 border-ef-green rounded-lg text-ef-accent font-medium leading-none hover:bg-ef-green hover:text-ef-bg"
+      class="ml-auto px-3 py-2 bg-ef-bg border-2 border-ef-text-dim rounded-lg text-ef-text-dim font-medium leading-none hover:border-ef-accent hover:text-ef-accent"
       onclick={newTab}
     >+</button>
   </div>

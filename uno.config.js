@@ -38,6 +38,7 @@ export default defineConfig({
         *, *::before, *::after { box-sizing: border-box; }
         body { margin: 0; }
         button { border: none; background: none; cursor: pointer; }
+        button[class*="border-"] { border-style: solid; }
       `,
     },
   ],
