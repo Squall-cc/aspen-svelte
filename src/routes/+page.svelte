@@ -4,6 +4,7 @@
   import { registerSW } from '$lib/registerSW.js'
   import svelteTilt from 'vanilla-tilt-svelte'
   import Toolbar from '$lib/Toolbar.svelte'
+  import { fly } from 'svelte/transition'
 
   let tabs = $state([])
   let openTab = $state(null)
@@ -334,8 +335,12 @@
 <div class="flex flex-col h-screen bg-ef-bg text-ef-text">
   <!-- tab bar -->
   <div class="flex gap-1 p-2 bg-ef-bg-deep items-center border-b border-ef-border min-h-[60px]">
-    {#each tabs as tab}
-      <div class="flex border-2 border-ef-text-dim rounded-lg overflow-hidden">
+    {#each tabs as tab (tab.id)}
+      <div
+        class="flex border-2 border-ef-text-dim rounded-lg overflow-hidden"
+        in:fly={{ y: -24, duration: 200, opacity: 0 }}
+        out:fly={{ x: -30, duration: 150, opacity: 0 }}
+      >
         <button
           class="px-4 py-2 font-medium text-ef-text-dim"
           class:bg-ef-tab-active={openTab === tab.id}
