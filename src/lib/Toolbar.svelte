@@ -33,21 +33,21 @@
 
 <div class="flex items-center gap-1 px-2 py-1 bg-ef-bg-deep border-b border-ef-border min-h-[36px]">
   <button
-    class="px-2 py-1 border-2 border-ef-text-dim rounded-lg text-ef-text-dim hover:border-ef-accent hover:text-ef-accent disabled:opacity-30 disabled:cursor-default"
+    class="px-4 py-1 border-2 border-ef-text-dim rounded-lg text-ef-text-dim hover:border-ef-accent hover:text-ef-accent disabled:opacity-30 disabled:cursor-default"
     disabled={!canGoBack}
     onclick={onback}
     aria-label="back"
   ><i class="fa-solid fa-arrow-left text-sm"></i></button>
 
   <button
-    class="px-2 py-1 border-2 border-ef-text-dim rounded-lg text-ef-text-dim hover:border-ef-accent hover:text-ef-accent disabled:opacity-30 disabled:cursor-default"
+    class="px-4 py-1 border-2 border-ef-text-dim rounded-lg text-ef-text-dim hover:border-ef-accent hover:text-ef-accent disabled:opacity-30 disabled:cursor-default"
     disabled={!canGoForward}
     onclick={onforward}
     aria-label="forward"
   ><i class="fa-solid fa-arrow-right text-sm"></i></button>
 
   <button
-    class="px-2 py-1 border-2 border-ef-text-dim rounded-lg text-ef-text-dim hover:border-ef-accent hover:text-ef-accent"
+    class="px-3 py-1 border-2 border-ef-text-dim rounded-lg text-ef-text-dim hover:border-ef-accent hover:text-ef-accent"
     onclick={onreload}
     aria-label="reload"
   ><i class="fa-solid fa-rotate-right text-sm"></i></button>
