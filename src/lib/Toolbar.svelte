@@ -62,7 +62,7 @@
       onfocus={() => { focused = true; inputValue = currentUrl }}
       onblur={() => { focused = false; inputValue = currentUrl }}
       placeholder="search or url"
-      class="w-full px-3 py-1 bg-ef-bg border border-ef-text-dim rounded-lg text-ef-text text-xs placeholder-ef-text-muted outline-none focus:border-ef-accent"
+      class="w-full px-4 py-1 bg-ef-bg-deep border-2 border-ef-text-dim rounded-lg text-ef-text-dim text-sm placeholder-ef-text-muted outline-none focus:border-ef-accent focus:text-ef-text"
     />
   </form>
 </div>

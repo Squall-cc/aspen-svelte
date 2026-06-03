@@ -424,7 +424,7 @@
               </div>
             {/if}
           </div>
-          <div class="grow overflow-y-auto p-4 bg-ef-bg/90">
+          <div class="grow overflow-y-auto p-4 bg-ef-bg">
             {#if gamesLoading}
               <div class="flex items-center justify-center h-full text-ef-accent text-3xl font-bold">loading...</div>
             {:else if gamesError}
@@ -463,7 +463,7 @@
       <div class="absolute inset-0 flex items-center justify-center">
         <div
           use:svelteTilt={{ max: 15, perspective: 1000, scale: 1.03, speed: 400, glare: true, "max-glare": 0.3 }}
-          class="px-10 py-8 bg-ef-bg-deep border-2 border-ef-text-dim rounded-2xl shadow-2xl text-ef-text-muted text-xl font-medium"
+          class="px-10 py-8 bg-ef-bg-deep border-3 border-ef-text-dim rounded-2xl shadow-2xl text-ef-text-dim text-xl font-medium"
         >
           no tab open
         </div>

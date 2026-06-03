@@ -5,25 +5,25 @@ export default defineConfig({
     colors: {
       ef: {
         bg: {
-          DEFAULT: '#333c43',
-          deep:    '#293136',
-          deeper:  '#222a2f',
+          DEFAULT: '#2a302b',
+          deep:    '#161a16',
+          deeper:  '#0f1310',
         },
-        border:  '#4d5960',
+        border:  '#48584E',
         text: {
-          DEFAULT: '#D3C6AA',
-          dim:     '#9DA9A0',
-          muted:   '#859289',
+          DEFAULT: '#d8e0c8',
+          dim:     '#93B259',
+          muted:   '#707668',
         },
         accent: {
-          DEFAULT: '#A7C080',
-          hover:   '#B5CC95',
+          DEFAULT: '#93B259',
+          hover:   '#A7C080',
         },
-        green:   '#83C092',
+        green:   '#93B259',
         red:     '#E67E80',
         error:   '#E67E80',
         tab: {
-          active: '#434f55',
+          active: '#242a25',
         },
       },
     },

@@ -27,6 +27,8 @@
 	},
 	"dependencies": {
 		"@danielx/civet": "^0.11.9",
+		"@fontsource/inter": "^5.2.8",
+		"@fontsource/jetbrains-mono": "^5.2.8",
 		"@mercuryworkshop/bare-mux": "^2.1.9",
 		"@mercuryworkshop/epoxy-tls": "^2.1.19-1",
 		"@mercuryworkshop/epoxy-transport": "^2.1.28",
