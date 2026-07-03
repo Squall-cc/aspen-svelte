@@ -1,3 +1,6 @@
+edit: its a webos now and svelte sucks so check iframeos repo under squall-cc
+
+
 edit: my svelte-civet method is BUNS. get these extensions (uninstall civet/svelte normal extensions): https://github.com/adam2am/serena-svelte-civet/tree/main
 
 then hotfix scule into svelte: find yo .vscode folder then go to .vscode\extensions\svelte.svelte-vscode-0.5.0\server then run npm (not bun/pnpm) install scule --legacy-peer-deps
