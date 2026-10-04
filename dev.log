@@ -45,3 +45,29 @@ https://svelte.dev/e/css_unused_selector
 [2m10:12:36 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.svelte[22m
 10:12:37 AM [vite-plugin-svelte] src/App.svelte:873:1 Unused CSS selector ".loading-overlay .pulse"
 https://svelte.dev/e/css_unused_selector
+[2m10:42:00 AM[22m [36m[1m[vite][22m[39m [32mvite.config.js changed, restarting server...[39m
+[2m10:42:00 AM[22m [36m[1m[vite][22m[39m server restarted.
+10:45:25 AM [vite-plugin-svelte] src/App.svelte:873:1 Unused CSS selector ".loading-overlay .pulse"
+https://svelte.dev/e/css_unused_selector
+10:45:25 AM [vite-plugin-svelte] src/lib/NewTab.svelte:29:2 Visible, non-interactive elements with a click event must be accompanied by a keyboard event handler. Consider whether an interactive element such as `<button type="button">` or `<a>` might be more appropriate
+https://svelte.dev/e/a11y_click_events_have_key_events
+10:45:25 AM [vite-plugin-svelte] src/lib/NewTab.svelte:29:2 `<div>` with a click handler must have an ARIA role
+https://svelte.dev/e/a11y_no_static_element_interactions
+[2m10:47:37 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/lib/Omnibox.svelte[22m
+[2m10:47:40 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/lib/Omnibox.svelte[22m
+10:47:52 AM [vite-plugin-svelte] src/App.svelte:883:1 Unused CSS selector ".loading-overlay .pulse"
+https://svelte.dev/e/css_unused_selector
+[2m10:47:52 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.svelte[22m
+10:47:53 AM [vite-plugin-svelte] src/App.svelte:884:1 Unused CSS selector ".loading-overlay .pulse"
+https://svelte.dev/e/css_unused_selector
+[2m10:47:53 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.svelte[22m
+10:47:55 AM [vite-plugin-svelte] src/App.svelte:886:1 Unused CSS selector ".loading-overlay .pulse"
+https://svelte.dev/e/css_unused_selector
+[2m10:47:55 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.svelte[22m
+10:48:11 AM [vite-plugin-svelte] src/App.svelte:894:1 Unused CSS selector ".loading-overlay .pulse"
+https://svelte.dev/e/css_unused_selector
+[2m10:48:11 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.svelte[22m
+10:48:17 AM [vite-plugin-svelte] src/App.svelte:894:1 Unused CSS selector ".loading-overlay .pulse"
+https://svelte.dev/e/css_unused_selector
+10:48:41 AM [vite-plugin-svelte] src/App.svelte:894:1 Unused CSS selector ".loading-overlay .pulse"
+https://svelte.dev/e/css_unused_selector

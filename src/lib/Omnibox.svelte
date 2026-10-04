@@ -1,5 +1,14 @@
 <script>
-	let { url = '', canBack = false, canForward = false, onBack, onForward, onNavigate } = $props();
+	let {
+		url = '',
+		canBack = false,
+		canForward = false,
+		canReload = false,
+		onBack,
+		onForward,
+		onReload,
+		onNavigate
+	} = $props();
 
 	let input = $state('');
 	let focused = $state(false);
@@ -22,6 +31,9 @@
 	</button>
 	<button id="omni-fwd" disabled={!canForward} onclick={onForward} aria-label="forward">
 		<i class="fa-solid fa-arrow-right"></i>
+	</button>
+	<button id="omni-reload" disabled={!canReload} onclick={onReload} aria-label="reload">
+		<i class="fa-solid fa-rotate-right"></i>
 	</button>
 
 	<form class="omnibox-form" onsubmit={submit}>

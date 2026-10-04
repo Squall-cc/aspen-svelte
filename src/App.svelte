@@ -100,6 +100,7 @@
 	});
 
 	const activeTab = $derived(tabs.find((t) => t.id === openTab));
+	const canReload = $derived(!!activeTab?.content && activeTab.type !== 'games');
 
 	// same-domain urls are shown as internal://, like the old site's internal pages
 	function getDisplayUrl(url) {
@@ -407,6 +408,24 @@
 		navHistory(openTab, 'forward');
 	}
 
+	function reload() {
+		const tab = tabs.find((t) => t.id === openTab);
+		if (!tab || !tab.content || tab.type === 'games') return;
+		if (tab.type === 'game') return loadGame(tab.id, tab.zone);
+		tab.loading = true;
+		clearTimeout(loadWatchdogs.get(tab.id));
+		loadWatchdogs.set(
+			tab.id,
+			setTimeout(() => {
+				loadWatchdogs.delete(tab.id);
+				if (tabs.some((t) => t.id === tab.id)) tab.loading = false;
+			}, LOAD_TIMEOUT)
+		);
+		const frame = frames.get(tab.id);
+		if (frame) return frame.reload();
+		directs.get(tab.id)?.contentWindow?.location.reload();
+	}
+
 	// same-origin history entries are plain iframes, everything else is a scramjet frame;
 	// switching page kinds means reloading the entry through the normal path
 	function navHistory(tabId, dir) {
@@ -635,8 +654,10 @@
 			url={currentUrl}
 			canBack={canGoBack}
 			canForward={canGoForward}
+			{canReload}
 			onBack={goBack}
 			onForward={goForward}
+			onReload={reload}
 			onNavigate={navigateOmnibox}
 		/>
 	{/if}
