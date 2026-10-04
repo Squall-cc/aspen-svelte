@@ -1,12 +1,4 @@
-edit: its a webos now and svelte sucks so check iframeos repo under squall-cc
-
-
-edit: my svelte-civet method is BUNS. get these extensions (uninstall civet/svelte normal extensions): https://github.com/adam2am/serena-svelte-civet/tree/main
-
-then hotfix scule into svelte: find yo .vscode folder then go to .vscode\extensions\svelte.svelte-vscode-0.5.0\server then run npm (not bun/pnpm) install scule --legacy-peer-deps
-
-restart vscode
-
+new repo at: https://github.com/squall-cc/aspen-svelte/
 
 uhh
 aspen in svelte so i can do svg builds with xhtml without breaking stuff or smthn
@@ -22,14 +14,12 @@ vanilla-tilt-svelte for that cool effect i saw in a yt short glazing vue
 font used is readex pro
 
 scramjet is from some static scramjet repo i found on discord
-i lowk skidded it and it was not written in svelte. it also uses space's wisp. 
+i lowk skidded it and it was not written in svelte. it also uses space's wisp.
 also i switched to epoxy and i dont remember why, it has webkit support tho ig
 
-
 todo:
-make script to download scramjet + baremux + libcurl + epoxy and put it in  static folder
+make script to download scramjet + baremux + libcurl + epoxy and put it in static folder
 get animations for switching tabs
-
 
 url detection skidded from here:
 https://stackoverflow.com/questions/1500260/detect-urls-in-text-with-javascript

@@ -1,0 +1,1089 @@
+{
+  "games": [
+    {
+      "name": "slope",
+      "url": "https://timeis886.github.io/seraph/slope/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/slope.jpg"
+    },
+    {
+      "name": "bloxors",
+      "url": "https://timeis886.github.io/seraph/bloxors/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/bloxors.jpg"
+    },
+    {
+      "name": "portal2",
+      "url": "https://timeis886.github.io/seraph/portal2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/portal2.jpg"
+    },
+    {
+      "name": "btd",
+      "url": "https://timeis886.github.io/seraph/btd/btd/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/btd.jpg"
+    },
+    {
+      "name": "btd",
+      "url": "https://timeis886.github.io/seraph/btd/btd2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/btd2.jpg"
+    },
+    {
+      "name": "btd",
+      "url": "https://timeis886.github.io/seraph/btd/btd3/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/btd3.jpg"
+    },
+    {
+      "name": "btd",
+      "url": "https://timeis886.github.io/seraph/btd/btd4/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/btd4.jpg"
+    },
+    {
+      "name": "riddleschool",
+      "url": "https://timeis886.github.io/seraph/riddleschool/riddleschool1/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/riddleschool.jpg"
+    },
+    {
+      "name": "riddleschool",
+      "url": "https://timeis886.github.io/seraph/riddleschool/riddleschool2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/riddleschool2.jpg"
+    },
+    {
+      "name": "riddleschool",
+      "url": "https://timeis886.github.io/seraph/riddleschool/riddleschool3/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/riddleschool3.jpg"
+    },
+    {
+      "name": "riddleschool",
+      "url": "https://timeis886.github.io/seraph/riddleschool/riddleschool4/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/riddleschool4.jpg"
+    },
+    {
+      "name": "riddleschool",
+      "url": "https://timeis886.github.io/seraph/riddleschool/riddleschool5/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/riddleschool5.jpg"
+    },
+    {
+      "name": "riddleschool",
+      "url": "https://timeis886.github.io/seraph/riddleschool/riddletransfer/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/riddletransfer.jpg"
+    },
+    {
+      "name": "riddleschool",
+      "url": "https://timeis886.github.io/seraph/riddleschool/riddletransfer2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/riddletransfer2.jpg"
+    },
+    {
+      "name": "doodledefender",
+      "url": "https://timeis886.github.io/seraph/doodledefender/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/doodledefender.jpg"
+    },
+    {
+      "name": "papassushiria",
+      "url": "https://timeis886.github.io/seraph/papassushiria/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/papassushiria.jpg"
+    },
+    {
+      "name": "solitaire",
+      "url": "https://timeis886.github.io/seraph/solitaire/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/solitaire.jpg"
+    },
+    {
+      "name": "papasdonuteria",
+      "url": "https://timeis886.github.io/seraph/papasdonuteria/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/papasdonuteria.jpg"
+    },
+    {
+      "name": "electricbox",
+      "url": "https://timeis886.github.io/seraph/electricbox/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/electricbox.jpg"
+    },
+    {
+      "name": "electricman2",
+      "url": "https://timeis886.github.io/seraph/electricman2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/electricman2.jpg"
+    },
+    {
+      "name": "portal",
+      "url": "https://timeis886.github.io/seraph/portal/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/portal.jpg"
+    },
+    {
+      "name": "connect4",
+      "url": "https://timeis886.github.io/seraph/connect4/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/connect4.jpg"
+    },
+    {
+      "name": "ducklife5",
+      "url": "https://timeis886.github.io/seraph/ducklife5/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/ducklife5.jpg"
+    },
+    {
+      "name": "worldshardestgame",
+      "url": "https://timeis886.github.io/seraph/worldshardestgame/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/worldshardestgame.jpg"
+    },
+    {
+      "name": "ducklife2",
+      "url": "https://timeis886.github.io/seraph/ducklife2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/ducklife2.jpg"
+    },
+    {
+      "name": "papasbakeria",
+      "url": "https://timeis886.github.io/seraph/papasbakeria/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/papasbakeria.jpg"
+    },
+    {
+      "name": "stealingthediamond",
+      "url": "https://timeis886.github.io/seraph/stealingthediamond/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/stealingthediamond.jpg"
+    },
+    {
+      "name": "ducklife",
+      "url": "https://timeis886.github.io/seraph/ducklife/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/ducklife.jpg"
+    },
+    {
+      "name": "ducklife3",
+      "url": "https://timeis886.github.io/seraph/ducklife3/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/ducklife3.jpg"
+    },
+    {
+      "name": "monsterbrawl",
+      "url": "https://timeis886.github.io/seraph/monsterbrawl/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/monsterbrawl.jpg"
+    },
+    {
+      "name": "ducklife4",
+      "url": "https://timeis886.github.io/seraph/ducklife4/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/ducklife4.jpg"
+    },
+    {
+      "name": "grandtheftgrotto",
+      "url": "https://timeis886.github.io/seraph/grandtheftgrotto/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/grandtheftgrotto.jpg"
+    },
+    {
+      "name": "supermeatboy",
+      "url": "https://timeis886.github.io/seraph/supermeatboy/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/supermeatboy.jpg"
+    },
+    {
+      "name": "1on1soccer",
+      "url": "https://timeis886.github.io/seraph/1on1soccer/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/1on1soccer.jpg"
+    },
+    {
+      "name": "fancypantsadventure",
+      "url": "https://timeis886.github.io/seraph/fancypantsadventure/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/fancypantsadventure.jpg"
+    },
+    {
+      "name": "papaspastaria",
+      "url": "https://timeis886.github.io/seraph/papaspastaria/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/papaspastaria.jpg"
+    },
+    {
+      "name": "chooseyourweapon",
+      "url": "https://timeis886.github.io/seraph/chooseyourweapon/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/chooseyourweapon.jpg"
+    },
+    {
+      "name": "spaceinvaders",
+      "url": "https://timeis886.github.io/seraph/spaceinvaders/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/spaceinvaders.jpg"
+    },
+    {
+      "name": "redball3",
+      "url": "https://timeis886.github.io/seraph/redball3/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/redball3.jpg"
+    },
+    {
+      "name": "unfairmario",
+      "url": "https://timeis886.github.io/seraph/unfairmario/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/unfairmario.jpg"
+    },
+    {
+      "name": "redball4",
+      "url": "https://timeis886.github.io/seraph/redball4/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/redball4.jpg"
+    },
+    {
+      "name": "papascheeseria",
+      "url": "https://timeis886.github.io/seraph/papascheeseria/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/papascheeseria.jpg"
+    },
+    {
+      "name": "papasfreezeria",
+      "url": "https://timeis886.github.io/seraph/papasfreezeria/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/papasfreezeria.jpg"
+    },
+    {
+      "name": "shift",
+      "url": "https://timeis886.github.io/seraph/shift/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/shift.jpg"
+    },
+    {
+      "name": "chooseyourweapon3",
+      "url": "https://timeis886.github.io/seraph/chooseyourweapon3/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/chooseyourweapon3.jpg"
+    },
+    {
+      "name": "battleships",
+      "url": "https://timeis886.github.io/seraph/battleships/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/battleships.jpg"
+    },
+    {
+      "name": "factoryballs",
+      "url": "https://timeis886.github.io/seraph/factoryballs/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/factoryballs.jpg"
+    },
+    {
+      "name": "shift2",
+      "url": "https://timeis886.github.io/seraph/shift2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/shift2.jpg"
+    },
+    {
+      "name": "run2",
+      "url": "https://timeis886.github.io/seraph/run2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/run2.jpg"
+    },
+    {
+      "name": "bubbletanks2",
+      "url": "https://timeis886.github.io/seraph/bubbletanks2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/bubbletanks2.jpg"
+    },
+    {
+      "name": "learntofly3",
+      "url": "https://timeis886.github.io/seraph/learntofly3/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/learntofly3.jpg"
+    },
+    {
+      "name": "mctowerdefence2",
+      "url": "https://timeis886.github.io/seraph/mctowerdefence2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/mctowerdefence2.jpg"
+    },
+    {
+      "name": "papastacomia",
+      "url": "https://timeis886.github.io/seraph/papastacomia/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/papastacomia.jpg"
+    },
+    {
+      "name": "shopempire",
+      "url": "https://timeis886.github.io/seraph/shopempire/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/shopempire.jpg"
+    },
+    {
+      "name": "chooseyourweapon2",
+      "url": "https://timeis886.github.io/seraph/chooseyourweapon2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/chooseyourweapon.jpg"
+    },
+    {
+      "name": "learntofly2",
+      "url": "https://timeis886.github.io/seraph/learntofly2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/learntofly2.jpg"
+    },
+    {
+      "name": "shift4",
+      "url": "https://timeis886.github.io/seraph/shift4/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/shift4.jpg"
+    },
+    {
+      "name": "run3",
+      "url": "https://timeis886.github.io/seraph/run3/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/run3.jpg"
+    },
+    {
+      "name": "shift3",
+      "url": "https://timeis886.github.io/seraph/shift3/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/shift3.jpg"
+    },
+    {
+      "name": "raftwars",
+      "url": "https://timeis886.github.io/seraph/raftwars/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/raftwars.jpg"
+    },
+    {
+      "name": "thisistheonlylevel",
+      "url": "https://timeis886.github.io/seraph/thisistheonlylevel/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/thisistheonlylevel.jpg"
+    },
+    {
+      "name": "gunmayhem2",
+      "url": "https://timeis886.github.io/seraph/gunmayhem2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/gunmayhem2.jpg"
+    },
+    {
+      "name": "skywire2",
+      "url": "https://timeis886.github.io/seraph/skywire2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/skywire2.jpg"
+    },
+    {
+      "name": "vex2",
+      "url": "https://timeis886.github.io/seraph/vex2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/vex2.jpg"
+    },
+    {
+      "name": "vex",
+      "url": "https://timeis886.github.io/seraph/vex/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/vex.jpg"
+    },
+    {
+      "name": "papaspancakeria",
+      "url": "https://timeis886.github.io/seraph/papaspancakeria/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/papaspancakeria.jpg"
+    },
+    {
+      "name": "tron",
+      "url": "https://timeis886.github.io/seraph/tron/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/tron.jpg"
+    },
+    {
+      "name": "supersmashflash",
+      "url": "https://timeis886.github.io/seraph/supersmashflash/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/supersmashflash.jpg"
+    },
+    {
+      "name": "swordsandsandals",
+      "url": "https://timeis886.github.io/seraph/swordsandsandals/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/swordsandsandals.jpg"
+    },
+    {
+      "name": "learntofly",
+      "url": "https://timeis886.github.io/seraph/learntofly/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/learntofly.jpg"
+    },
+    {
+      "name": "mariocombat",
+      "url": "https://timeis886.github.io/seraph/mariocombat/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/mariocombat.jpg"
+    },
+    {
+      "name": "supermarioflash2",
+      "url": "https://timeis886.github.io/seraph/supermarioflash2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/supermarioflash2.jpg"
+    },
+    {
+      "name": "happywheels",
+      "url": "https://timeis886.github.io/seraph/happywheels/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/happywheels.jpg"
+    },
+    {
+      "name": "papasburgeria",
+      "url": "https://timeis886.github.io/seraph/papasburgeria/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/papasburgeria.jpg"
+    },
+    {
+      "name": "swordsandsandals2",
+      "url": "https://timeis886.github.io/seraph/swordsandsandals2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/swordsandsandals2.jpg"
+    },
+    {
+      "name": "supermarioflash",
+      "url": "https://timeis886.github.io/seraph/supermarioflash/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/supermarioflash.jpg"
+    },
+    {
+      "name": "papascupcakeria",
+      "url": "https://timeis886.github.io/seraph/papascupcakeria/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/papascupcakeria.jpg"
+    },
+    {
+      "name": "redballv2",
+      "url": "https://timeis886.github.io/seraph/redballv2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/redball4vol2.jpg"
+    },
+    {
+      "name": "theimpossiblequiz",
+      "url": "https://timeis886.github.io/seraph/theimpossiblequiz/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/theimpossiblequiz.jpg"
+    },
+    {
+      "name": "linerider",
+      "url": "https://timeis886.github.io/seraph/linerider/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/linerider.jpg"
+    },
+    {
+      "name": "achievementunlocked3",
+      "url": "https://timeis886.github.io/seraph/achievementunlocked3/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/achievementunlocked3.jpg"
+    },
+    {
+      "name": "multitask",
+      "url": "https://timeis886.github.io/seraph/multitask/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/multitask.jpg"
+    },
+    {
+      "name": "bigredbutton",
+      "url": "https://timeis886.github.io/seraph/bigredbutton/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/bigredbutton.jpg"
+    },
+    {
+      "name": "sprinter",
+      "url": "https://timeis886.github.io/seraph/sprinter/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/sprinter.jpg"
+    },
+    {
+      "name": "badpiggies",
+      "url": "https://timeis886.github.io/seraph/badpiggies/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/badpiggies.jpg"
+    },
+    {
+      "name": "skywire",
+      "url": "https://timeis886.github.io/seraph/skywire/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/skywire.jpg"
+    },
+    {
+      "name": "raftwars2",
+      "url": "https://timeis886.github.io/seraph/raftwars2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/raftwars2.jpg"
+    },
+    {
+      "name": "breakingthebank",
+      "url": "https://timeis886.github.io/seraph/breakingthebank/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/breakingthebank.jpg"
+    },
+    {
+      "name": "run",
+      "url": "https://timeis886.github.io/seraph/run/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/run.jpg"
+    },
+    {
+      "name": "gunmayhemredux",
+      "url": "https://timeis886.github.io/seraph/gunmayhemredux/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/gunmayhemredux.jpg"
+    },
+    {
+      "name": "achievementunlocked2",
+      "url": "https://timeis886.github.io/seraph/achievementunlocked2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/achievementunlocked2.jpg"
+    },
+    {
+      "name": "redball1",
+      "url": "https://timeis886.github.io/seraph/redball1/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/redball.jpg"
+    },
+    {
+      "name": "redballv3",
+      "url": "https://timeis886.github.io/seraph/redballv3/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/redball4vol3.jpg"
+    },
+    {
+      "name": "fleeingthecomplex",
+      "url": "https://timeis886.github.io/seraph/fleeingthecomplex/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/fleeingthecomplex.jpg"
+    },
+    {
+      "name": "thebindingofisaac",
+      "url": "https://timeis886.github.io/seraph/thebindingofisaac/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/thebindingofisaac.jpg"
+    },
+    {
+      "name": "papaspizzaria",
+      "url": "https://timeis886.github.io/seraph/papaspizzaria/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/papaspizzeria.jpg"
+    },
+    {
+      "name": "pool",
+      "url": "https://timeis886.github.io/seraph/pool/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/pool.jpg"
+    },
+    {
+      "name": "chibiknight",
+      "url": "https://timeis886.github.io/seraph/chibiknight/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/chibiknight.jpg"
+    },
+    {
+      "name": "achievementunlocked",
+      "url": "https://timeis886.github.io/seraph/achievementunlocked/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/achievementunlocked.jpg"
+    },
+    {
+      "name": "gunmayhem",
+      "url": "https://timeis886.github.io/seraph/gunmayhem/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/gunmayhem.jpg"
+    },
+    {
+      "name": "papaswingeria",
+      "url": "https://timeis886.github.io/seraph/papaswingeria/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/papaswingeria.jpg"
+    },
+    {
+      "name": "theimpossiblequiz2",
+      "url": "https://timeis886.github.io/seraph/theimpossiblequiz2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/theimpossiblequiz2.jpg"
+    },
+    {
+      "name": "themehotel",
+      "url": "https://timeis886.github.io/seraph/themehotel/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/themehotel.jpg"
+    },
+    {
+      "name": "escapingtheprison",
+      "url": "https://timeis886.github.io/seraph/escapingtheprison/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/escapingtheprison.jpg"
+    },
+    {
+      "name": "worldshardestgame2",
+      "url": "https://timeis886.github.io/seraph/worldshardestgame2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/worldshardestgame2.jpg"
+    },
+    {
+      "name": "fancypantsadventure2",
+      "url": "https://timeis886.github.io/seraph/fancypantsadventure2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/fancypantsadventure2.jpg"
+    },
+    {
+      "name": "papasscooperia",
+      "url": "https://timeis886.github.io/seraph/papasscooperia/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/papasscooperia.jpg"
+    },
+    {
+      "name": "infiltratingtheairship",
+      "url": "https://timeis886.github.io/seraph/infiltratingtheairship/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/infiltratingtheairship.jpg"
+    },
+    {
+      "name": "papashotdoggeria",
+      "url": "https://timeis886.github.io/seraph/papashotdoggeria/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/papashotdoggeria.jpg"
+    },
+    {
+      "name": "sm64",
+      "url": "https://timeis886.github.io/seraph/sm64/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/sm64.jpg"
+    },
+    {
+      "name": "mc",
+      "url": "https://timeis886.github.io/seraph/mc/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/mc.jpg"
+    },
+    {
+      "name": "driftmania",
+      "url": "https://timeis886.github.io/seraph/driftmania/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/driftmania.jpg"
+    },
+    {
+      "name": "burritobison",
+      "url": "https://timeis886.github.io/seraph/burritobison/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/burritobison.jpg"
+    },
+    {
+      "name": "amazingropepolice",
+      "url": "https://timeis886.github.io/seraph/amazingropepolice/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/amazingropepolice.jpg"
+    },
+    {
+      "name": "timeshooter1",
+      "url": "https://timeis886.github.io/seraph/timeshooter1/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/timeshooter.jpg"
+    },
+    {
+      "name": "timeshooter2",
+      "url": "https://timeis886.github.io/seraph/timeshooter2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/timeshooter2.jpg"
+    },
+    {
+      "name": "timeshooter3",
+      "url": "https://timeis886.github.io/seraph/timeshooter3/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/timeshooter3.jpg"
+    },
+    {
+      "name": "roughdino",
+      "url": "https://timeis886.github.io/seraph/roughdino/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/roughdino.jpg"
+    },
+    {
+      "name": "risehigher",
+      "url": "https://timeis886.github.io/seraph/risehigher/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/risehigher.jpg"
+    },
+    {
+      "name": "gdlite",
+      "url": "https://timeis886.github.io/seraph/gdlite/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/geometrydashlite.jpg"
+    },
+    {
+      "name": "funnymadracing",
+      "url": "https://timeis886.github.io/seraph/funnymadracing/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/funnymadracing.jpg"
+    },
+    {
+      "name": "cuttherope",
+      "url": "https://timeis886.github.io/seraph/cuttherope/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/cuttherope.jpg"
+    },
+    {
+      "name": "crimsonfantasia",
+      "url": "https://timeis886.github.io/seraph/crimsonfantasia/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/crimsonfantasia.jpg"
+    },
+    {
+      "name": "wallsmash",
+      "url": "https://timeis886.github.io/seraph/wallsmash/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/wallsmash.jpg"
+    },
+    {
+      "name": "watermelongame",
+      "url": "https://timeis886.github.io/seraph/watermelongame/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/watermelongame.jpg"
+    },
+    {
+      "name": "tabs",
+      "url": "https://timeis886.github.io/seraph/tabs/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/totallyaccuratebattlesim.jpg"
+    },
+    {
+      "name": "stickmangolf",
+      "url": "https://timeis886.github.io/seraph/stickmangolf/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/stickmangolf.jpg"
+    },
+    {
+      "name": "holeio",
+      "url": "https://timeis886.github.io/seraph/holeio/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/holeio.jpg"
+    },
+    {
+      "name": "10minutestilldawn",
+      "url": "https://timeis886.github.io/seraph/10minutestilldawn/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/10minutestilldawn.jpg"
+    },
+    {
+      "name": "volleyrandom",
+      "url": "https://timeis886.github.io/seraph/volleyrandom/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/volleyrandom.jpg"
+    },
+    {
+      "name": "snowrider3d",
+      "url": "https://timeis886.github.io/seraph/snowrider3d/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/snowrider3d.jpg"
+    },
+    {
+      "name": "tubejumpers",
+      "url": "https://timeis886.github.io/seraph/tubejumpers/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/tubejumpers.jpg"
+    },
+    {
+      "name": "helixjump",
+      "url": "https://timeis886.github.io/seraph/helixjump/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/helixjump.jpg"
+    },
+    {
+      "name": "osumania",
+      "url": "https://timeis886.github.io/seraph/osumania/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/osumania.jpg"
+    },
+    {
+      "name": "ngon",
+      "url": "https://timeis886.github.io/seraph/ngon/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/ngon.jpg"
+    },
+    {
+      "name": "celeste",
+      "url": "https://timeis886.github.io/seraph/celeste/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/celeste.jpg"
+    },
+    {
+      "name": "soccerrandom",
+      "url": "https://timeis886.github.io/seraph/soccerrandom/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/soccerrandom.jpg"
+    },
+    {
+      "name": "lazyjump3d",
+      "url": "https://timeis886.github.io/seraph/lazyjump3d/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/lazyjump3d.jpg"
+    },
+    {
+      "name": "slope2",
+      "url": "https://timeis886.github.io/seraph/slope2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/slope2.jpg"
+    },
+    {
+      "name": "championisland",
+      "url": "https://timeis886.github.io/seraph/championisland/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/championisland.jpg"
+    },
+    {
+      "name": "stack",
+      "url": "https://timeis886.github.io/seraph/stack/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/stack.jpg"
+    },
+    {
+      "name": "wordle",
+      "url": "https://timeis886.github.io/seraph/wordle/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/wordle.jpg"
+    },
+    {
+      "name": "getawayshootout",
+      "url": "https://timeis886.github.io/seraph/getawayshootout/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/getawayshootout.jpg"
+    },
+    {
+      "name": "clusterrush",
+      "url": "https://timeis886.github.io/seraph/clusterrush/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/clusterrush.jpg"
+    },
+    {
+      "name": "rooftop2",
+      "url": "https://timeis886.github.io/seraph/rooftop2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/rooftopsnipers2.jpg"
+    },
+    {
+      "name": "stickmanhook",
+      "url": "https://timeis886.github.io/seraph/stickmanhook/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/stickmanhook.jpg"
+    },
+    {
+      "name": "tanukisunset",
+      "url": "https://timeis886.github.io/seraph/tanukisunset/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/tanukisunset.jpg"
+    },
+    {
+      "name": "aquaparkslides",
+      "url": "https://timeis886.github.io/seraph/aquaparkslides/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/aquaparkslides.jpg"
+    },
+    {
+      "name": "baldisbasics",
+      "url": "https://timeis886.github.io/seraph/baldisbasics/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/baldisbasics.jpg"
+    },
+    {
+      "name": "rooftop",
+      "url": "https://timeis886.github.io/seraph/rooftop/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/rooftopsnipers.jpg"
+    },
+    {
+      "name": "fnaf",
+      "url": "https://timeis886.github.io/seraph/fnaf/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/fnaf.jpg"
+    },
+    {
+      "name": "fnaf-2",
+      "url": "https://timeis886.github.io/seraph/fnaf-2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/fnaf2.jpg"
+    },
+    {
+      "name": "fnaf-3",
+      "url": "https://timeis886.github.io/seraph/fnaf-3/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/fnaf3.jpg"
+    },
+    {
+      "name": "fnaf-4",
+      "url": "https://timeis886.github.io/seraph/fnaf-4/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/fnaf4.jpg"
+    },
+    {
+      "name": "superhot",
+      "url": "https://timeis886.github.io/seraph/superhot/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/superhot.jpg"
+    },
+    {
+      "name": "2048",
+      "url": "https://timeis886.github.io/seraph/2048/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/2048.jpg"
+    },
+    {
+      "name": "jetpackjoyride",
+      "url": "https://timeis886.github.io/seraph/jetpackjoyride/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/jetpackjoyride.jpg"
+    },
+    {
+      "name": "dinogame",
+      "url": "https://timeis886.github.io/seraph/dinogame/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/chromedino.jpg"
+    },
+    {
+      "name": "bitlife",
+      "url": "https://timeis886.github.io/seraph/bitlife/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/bitlife.jpg"
+    },
+    {
+      "name": "abudathealien",
+      "url": "https://timeis886.github.io/seraph/abudathealien/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/abudathealien.jpg"
+    },
+    {
+      "name": "battlebeavers",
+      "url": "https://timeis886.github.io/seraph/battlebeavers/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/battlebeavers.jpg"
+    },
+    {
+      "name": "controlcraft2",
+      "url": "https://timeis886.github.io/seraph/controlcraft2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/controlcraft2.jpg"
+    },
+    {
+      "name": "ageofwar",
+      "url": "https://timeis886.github.io/seraph/ageofwar/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/ageofwar.jpg"
+    },
+    {
+      "name": "ageofwar2",
+      "url": "https://timeis886.github.io/seraph/ageofwar2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/ageofwar2.jpg"
+    },
+    {
+      "name": "amorphous",
+      "url": "https://timeis886.github.io/seraph/amorphous/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/amorphous.jpg"
+    },
+    {
+      "name": "bubblespinner",
+      "url": "https://timeis886.github.io/seraph/bubblespinner/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/bubblespinner.jpg"
+    },
+    {
+      "name": "crushthecastle",
+      "url": "https://timeis886.github.io/seraph/crushthecastle/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/crushthecastle.jpg"
+    },
+    {
+      "name": "crushthecastle2",
+      "url": "https://timeis886.github.io/seraph/crushthecastle2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/crushthecastle2.jpg"
+    },
+    {
+      "name": "epicbattlefantasy",
+      "url": "https://timeis886.github.io/seraph/epicbattlefantasy/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/epicbattlefantasy.jpg"
+    },
+    {
+      "name": "epicbattlefantasy2",
+      "url": "https://timeis886.github.io/seraph/epicbattlefantasy2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/epicbattlefantasy2.jpg"
+    },
+    {
+      "name": "epicbattlefantasy3",
+      "url": "https://timeis886.github.io/seraph/epicbattlefantasy3/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/epicbattlefantasy3.jpg"
+    },
+    {
+      "name": "fancypantsadventure3",
+      "url": "https://timeis886.github.io/seraph/fancypantsadventure3/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/fancypantsadventure3.jpg"
+    },
+    {
+      "name": "floodrunner2",
+      "url": "https://timeis886.github.io/seraph/floodrunner2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/floodrunner2.jpg"
+    },
+    {
+      "name": "floodrunner3",
+      "url": "https://timeis886.github.io/seraph/floodrunner3/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/floodrunner3.jpg"
+    },
+    {
+      "name": "dragonboy2",
+      "url": "https://timeis886.github.io/seraph/dragonboy2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/dragonboy2.jpg"
+    },
+    {
+      "name": "neonrider",
+      "url": "https://timeis886.github.io/seraph/neonrider/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/neonrider.jpg"
+    },
+    {
+      "name": "pandemic2",
+      "url": "https://timeis886.github.io/seraph/pandemic2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/pandemic2.jpg"
+    },
+    {
+      "name": "stickwar",
+      "url": "https://timeis886.github.io/seraph/stickwar/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/stickwar.jpg"
+    },
+    {
+      "name": "stickwar2",
+      "url": "https://timeis886.github.io/seraph/stickwar2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/stickwar2.jpg"
+    },
+    {
+      "name": "ultimateflashsonic",
+      "url": "https://timeis886.github.io/seraph/ultimateflashsonic/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/ultimateflashsonic.jpg"
+    },
+    {
+      "name": "zombocalypse",
+      "url": "https://timeis886.github.io/seraph/zombocalypse/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/zombocalpyse.jpg"
+    },
+    {
+      "name": "zombotron",
+      "url": "https://timeis886.github.io/seraph/zombotron/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/zombotron.jpg"
+    },
+    {
+      "name": "zombotron2",
+      "url": "https://timeis886.github.io/seraph/zombotron2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/zombotron2.jpg"
+    },
+    {
+      "name": "3line",
+      "url": "https://timeis886.github.io/seraph/3line/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/threeline.jpg"
+    },
+    {
+      "name": "bikechamp",
+      "url": "https://timeis886.github.io/seraph/bikechamp/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/bikechamp.jpg"
+    },
+    {
+      "name": "bikechamp2",
+      "url": "https://timeis886.github.io/seraph/bikechamp2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/bikechamp2.jpg"
+    },
+    {
+      "name": "corporationinc",
+      "url": "https://timeis886.github.io/seraph/corporationinc/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/corporationinc.jpg"
+    },
+    {
+      "name": "shopempirefable",
+      "url": "https://timeis886.github.io/seraph/shopempirefable/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/shopempirefable.jpg"
+    },
+    {
+      "name": "wubzzysamazingadventure",
+      "url": "https://timeis886.github.io/seraph/wubzzysamazingadventure/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/wubzzysamazingadventure.jpg"
+    },
+    {
+      "name": "canopy",
+      "url": "https://timeis886.github.io/seraph/canopy/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/canopy.jpg"
+    },
+    {
+      "name": "cavechaos",
+      "url": "https://timeis886.github.io/seraph/cavechaos/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/cavechaos.jpg"
+    },
+    {
+      "name": "changetype",
+      "url": "https://timeis886.github.io/seraph/changetype/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/changetype.jpg"
+    },
+    {
+      "name": "cheesedreams",
+      "url": "https://timeis886.github.io/seraph/cheesedreams/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/cheesedreams.jpg"
+    },
+    {
+      "name": "chisel",
+      "url": "https://timeis886.github.io/seraph/chisel/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/chisel.jpg"
+    },
+    {
+      "name": "chisel2",
+      "url": "https://timeis886.github.io/seraph/chisel2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/chisel2.jpg"
+    },
+    {
+      "name": "ditto",
+      "url": "https://timeis886.github.io/seraph/ditto/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/ditto.jpg"
+    },
+    {
+      "name": "feedme",
+      "url": "https://timeis886.github.io/seraph/feedme/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/feedme.jpg"
+    },
+    {
+      "name": "finalninja",
+      "url": "https://timeis886.github.io/seraph/finalninja/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/finalninja.jpg"
+    },
+    {
+      "name": "frostbite",
+      "url": "https://timeis886.github.io/seraph/frostbite/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/frostbite.jpg"
+    },
+    {
+      "name": "frostbite2",
+      "url": "https://timeis886.github.io/seraph/frostbite2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/frostbite2.jpg"
+    },
+    {
+      "name": "icebreaker",
+      "url": "https://timeis886.github.io/seraph/icebreaker/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/icebreaker.jpg"
+    },
+    {
+      "name": "mutiny",
+      "url": "https://timeis886.github.io/seraph/mutiny/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/mutiny.jpg"
+    },
+    {
+      "name": "nitromemustdie",
+      "url": "https://timeis886.github.io/seraph/nitromemustdie/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/nitromemustdie.jpg"
+    },
+    {
+      "name": "oodlegobs",
+      "url": "https://timeis886.github.io/seraph/oodlegobs/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/oodlegobs.jpg"
+    },
+    {
+      "name": "supertreadmill",
+      "url": "https://timeis886.github.io/seraph/supertreadmill/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/supertreadmill.jpg"
+    },
+    {
+      "name": "swindler",
+      "url": "https://timeis886.github.io/seraph/swindler/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/swindler.jpg"
+    },
+    {
+      "name": "testsubjectarena",
+      "url": "https://timeis886.github.io/seraph/testsubjectarena/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/testsubjectarena.jpg"
+    },
+    {
+      "name": "testsubjectcomplete",
+      "url": "https://timeis886.github.io/seraph/testsubjectcomplete/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/testsubjectcomplete.jpg"
+    },
+    {
+      "name": "twinshot",
+      "url": "https://timeis886.github.io/seraph/twinshot/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/twinshot.jpg"
+    },
+    {
+      "name": "twinshot2",
+      "url": "https://timeis886.github.io/seraph/twinshot2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/twinshot2.jpg"
+    },
+    {
+      "name": "cactusmccoy",
+      "url": "https://timeis886.github.io/seraph/cactusmccoy/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/cactusmccoy.jpg"
+    },
+    {
+      "name": "cactusmccoy2",
+      "url": "https://timeis886.github.io/seraph/cactusmccoy2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/cactusmccoy2.jpg"
+    },
+    {
+      "name": "papalouie",
+      "url": "https://timeis886.github.io/seraph/papalouie/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/papalouie.jpg"
+    },
+    {
+      "name": "papalouie2",
+      "url": "https://timeis886.github.io/seraph/papalouie2/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/papalouie2.jpg"
+    },
+    {
+      "name": "papalouie3",
+      "url": "https://timeis886.github.io/seraph/papalouie3/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/papalouie3.jpg"
+    },
+    {
+      "name": "steakandjake",
+      "url": "https://timeis886.github.io/seraph/steakandjake/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/steakandjake.jpg"
+    },
+    {
+      "name": "steakandjakemidnightmarch",
+      "url": "https://timeis886.github.io/seraph/steakandjakemidnightmarch/index.html",
+      "thumbnail": "https://timeis886.github.io/seraph/images/thumbnails/steakandjakemidnightmarch.jpg"
+    }
+  ]
+}

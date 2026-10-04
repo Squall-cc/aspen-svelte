@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
+<link rel="stylesheet" href="glass.css">
+<script src="theme.js"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:             #3b4252;
+    --bg-deep:        #2e3440;
+    --bg-deeper:      #242933;
+    --border:         #5e81ac;
+    --text:           #eceff4;
+    --text-dim:       #e5e9f0;
+    --text-muted:     #d8dee9;
+    --accent:         #5e81ac;
+  }
+
+  body {
+    font-family: 'Readex Pro', sans-serif;
+    height: 100vh;
+    display: flex;
+    background: var(--bg);
+    color: var(--text);
+  }
+
+  /* auth overlay */
+  #auth-overlay {
+    position: fixed; inset: 0; background: var(--bg);
+    display: flex; align-items: center; justify-content: center; z-index: 10;
+  }
+  #auth-box { text-align: center; width: 300px; position: relative; z-index: 1; }
+  #auth-box h2 { margin-bottom: 12px; font-size: 18px; color: var(--text); }
+  #auth-box input {
+    display: block; margin: 8px auto; padding: 10px 14px; width: 100%;
+    border: 2px solid var(--border); border-radius: 10px;
+    background: transparent; color: var(--text);
+    font-family: 'Readex Pro', sans-serif; font-size: 14px; outline: none;
+  }
+  #auth-box input::placeholder { color: var(--text-muted); }
+  #auth-box input:focus { border-color: var(--accent); }
+  #auth-box .btn-row { display: flex; gap: 8px; margin-top: 10px; }
+  #auth-box button {
+    flex: 1; padding: 10px 0; border: 2px solid var(--border); border-radius: 10px;
+    background: var(--accent); color: var(--text); cursor: pointer;
+    font-family: 'Readex Pro', sans-serif; font-size: 14px; font-weight: 600;
+  }
+  #auth-box button.secondary { background: transparent; color: var(--text-muted); }
+  #auth-box button:hover { opacity: 0.85; }
+  #auth-error { color: var(--red, #bf616a); margin-top: 8px; font-size: 12px; min-height: 18px; }
+
+  /* sidebar */
+  #chat-sidebar {
+    width: 200px; background: var(--bg-deep); display: flex; flex-direction: column;
+    border-right: 1px solid var(--border); position: relative; z-index: 1;
+  }
+  #chat-sidebar h3 {
+    padding: 16px; font-size: 12px; color: var(--text-muted);
+    text-transform: uppercase; letter-spacing: 1px;
+  }
+  .channel-btn {
+    padding: 10px 16px; border: none; background: none; color: var(--text-dim);
+    text-align: left; cursor: pointer; font-size: 14px;
+    font-family: 'Readex Pro', sans-serif;
+  }
+  .channel-btn:hover { background: var(--bg-deeper); }
+  .channel-btn.active { background: var(--bg-deeper); color: var(--text); font-weight: 600; }
+
+  #new-dm-btn {
+    margin: 8px 16px; padding: 8px 10px; border: 2px solid var(--border);
+    border-radius: 8px; background: transparent; color: var(--text-muted);
+    cursor: pointer; font-size: 12px; font-family: 'Readex Pro', sans-serif;
+  }
+  #new-dm-btn:hover { border-color: var(--accent); color: var(--text); }
+
+  #dm-modal {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.5);
+    display: flex; align-items: center; justify-content: center; z-index: 20;
+  }
+  #dm-modal .box {
+    background: var(--bg-deep); border: 2px solid var(--border); border-radius: 12px;
+    padding: 16px; width: 300px; max-height: 400px; display: flex; flex-direction: column;
+  }
+  #dm-modal h3 { margin-bottom: 10px; font-size: 14px; color: var(--text); }
+  #dm-modal input {
+    padding: 8px 12px; border: 2px solid var(--border); border-radius: 8px;
+    background: transparent; color: var(--text);
+    font-family: 'Readex Pro', sans-serif; font-size: 13px; outline: none;
+    margin-bottom: 8px;
+  }
+  #dm-modal input:focus { border-color: var(--accent); }
+  #dm-user-list { overflow-y: auto; flex: 1; }
+  #dm-user-list .user-row {
+    padding: 8px 10px; cursor: pointer; border-radius: 6px;
+    font-size: 13px; color: var(--text-dim);
+  }
+  #dm-user-list .user-row:hover { background: var(--bg-deeper); color: var(--text); }
+  #dm-modal .close-btn {
+    margin-top: 8px; padding: 6px 10px; border: 2px solid var(--border);
+    border-radius: 8px; background: transparent; color: var(--text-muted);
+    cursor: pointer; font-family: 'Readex Pro', sans-serif; font-size: 12px;
+  }
+
+  /* main area */
+  #main { flex: 1; display: flex; flex-direction: column; position: relative; z-index: 1; }
+  #header {
+    padding: 12px 16px; border-bottom: 1px solid var(--border);
+    display: flex; justify-content: space-between; align-items: center;
+    background: var(--bg-deep);
+  }
+  #header span { font-weight: 600; font-size: 15px; }
+  #header button {
+    background: none; border: 2px solid var(--border); color: var(--text-muted);
+    padding: 4px 12px; border-radius: 8px; cursor: pointer; font-size: 12px;
+    font-family: 'Readex Pro', sans-serif;
+  }
+  #header button:hover { border-color: var(--accent); color: var(--text); }
+
+  #messages-area { flex: 1; overflow-y: auto; padding: 12px 16px; }
+
+  /* pinned */
+  #pinned-section { margin-bottom: 12px; }
+  #pinned-section h4 {
+    color: var(--accent); font-size: 11px; margin-bottom: 6px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .pinned-msg {
+    background: var(--bg-deep); border-left: 4px solid var(--accent);
+    padding: 6px 10px; margin-bottom: 4px; border-radius: 0 8px 8px 0; font-size: 13px;
+  }
+  .pinned-msg .msg-user { color: var(--accent); font-weight: 600; margin-right: 6px; }
+  .pinned-msg .msg-time { color: var(--text-muted); font-size: 11px; margin-left: 6px; }
+
+  /* messages */
+  .msg {
+    padding: 6px 10px; font-size: 13px;
+    border-left: 2px solid var(--accent);
+    margin-bottom: 2px;
+    background: var(--bg-deep);
+    border-radius: 0 8px 8px 0;
+  }
+  .msg .msg-user { font-weight: 600; color: var(--accent); margin-right: 6px; }
+  .msg .msg-time { color: var(--text-muted); font-size: 11px; margin-left: 6px; }
+
+  /* pin button — shared between .msg and .pinned-msg */
+  .pin-btn {
+    background: none; border: none; cursor: pointer; font-size: 11px;
+    margin-left: 8px; color: var(--text-muted); font-family: 'Readex Pro', sans-serif;
+  }
+  .pin-btn:hover { color: var(--accent); }
+
+  /* input */
+  #input-bar {
+    padding: 12px 16px; border-top: 1px solid var(--border);
+    display: flex; gap: 8px; background: var(--bg-deep);
+  }
+  #input-bar input {
+    flex: 1; padding: 10px 14px; border: 2px solid var(--border); border-radius: 10px;
+    background: transparent; color: var(--text);
+    font-family: 'Readex Pro', sans-serif; font-size: 14px; outline: none;
+  }
+  #input-bar input::placeholder { color: var(--text-muted); }
+  #input-bar input:focus { border-color: var(--accent); }
+  #input-bar button {
+    padding: 10px 18px; border: 2px solid var(--border); border-radius: 10px;
+    background: var(--accent); color: var(--text); cursor: pointer;
+    font-family: 'Readex Pro', sans-serif; font-size: 14px; font-weight: 600;
+  }
+  #input-bar button:hover { opacity: 0.85; }
+  #input-bar #attach-btn {
+    padding: 10px 14px; background: transparent; color: var(--text-muted);
+  }
+  #input-bar #attach-btn:hover { color: var(--accent); opacity: 1; }
+
+  .msg-img, .pinned-msg-img {
+    display: block; max-width: 320px; max-height: 240px;
+    margin-top: 6px; border-radius: 8px; border: 1px solid var(--border);
+  }
+
+  #img-modal {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.5);
+    display: flex; align-items: center; justify-content: center; z-index: 20;
+  }
+  #img-modal .box {
+    background: var(--bg-deep); border: 2px solid var(--border); border-radius: 12px;
+    padding: 16px; width: 340px;
+  }
+  #img-modal h3 { margin-bottom: 10px; font-size: 14px; color: var(--text); }
+  #img-modal input {
+    width: 100%; padding: 8px 12px; border: 2px solid var(--border); border-radius: 8px;
+    background: transparent; color: var(--text);
+    font-family: 'Readex Pro', sans-serif; font-size: 13px; outline: none;
+  }
+  #img-modal input:focus { border-color: var(--accent); }
+  #img-modal .btn-row { display: flex; gap: 8px; margin-top: 10px; }
+  #img-modal button {
+    flex: 1; padding: 8px 0; border: 2px solid var(--border); border-radius: 8px;
+    font-family: 'Readex Pro', sans-serif; font-size: 13px; cursor: pointer;
+  }
+  #img-modal .confirm { background: var(--accent); color: var(--text); font-weight: 600; }
+  #img-modal .cancel { background: transparent; color: var(--text-muted); }
+
+  .hidden { display: none !important; }
+</style>
+</head>
+<body>
+
+<div id="vanta-bg" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;"></div>
+
+<!-- auth -->
+<div id="auth-overlay">
+  <div id="auth-box">
+    <h2 id="auth-title">login</h2>
+    <input type="text" id="auth-username" placeholder="username" autofocus>
+    <input type="password" id="auth-password" placeholder="password">
+    <div class="btn-row">
+      <button id="auth-submit">login</button>
+      <button id="auth-toggle" class="secondary">register</button>
+    </div>
+    <div id="auth-error"></div>
+  </div>
+</div>
+
+<!-- sidebar -->
+<div id="chat-sidebar" class="hidden">
+  <h3>Channels</h3>
+  <div id="channel-list"></div>
+  <h3>Direct Messages</h3>
+  <div id="dm-list"></div>
+  <button id="new-dm-btn">+ new dm</button>
+</div>
+
+<!-- dm modal -->
+<div id="dm-modal" class="hidden">
+  <div class="box">
+    <h3>start a dm</h3>
+    <input type="text" id="dm-search" placeholder="search users...">
+    <div id="dm-user-list"></div>
+    <button class="close-btn" id="dm-close">cancel</button>
+  </div>
+</div>
+
+<!-- main -->
+<div id="main" class="hidden">
+  <div id="header">
+    <span id="channel-name">#general</span>
+    <button id="logout-btn">logout</button>
+  </div>
+  <div id="messages-area">
+    <div id="pinned-section" class="hidden">
+      <h4>Pinned</h4>
+      <div id="pinned-list"></div>
+    </div>
+    <div id="message-list"></div>
+  </div>
+  <div id="input-bar">
+    <button id="attach-btn" title="attach image url"><i class="fa-solid fa-plus"></i></button>
+    <input type="text" id="msg-input" placeholder="type a message...">
+    <button id="send-btn">send</button>
+  </div>
+</div>
+
+<!-- image modal -->
+<div id="img-modal" class="hidden">
+  <div class="box">
+    <h3>attach image</h3>
+    <input type="text" id="img-url" placeholder="https://example.com/image.png">
+    <div class="btn-row">
+      <button class="confirm" id="img-confirm">attach</button>
+      <button class="cancel" id="img-cancel">cancel</button>
+    </div>
+  </div>
+</div>
+
+<script src="/chat/socket.io/socket.io.js"></script>
+<script>
+const $ = (s) => document.querySelector(s);
+
+let username = null;
+let isAdmin = false;
+let currentChannel = null;
+let socket = null;
+let authMode = "login";
+
+fetch("/chat/api/me").then(r => r.json()).then(data => {
+  if (data.username) {
+    username = data.username;
+    isAdmin = data.isAdmin;
+    enterApp();
+  }
+});
+
+$("#auth-toggle").addEventListener("click", () => {
+  authMode = authMode === "login" ? "register" : "login";
+  $("#auth-title").textContent = authMode === "login" ? "login" : "register";
+  $("#auth-submit").textContent = authMode === "login" ? "login" : "register";
+  $("#auth-toggle").textContent = authMode === "login" ? "register" : "login";
+  $("#auth-error").textContent = "";
+});
+
+$("#auth-submit").addEventListener("click", doAuth);
+$("#auth-username").addEventListener("keydown", (e) => { if (e.key === "Enter") $("#auth-password").focus(); });
+$("#auth-password").addEventListener("keydown", (e) => { if (e.key === "Enter") doAuth(); });
+
+async function doAuth() {
+  const u = $("#auth-username").value.trim();
+  const p = $("#auth-password").value;
+  if (!u) { $("#auth-error").textContent = "username required"; return; }
+  if (!p) { $("#auth-error").textContent = "password required"; return; }
+
+  const endpoint = authMode === "login" ? "/chat/api/login" : "/chat/api/register";
+  const res = await fetch(endpoint, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ username: u, password: p }),
+  });
+  const data = await res.json();
+  if (!res.ok) {
+    $("#auth-error").textContent = data.error;
+    return;
+  }
+  username = u;
+  isAdmin = data.isAdmin;
+  enterApp();
+}
+
+function enterApp() {
+  $("#auth-overlay").classList.add("hidden");
+  $("#chat-sidebar").classList.remove("hidden");
+  $("#main").classList.remove("hidden");
+
+  socket = io({ path: "/chat/socket.io" });
+
+  fetch("/chat/api/channels").then(r => r.json()).then(channels => {
+    const list = $("#channel-list");
+    list.innerHTML = "";
+    channels.forEach(ch => {
+      const btn = document.createElement("button");
+      btn.className = "channel-btn";
+      btn.textContent = "# " + ch;
+      btn.dataset.channel = ch;
+      btn.dataset.kind = "channel";
+      btn.addEventListener("click", () => switchChannel(ch, "# " + ch));
+      list.appendChild(btn);
+    });
+    loadDMs().then(() => {
+      if (channels[0]) switchChannel(channels[0], "# " + channels[0]);
+    });
+  });
+
+  socket.on("history", ({ channel, messages, pinned }) => {
+    if (channel && channel !== currentChannel) return;
+    renderMessages(messages, pinned);
+  });
+
+  $("#send-btn").addEventListener("click", sendMessage);
+  $("#msg-input").addEventListener("keydown", (e) => { if (e.key === "Enter") sendMessage(); });
+  $("#logout-btn").addEventListener("click", async () => {
+    await fetch("/chat/api/logout", { method: "POST" });
+    location.reload();
+  });
+
+  $("#new-dm-btn").addEventListener("click", openDMModal);
+  $("#dm-close").addEventListener("click", () => $("#dm-modal").classList.add("hidden"));
+  $("#dm-search").addEventListener("input", filterDMUsers);
+
+  $("#attach-btn").addEventListener("click", openImgModal);
+  $("#img-cancel").addEventListener("click", () => $("#img-modal").classList.add("hidden"));
+  $("#img-confirm").addEventListener("click", attachImg);
+  $("#img-url").addEventListener("keydown", (e) => { if (e.key === "Enter") attachImg(); });
+}
+
+function openImgModal() {
+  $("#img-modal").classList.remove("hidden");
+  $("#img-url").value = "";
+  $("#img-url").focus();
+}
+
+function attachImg() {
+  const url = $("#img-url").value.trim();
+  if (!url) return;
+  const input = $("#msg-input");
+  const token = "[[img:" + url + "]]";
+  input.value = (input.value ? input.value + " " : "") + token;
+  $("#img-modal").classList.add("hidden");
+  input.focus();
+}
+
+function appendMessageContent(container, text, imgClass) {
+  const re = /\[\[img:([^\]]+)\]\]/g;
+  let last = 0;
+  let m;
+  while ((m = re.exec(text)) !== null) {
+    if (m.index > last) container.appendChild(document.createTextNode(text.slice(last, m.index)));
+    const img = document.createElement("img");
+    img.className = imgClass;
+    img.src = m[1];
+    img.loading = "lazy";
+    img.referrerPolicy = "no-referrer";
+    img.addEventListener("error", () => img.remove());
+    container.appendChild(img);
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) container.appendChild(document.createTextNode(text.slice(last)));
+}
+
+async function loadDMs() {
+  const res = await fetch("/chat/api/dms");
+  const dms = await res.json();
+  const list = $("#dm-list");
+  list.innerHTML = "";
+  dms.forEach(dm => {
+    const btn = document.createElement("button");
+    btn.className = "channel-btn";
+    btn.textContent = "@ " + dm.other;
+    btn.dataset.channel = dm.channel;
+    btn.dataset.kind = "dm";
+    btn.addEventListener("click", () => switchChannel(dm.channel, "@ " + dm.other));
+    list.appendChild(btn);
+  });
+}
+
+let allUsers = [];
+async function openDMModal() {
+  $("#dm-modal").classList.remove("hidden");
+  $("#dm-search").value = "";
+  const res = await fetch("/chat/api/users");
+  allUsers = await res.json();
+  renderDMUsers(allUsers);
+  $("#dm-search").focus();
+}
+
+function filterDMUsers() {
+  const q = $("#dm-search").value.toLowerCase();
+  renderDMUsers(allUsers.filter(u => u.toLowerCase().includes(q)));
+}
+
+function renderDMUsers(users) {
+  const list = $("#dm-user-list");
+  list.innerHTML = "";
+  users.forEach(u => {
+    const row = document.createElement("div");
+    row.className = "user-row";
+    row.textContent = "@ " + u;
+    row.addEventListener("click", () => startDM(u));
+    list.appendChild(row);
+  });
+}
+
+async function startDM(target) {
+  const res = await fetch("/chat/api/dm", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ target }),
+  });
+  if (!res.ok) return;
+  const { channel, other } = await res.json();
+  $("#dm-modal").classList.add("hidden");
+  await loadDMs();
+  switchChannel(channel, "@ " + other);
+}
+
+function switchChannel(ch, label) {
+  if (currentChannel) socket.emit("leave", currentChannel);
+  currentChannel = ch;
+  $("#channel-name").textContent = label;
+  document.querySelectorAll(".channel-btn").forEach(b => {
+    b.classList.toggle("active", b.dataset.channel === ch);
+  });
+  $("#message-list").innerHTML = "";
+  $("#pinned-list").innerHTML = "";
+  $("#pinned-section").classList.add("hidden");
+  socket.emit("join", ch);
+}
+
+function sendMessage() {
+  const text = $("#msg-input").value.trim();
+  if (!text) return;
+  socket.emit("message", { channel: currentChannel, text });
+  $("#msg-input").value = "";
+}
+
+function renderMessages(messages, pinned) {
+  const ml = $("#message-list");
+  ml.innerHTML = "";
+  messages.forEach(m => {
+    const div = document.createElement("div");
+    div.className = "msg";
+
+    const userSpan = document.createElement("span");
+    userSpan.className = "msg-user";
+    userSpan.textContent = m.username;
+    div.appendChild(userSpan);
+
+    appendMessageContent(div, m.text, "msg-img");
+
+    const timeSpan = document.createElement("span");
+    timeSpan.className = "msg-time";
+    timeSpan.textContent = new Date(m.time).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+    div.appendChild(timeSpan);
+
+    if (isAdmin) {
+      const pinBtn = document.createElement("button");
+      pinBtn.className = "pin-btn";
+      pinBtn.textContent = "pin";
+      pinBtn.addEventListener("click", () => {
+        socket.emit("pin", { channel: currentChannel, messageId: m.id });
+      });
+      div.appendChild(pinBtn);
+    }
+
+    ml.appendChild(div);
+  });
+
+  const ps = $("#pinned-section");
+  const pl = $("#pinned-list");
+  if (pinned.length > 0) {
+    ps.classList.remove("hidden");
+    pl.innerHTML = "";
+    pinned.forEach(m => {
+      const div = document.createElement("div");
+      div.className = "pinned-msg";
+
+      const userSpan = document.createElement("span");
+      userSpan.className = "msg-user";
+      userSpan.textContent = m.username;
+      div.appendChild(userSpan);
+
+      appendMessageContent(div, m.text, "pinned-msg-img");
+
+      const timeSpan = document.createElement("span");
+      timeSpan.className = "msg-time";
+      timeSpan.textContent = new Date(m.time).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+      div.appendChild(timeSpan);
+
+      if (isAdmin) {
+        const unpinBtn = document.createElement("button");
+        unpinBtn.className = "pin-btn";
+        unpinBtn.textContent = "unpin";
+        unpinBtn.addEventListener("click", () => {
+          socket.emit("unpin", { channel: currentChannel, messageId: m.id });
+        });
+        div.appendChild(unpinBtn);
+      }
+
+      pl.appendChild(div);
+    });
+  } else {
+    ps.classList.add("hidden");
+  }
+
+  const area = $("#messages-area");
+  area.scrollTop = area.scrollHeight;
+}
+</script>
+
+<script>
+  function loadVanta() {
+      var s = document.createElement('script');
+      s.src = '/vanta-modified.js';
+      s.onload = function() {
+          try {
+              var _vc = getVantaColors();
+              window._vantaEffect = VANTA.TOPOLOGY({
+                  el: "#vanta-bg",
+                  mouseControls: true,
+                  touchControls: true,
+                  gyroControls: false,
+                  minHeight: 200,
+                  minWidth: 200,
+                  scale: 1,
+                  scaleMobile: 1,
+                  color: _vc.color,
+                  backgroundColor: _vc.backgroundColor,
+              });
+          } catch(e) { console.warn('Vanta failed to init:', e); }
+      };
+      document.head.appendChild(s);
+  }
+  function tryLoadVanta() {
+    if (navigator.getBattery) {
+      navigator.getBattery().then(function(b) {
+        if (b.charging || b.level >= 0.25) loadVanta();
+      });
+    } else { loadVanta(); }
+  }
+  if (document.readyState === 'complete') tryLoadVanta();
+  else window.addEventListener('load', tryLoadVanta);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,849 @@
+{
+  "games": [
+    {
+      "name": "geometry dash",
+      "url": "https://larp.now/stuff/selfhosted/gdlite/",
+      "thumbnail": "https://larp.now/stuff/games/geodash.png"
+    },
+    {
+      "name": "getaway shootout",
+      "url": "https://larp.now/stuff/selfhosted/rayvon-shootout/",
+      "thumbnail": "https://larp.now/stuff/games/getaway-shootout.png"
+    },
+    {
+      "name": "rooftop snipers",
+      "url": "https://larp.now/stuff/selfhosted/rooftop-snipers/",
+      "thumbnail": "https://larp.now/stuff/games/rooftop-snipers.jpg"
+    },
+    {
+      "name": "rooftop snipers 2",
+      "url": "https://larp.now/stuff/selfhosted/rooftop-snipers-2/",
+      "thumbnail": "https://larp.now/stuff/games/rooftop-snipers2.jpg"
+    },
+    {
+      "name": "tube jumpers",
+      "url": "https://larp.now/stuff/selfhosted/tube-jumpers",
+      "thumbnail": "https://larp.now/stuff/games/tubejumpers.png"
+    },
+    {
+      "name": "five nights at freddys",
+      "url": "https://larp.now/stuff/selfhosted/fnaf1",
+      "thumbnail": "https://larp.now/stuff/games/fnaf1.png"
+    },
+    {
+      "name": "five nights at freddys 2",
+      "url": "https://larp.now/stuff/selfhosted/fnaf2",
+      "thumbnail": "https://larp.now/stuff/games/fnaf2.png"
+    },
+    {
+      "name": "five nights at freddys 3",
+      "url": "https://larp.now/stuff/selfhosted/fnaf3",
+      "thumbnail": "https://larp.now/stuff/games/fnaf3.png"
+    },
+    {
+      "name": "five nights at freddys 4",
+      "url": "https://larp.now/stuff/selfhosted/fnaf4",
+      "thumbnail": "https://larp.now/stuff/games/fnaf4.png"
+    },
+    {
+      "name": "five nights at freddys sister location",
+      "url": "https://larp.now/stuff/selfhosted/sisterlocation",
+      "thumbnail": "https://larp.now/stuff/games/fnafsl.jpg"
+    },
+    {
+      "name": "pizzeria simulator",
+      "url": "https://larp.now/stuff/selfhosted/pizzeriasimulator",
+      "thumbnail": "https://larp.now/stuff/games/pizzeriasimulator.png"
+    },
+    {
+      "name": "fnaf world",
+      "url": "https://larp.now/stuff/selfhosted/fnafworld",
+      "thumbnail": "https://larp.now/stuff/games/fnafworld.png"
+    },
+    {
+      "name": "ultimate custom night",
+      "url": "https://larp.now/stuff/selfhosted/ucn",
+      "thumbnail": "https://larp.now/stuff/games/ucn.jpg"
+    },
+    {
+      "name": "minecraft",
+      "url": "https://larp.now/stuff/selfhosted/minecraft/",
+      "thumbnail": "https://larp.now/stuff/games/minecraft.jpg"
+    },
+    {
+      "name": "subway surfers",
+      "url": "https://larp.now/cdn/projects/subway-surfers/",
+      "thumbnail": "https://larp.now/stuff/games/subway.png"
+    },
+    {
+      "name": "bloodmoney",
+      "url": "https://larp.now/stuff/selfhosted/bloodmoney/",
+      "thumbnail": "https://larp.now/stuff/games/bloodmoney.png"
+    },
+    {
+      "name": "human expenditure program",
+      "url": "https://larp.now/stuff/selfhosted/hep/index.html",
+      "thumbnail": "https://larp.now/stuff/games/hep.png"
+    },
+    {
+      "name": "crossy road",
+      "url": "https://larp.now/stuff/selfhosted/crossyroad",
+      "thumbnail": "https://larp.now/stuff/games/crossyroad.jpeg"
+    },
+    {
+      "name": "slowroads",
+      "url": "https://larp.now/stuff/selfhosted/slowroads",
+      "thumbnail": "https://larp.now/stuff/games/slowroads.png"
+    },
+    {
+      "name": "happy wheels",
+      "url": "https://larp.now/stuff/selfhosted/happywheels",
+      "thumbnail": "https://larp.now/stuff/games/happywheels.jpg"
+    },
+    {
+      "name": "polytrack",
+      "url": "https://larp.now/stuff/selfhosted/polytrack",
+      "thumbnail": "https://larp.now/stuff/games/polytrack.jpg"
+    },
+    {
+      "name": "slope",
+      "url": "https://larp.now/stuff/selfhosted/slope",
+      "thumbnail": "https://larp.now/stuff/games/slope.jpg"
+    },
+    {
+      "name": "a small world cup",
+      "url": "https://larp.now/stuff/selfhosted/asmallworldcup",
+      "thumbnail": "https://larp.now/stuff/games/aswc.png"
+    },
+    {
+      "name": "bitlife",
+      "url": "https://larp.now/stuff/selfhosted/bitlife",
+      "thumbnail": "https://larp.now/stuff/games/bitlife.jpg"
+    },
+    {
+      "name": "monkey mart",
+      "url": "https://larp.now/stuff/selfhosted/monkey-mart",
+      "thumbnail": "https://larp.now/stuff/games/monkey-mart.jpg"
+    },
+    {
+      "name": "drive mad",
+      "url": "https://larp.now/cdn/projects/drive-mad/",
+      "thumbnail": "https://larp.now/stuff/games/drive-mad.png"
+    },
+    {
+      "name": "monster tracks",
+      "url": "https://larp.now/stuff/selfhosted/monster-tracks",
+      "thumbnail": "https://larp.now/stuff/games/monster-tracks.png"
+    },
+    {
+      "name": "a dance of fire and ice",
+      "url": "https://larp.now/stuff/selfhosted/a-dance-of-fire-and-ice",
+      "thumbnail": "https://larp.now/stuff/games/adofai.png"
+    },
+    {
+      "name": "cannon basketball 4",
+      "url": "https://larp.now/stuff/selfhosted/cannon-basketball-4",
+      "thumbnail": "https://larp.now/stuff/games/cannonbasketball4.jpg"
+    },
+    {
+      "name": "dragon vs icy bricks",
+      "url": "https://larp.now/stuff/selfhosted/dragon-vs-bricks",
+      "thumbnail": "https://larp.now/stuff/games/dragondeeznuts.jpg"
+    },
+    {
+      "name": "dodge",
+      "url": "https://larp.now/stuff/selfhosted/dodge",
+      "thumbnail": "https://larp.now/stuff/games/dodge.png"
+    },
+    {
+      "name": "baldis basics in education and learning",
+      "url": "https://larp.now/stuff/selfhosted/baldis-basics",
+      "thumbnail": "https://larp.now/stuff/games/baldi.png"
+    },
+    {
+      "name": "100 player pong",
+      "url": "https://larp.now/stuff/selfhosted/100ng",
+      "thumbnail": "https://larp.now/stuff/games/100ng.jpg"
+    },
+    {
+      "name": "burrito bison",
+      "url": "https://larp.now/stuff/selfhosted/burrito-bison",
+      "thumbnail": "https://larp.now/stuff/games/burritobison.jpg"
+    },
+    {
+      "name": "rhythm hell",
+      "url": "https://larp.now/stuff/selfhosted/rhythm-hell",
+      "thumbnail": "https://larp.now/stuff/games/rhythmhell.png"
+    },
+    {
+      "name": "bacon may die",
+      "url": "https://larp.now/stuff/selfhosted/bacon-may-die",
+      "thumbnail": "https://larp.now/stuff/games/baconmaydie.jpg"
+    },
+    {
+      "name": "venge",
+      "url": "https://venge.io",
+      "thumbnail": "https://larp.now/stuff/games/venge.jpg"
+    },
+    {
+      "name": "soccer random",
+      "url": "https://larp.now/stuff/selfhosted/soccer-random",
+      "thumbnail": "https://larp.now/stuff/games/soccerrandom.jpg"
+    },
+    {
+      "name": "basket random",
+      "url": "https://larp.now/stuff/selfhosted/basket-random",
+      "thumbnail": "https://larp.now/stuff/games/basketrandom.png"
+    },
+    {
+      "name": "boxing random",
+      "url": "https://larp.now/stuff/selfhosted/boxing-random",
+      "thumbnail": "https://larp.now/stuff/games/boxingrandom.png"
+    },
+    {
+      "name": "volley random",
+      "url": "https://larp.now/stuff/selfhosted/volley-random",
+      "thumbnail": "https://larp.now/stuff/games/volleyrandom.png"
+    },
+    {
+      "name": "bouncy basketball",
+      "url": "https://larp.now/stuff/selfhosted/bouncy-basketball",
+      "thumbnail": "https://larp.now/stuff/games/bouncybasketball.png"
+    },
+    {
+      "name": "adventure drivers",
+      "url": "https://larp.now/stuff/selfhosted/adventure-drivers",
+      "thumbnail": "https://larp.now/stuff/games/adventuredrivers.png"
+    },
+    {
+      "name": "cookie clicker",
+      "url": "https://larp.now/cdn/projects/cookie-clicker/index.html",
+      "thumbnail": "https://larp.now/stuff/games/cookieclicker.png"
+    },
+    {
+      "name": "stickman hook",
+      "url": "https://larp.now/cdn/projects/stickman-hook/",
+      "thumbnail": "https://larp.now/stuff/games/stickmanhook.jpg"
+    },
+    {
+      "name": "ovo",
+      "url": "https://larp.now/cdn/projects/ovo/",
+      "thumbnail": "https://larp.now/stuff/games/ovo.png"
+    },
+    {
+      "name": "doom",
+      "url": "https://larp.now/stuff/selfhosted/doom/",
+      "thumbnail": "https://larp.now/stuff/games/doom.jpg"
+    },
+    {
+      "name": "tomb of the mask",
+      "url": "https://larp.now/stuff/selfhosted/tomb-of-the-mask/",
+      "thumbnail": "https://larp.now/stuff/games/totm.png"
+    },
+    {
+      "name": "big tower tiny square",
+      "url": "https://larp.now/cdn/projects/btts/",
+      "thumbnail": "https://larp.now/stuff/games/btts.png"
+    },
+    {
+      "name": "half-life",
+      "url": "https://larp.now/stuff/selfhosted/half-life/",
+      "thumbnail": "https://larp.now/stuff/games/halflife.jpg"
+    },
+    {
+      "name": "superhot",
+      "url": "https://larp.now/stuff/selfhosted/super-hot/",
+      "thumbnail": "https://larp.now/stuff/games/superhot.png"
+    },
+    {
+      "name": "retro hellicopter",
+      "url": "https://www.coolmathgames.com/0-retro-helicopter/play",
+      "thumbnail": "https://larp.now/stuff/games/retrohellicopter.png"
+    },
+    {
+      "name": "hexgl",
+      "url": "https://larp.now/stuff/selfhosted/hexgl/",
+      "thumbnail": "https://larp.now/stuff/games/hexgl.png"
+    },
+    {
+      "name": "buckshot roulette",
+      "url": "stuff/selfhosted/buckshot-roulette/",
+      "thumbnail": "https://larp.now/stuff/games/buckshot.jpg"
+    },
+    {
+      "name": "skribbl.io",
+      "url": "https://skribbl.io",
+      "thumbnail": "https://larp.now/stuff/games/skribbl.png"
+    },
+    {
+      "name": "nazi zombies portable",
+      "url": "https://larp.now/stuff/selfhosted/nzp/",
+      "thumbnail": "https://larp.now/stuff/games/nzp.png"
+    },
+    {
+      "name": "super fowlst",
+      "url": "https://larp.now/stuff/selfhosted/super-foulist/",
+      "thumbnail": "https://larp.now/stuff/games/superfowlst.png"
+    },
+    {
+      "name": "basket bros",
+      "url": "https://larp.now/cdn/projects/basketbros-io/",
+      "thumbnail": "https://larp.now/stuff/games/basket-bros.png"
+    },
+    {
+      "name": "quake",
+      "url": "https://larp.now/stuff/selfhosted/quake/",
+      "thumbnail": "https://larp.now/stuff/games/quake.jpg"
+    },
+    {
+      "name": "run 3",
+      "url": "https://larp.now/stuff/selfhosted/run3/",
+      "thumbnail": "https://larp.now/stuff/games/run3.png"
+    },
+    {
+      "name": "bob the robber 2",
+      "url": "https://larp.now/cdn/projects/bobtherobber2/index.html",
+      "thumbnail": "https://larp.now/stuff/games/btr2.png"
+    },
+    {
+      "name": "ev.io",
+      "url": "https://ev.io",
+      "thumbnail": "https://larp.now/stuff/games/evio.png"
+    },
+    {
+      "name": "moto x3m",
+      "url": "https://larp.now/cdn/projects/motox3m/index.html",
+      "thumbnail": "https://larp.now/stuff/games/motox3m.jpg"
+    },
+    {
+      "name": "flappy bird",
+      "url": "https://larp.now/stuff/selfhosted/flappybird/",
+      "thumbnail": "https://larp.now/stuff/games/flappybird.png"
+    },
+    {
+      "name": "tanuki sunset",
+      "url": "https://larp.now/stuff/selfhosted/tanuki-sunset/",
+      "thumbnail": "https://larp.now/stuff/games/tanuki.jpg"
+    },
+    {
+      "name": "basketball stars",
+      "url": "https://larp.now/stuff/selfhosted/basketball-stars/",
+      "thumbnail": "https://larp.now/stuff/games/basketball-stars.png"
+    },
+    {
+      "name": "tag",
+      "url": "https://118473026-235917736205837253.preview.editmysite.com/uploads/b/146211889-618141766941606391/files/tag.xml&container=ig",
+      "thumbnail": "https://larp.now/stuff/games/tag.png"
+    },
+    {
+      "name": "zombs royale",
+      "url": "https://fortnite.io",
+      "thumbnail": "https://larp.now/stuff/games/zombs.png"
+    },
+    {
+      "name": "uno",
+      "url": "https://buddyboardgames.com/uno",
+      "thumbnail": "https://larp.now/stuff/games/uno.png"
+    },
+    {
+      "name": "endless truck",
+      "url": "https://larp.now/stuff/selfhosted/endless-truck/",
+      "thumbnail": "https://larp.now/stuff/games/endlesstruck.png"
+    },
+    {
+      "name": "retro bowl",
+      "url": "https://larp.now/stuff/selfhosted/retro-bowl/",
+      "thumbnail": "https://larp.now/stuff/games/retrobowl.png"
+    },
+    {
+      "name": "block blast",
+      "url": "https://larp.now/stuff/selfhosted/blockblast/",
+      "thumbnail": "https://larp.now/stuff/games/blockblast.png"
+    },
+    {
+      "name": "drift boss",
+      "url": "https://larp.now/stuff/selfhosted/drift-boss/",
+      "thumbnail": "https://larp.now/stuff/games/driftboss.png"
+    },
+    {
+      "name": "pizza tower",
+      "url": "https://larp.now/stuff/selfhosted/pizzatower/",
+      "thumbnail": "https://larp.now/stuff/games/pizzatower.jpg"
+    },
+    {
+      "name": "five nights at winstons",
+      "url": "https://larp.now/stuff/selfhosted/fnaw/",
+      "thumbnail": "https://larp.now/stuff/games/fnaw.jpg"
+    },
+    {
+      "name": "we become what we behold",
+      "url": "https://larp.now/stuff/selfhosted/wbwwb/",
+      "thumbnail": "https://larp.now/stuff/games/wbwwb.png"
+    },
+    {
+      "name": "burger and frights",
+      "url": "https://larp.now/cdn/projects/burger-and-frights/index.html",
+      "thumbnail": "https://larp.now/stuff/games/baf.png"
+    },
+    {
+      "name": "10 minutes till dawn",
+      "url": "https://larp.now/cdn/projects/10-minutes-till-dawn/index.html",
+      "thumbnail": "https://larp.now/stuff/games/10mtd.png"
+    },
+    {
+      "name": "slither.io",
+      "url": "https://slither.io",
+      "thumbnail": "https://larp.now/stuff/games/slither.jpg"
+    },
+    {
+      "name": "ragdoll archers",
+      "url": "https://larp.now/stuff/selfhosted/ragdoll-archers/",
+      "thumbnail": "https://larp.now/stuff/games/ragdollarchers.jpg"
+    },
+    {
+      "name": "r.e.p.o",
+      "url": "https://larp.now/stuff/selfhosted/repo/",
+      "thumbnail": "https://larp.now/stuff/games/repo.png"
+    },
+    {
+      "name": "people playground",
+      "url": "https://larp.now/stuff/selfhosted/ppgbog/",
+      "thumbnail": "https://larp.now/stuff/games/ppg.png"
+    },
+    {
+      "name": "bendy and the ink machine",
+      "url": "https://larp.now/stuff/selfhosted/batim/",
+      "thumbnail": "https://larp.now/stuff/games/batim.png"
+    },
+    {
+      "name": "fused 240",
+      "url": "https://larp.now/stuff/selfhosted/fused240/",
+      "thumbnail": "https://larp.now/stuff/games/fused240.jpg"
+    },
+    {
+      "name": "bad game",
+      "url": "https://larp.now/stuff/selfhosted/badgame/",
+      "thumbnail": "https://larp.now/stuff/games/badgame.png"
+    },
+    {
+      "name": "karlson 2d",
+      "url": "https://larp.now/stuff/selfhosted/karlson2d/",
+      "thumbnail": "https://larp.now/stuff/games/karlson.png"
+    },
+    {
+      "name": "re:run",
+      "url": "https://larp.now/stuff/selfhosted/rerun/",
+      "thumbnail": "https://larp.now/stuff/games/rerun.jpg"
+    },
+    {
+      "name": "do not take this cat home",
+      "url": "https://larp.now/stuff/selfhosted/dnttch/",
+      "thumbnail": "https://larp.now/stuff/games/dnttch.png"
+    },
+    {
+      "name": "testimonium",
+      "url": "https://larp.now/stuff/selfhosted/testimonium/",
+      "thumbnail": "https://larp.now/stuff/games/testimonium.png"
+    },
+    {
+      "name": "cuphead",
+      "url": "https://larp.now/stuff/selfhosted/cuphead/decide.html",
+      "thumbnail": "https://larp.now/stuff/games/cuphead.png"
+    },
+    {
+      "name": "hollow knight",
+      "url": "https://larp.now/stuff/selfhosted/hollowknight/index.html",
+      "thumbnail": "https://larp.now/stuff/games/hollow.png"
+    },
+    {
+      "name": "raft",
+      "url": "https://larp.now/stuff/selfhosted/raft/index.html",
+      "thumbnail": "https://larp.now/stuff/games/raft.png"
+    },
+    {
+      "name": "ragdoll hit",
+      "url": "https://larp.now/stuff/selfhosted/ragdoll/index.html",
+      "thumbnail": "https://larp.now/stuff/games/ragdoll.png"
+    },
+    {
+      "name": "sonic mania",
+      "url": "https://larp.now/stuff/selfhosted/sonicmania/index.html",
+      "thumbnail": "https://larp.now/stuff/games/sonicmania.jpg"
+    },
+    {
+      "name": "balatro",
+      "url": "https://larp.now/stuff/selfhosted/balatro/index.html",
+      "thumbnail": "https://larp.now/stuff/games/balatro.jpg"
+    },
+    {
+      "name": "gorilla tag",
+      "url": "https://larp.now/stuff/selfhosted/gtag/index.html",
+      "thumbnail": "https://larp.now/stuff/games/thetag.png"
+    },
+    {
+      "name": "omori",
+      "url": "https://larp.now/stuff/selfhosted/omori/index.html",
+      "thumbnail": "https://larp.now/stuff/games/omori.png"
+    },
+    {
+      "name": "raldi's crackhouse",
+      "url": "https://larp.now/stuff/selfhosted/raldi/index.html",
+      "thumbnail": "https://larp.now/stuff/games/raldi.png"
+    },
+    {
+      "name": "slime rancher",
+      "url": "https://larp.now/stuff/selfhosted/slimerancher/index.html",
+      "thumbnail": "https://larp.now/stuff/games/slimerancher.png"
+    },
+    {
+      "name": "simple loot idle",
+      "url": "https://larp.now/stuff/selfhosted/simplelootidle/index.html",
+      "thumbnail": "https://larp.now/stuff/games/simplelootidle.png"
+    },
+    {
+      "name": "five nights at epsteins",
+      "url": "https://larp.now/stuff/selfhosted/fnae/index.html",
+      "thumbnail": "https://larp.now/stuff/games/fnae.png"
+    },
+    {
+      "name": "angry birds",
+      "url": "https://larp.now/stuff/selfhosted/angrybirds/index.html",
+      "thumbnail": "https://larp.now/stuff/games/angrybirds.png"
+    },
+    {
+      "name": "doki doki literature club plus",
+      "url": "https://larp.now/stuff/selfhosted/ddlcplus/index.html",
+      "thumbnail": "https://larp.now/stuff/games/ddlcplus.png"
+    },
+    {
+      "name": "needy streamer overload",
+      "url": "https://larp.now/stuff/selfhosted/nso/index.html",
+      "thumbnail": "https://larp.now/stuff/games/nso.png"
+    },
+    {
+      "name": "a difficult game about climbing",
+      "url": "https://larp.now/stuff/selfhosted/adgac/index.html",
+      "thumbnail": "https://larp.now/stuff/games/adgac.png"
+    },
+    {
+      "name": "delta traveler",
+      "url": "https://larp.now/stuff/selfhosted/deltatraveler/index.html",
+      "thumbnail": "https://larp.now/stuff/games/deltatraveler.png"
+    },
+    {
+      "name": "escape road",
+      "url": "https://larp.now/stuff/selfhosted/escape-road/index.html",
+      "thumbnail": "https://larp.now/stuff/games/escape-road.png"
+    },
+    {
+      "name": "class of '09",
+      "url": "https://larp.now/stuff/selfhosted/co09loader/index.html",
+      "thumbnail": "https://larp.now/stuff/games/classof09.png"
+    },
+    {
+      "name": "getting over it",
+      "url": "https://larp.now/stuff/selfhosted/gettingoverit/index.html",
+      "thumbnail": "https://larp.now/stuff/games/gettingoverit.png"
+    },
+    {
+      "name": "friday night funkin",
+      "url": "https://larp.now/stuff/selfhosted/fnf/index.html",
+      "thumbnail": "https://larp.now/stuff/games/fnf.png"
+    },
+    {
+      "name": "survivor.io",
+      "url": "https://larp.now/stuff/selfhosted/survivorio/index.html",
+      "thumbnail": "https://larp.now/stuff/games/survivorio.png"
+    },
+    {
+      "name": "undertale",
+      "url": "https://larp.now/stuff/selfhosted/undertale/index.html",
+      "thumbnail": "https://larp.now/stuff/games/undertale.jpg"
+    },
+    {
+      "name": "deltarune",
+      "url": "https://larp.now/stuff/selfhosted/deltarune/index.html",
+      "thumbnail": "https://larp.now/stuff/games/deltarune.jpg"
+    },
+    {
+      "name": "minecraft pocket edition",
+      "url": "https://larp.now/stuff/selfhosted/mcpe/index.html",
+      "thumbnail": "https://larp.now/stuff/games/mcpe.png"
+    },
+    {
+      "name": "oneshot",
+      "url": "https://larp.now/stuff/selfhosted/oneshot/index.html",
+      "thumbnail": "https://larp.now/stuff/games/oneshot.png"
+    },
+    {
+      "name": "bart blast",
+      "url": "https://larp.now/stuff/selfhosted/bartblast/index.html",
+      "thumbnail": "https://larp.now/stuff/games/bartblast.png"
+    },
+    {
+      "name": "drift hunters",
+      "url": "https://larp.now/stuff/selfhosted/drift-hunters/index.html",
+      "thumbnail": "https://larp.now/stuff/games/drift-hunters.png"
+    },
+    {
+      "name": "house of hazards",
+      "url": "https://larp.now/stuff/selfhosted/houseofhazards/index.html",
+      "thumbnail": "https://larp.now/stuff/games/houseofhazards.png"
+    },
+    {
+      "name": "achievement unlocked",
+      "url": "https://larp.now/stuff/selfhosted/flash/game/achunlocked.html",
+      "thumbnail": "https://larp.now/stuff/games/au.jpg"
+    },
+    {
+      "name": "avalanche",
+      "url": "https://larp.now/stuff/selfhosted/flash/game/avalanche.html",
+      "thumbnail": "https://larp.now/stuff/games/avalanche.png"
+    },
+    {
+      "name": "bloons tower defense 1",
+      "url": "https://larp.now/stuff/selfhosted/flash/game/bloons-td-1.html",
+      "thumbnail": "https://larp.now/stuff/games/bloons.png"
+    },
+    {
+      "name": "bloons tower defense 2",
+      "url": "https://larp.now/stuff/selfhosted/flash/game/bloons-td-2.html",
+      "thumbnail": "https://larp.now/stuff/games/bloons2.png"
+    },
+    {
+      "name": "diggy",
+      "url": "https://larp.now/stuff/selfhosted/flash/game/diggy.html",
+      "thumbnail": "https://larp.now/stuff/games/diggy.png"
+    },
+    {
+      "name": "super fancy pants adventure",
+      "url": "https://larp.now/stuff/selfhosted/flash/game/fancy-pants-man.html",
+      "thumbnail": "https://larp.now/stuff/games/sfpa.jpg"
+    },
+    {
+      "name": "gun mayhem",
+      "url": "https://larp.now/stuff/selfhosted/flash/game/gun-mayhem.html",
+      "thumbnail": "https://larp.now/stuff/games/gun-mayhem.png"
+    },
+    {
+      "name": "gun mayhem 2: more mayhem",
+      "url": "https://larp.now/stuff/selfhosted/flash/game/gun-mayhem2.html",
+      "thumbnail": "https://larp.now/stuff/games/gun-mayhem2.jpg"
+    },
+    {
+      "name": "learn tozeri fly",
+      "url": "https://larp.now/stuff/selfhosted/flash/game/learn-to-fly.html",
+      "thumbnail": "https://larp.now/stuff/games/learn2fly.png"
+    },
+    {
+      "name": "papa's pizzeria",
+      "url": "https://larp.now/stuff/selfhosted/flash/game/papa/example/pizzeria.html",
+      "thumbnail": "https://larp.now/stuff/games/papas.png"
+    },
+    {
+      "name": "portal: the flash version",
+      "url": "https://larp.now/stuff/selfhosted/flash/game/portal.html",
+      "thumbnail": "https://larp.now/stuff/games/portal.png"
+    },
+    {
+      "name": "alien hominid",
+      "url": "https://larp.now/stuff/selfhosted/flash/game/alien_hominid.html",
+      "thumbnail": "https://larp.now/stuff/games/alien.png"
+    },
+    {
+      "name": "1 on 1 soccer",
+      "url": "https://larp.now/stuff/selfhosted/flash/game/1on1soccer.html",
+      "thumbnail": "https://larp.now/stuff/games/1on1soccer.png"
+    },
+    {
+      "name": "red ball 4",
+      "url": "https://larp.now/stuff/selfhosted/flash/game/red-ball4.html",
+      "thumbnail": "https://larp.now/stuff/games/redball4.png"
+    },
+    {
+      "name": "toss the turtle",
+      "url": "https://larp.now/cdn/projects/tosstheturtle/index.html",
+      "thumbnail": "https://larp.now/stuff/games/tosstheturtle.png"
+    },
+    {
+      "name": "peggle",
+      "url": "https://larp.now/stuff/selfhosted/flash/game/peggle.html",
+      "thumbnail": "https://larp.now/stuff/games/peggle.png"
+    },
+    {
+      "name": "gacha life",
+      "url": "https://larp.now/stuff/selfhosted/flash/game/gachalife.html",
+      "thumbnail": "https://larp.now/stuff/games/gachalife.png"
+    },
+    {
+      "name": "gacha verse",
+      "url": "https://larp.now/stuff/selfhosted/flash/game/gachaverse.html",
+      "thumbnail": "https://larp.now/stuff/games/gachaverse.png"
+    },
+    {
+      "name": "super mario 64",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/sm64.html",
+      "thumbnail": "https://larp.now/stuff/games/sm64.png"
+    },
+    {
+      "name": "banjo kazooie",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/banjo.html",
+      "thumbnail": "https://larp.now/stuff/games/banjo.jpg"
+    },
+    {
+      "name": "super smash bros",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/ssb.html",
+      "thumbnail": "https://larp.now/stuff/games/ssb.png"
+    },
+    {
+      "name": "the legend of zelda ocarina of time",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/zelda-oot.html",
+      "thumbnail": "https://larp.now/stuff/games/lozoft.jpg"
+    },
+    {
+      "name": "south park 64",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/south.html",
+      "thumbnail": "https://larp.now/stuff/games/southpark.jpg"
+    },
+    {
+      "name": "animal crossing wild world",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/acww.html",
+      "thumbnail": "https://larp.now/stuff/games/acww.jpg"
+    },
+    {
+      "name": "new super mario bros ds",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/nsmb.html",
+      "thumbnail": "https://larp.now/stuff/games/nsmb.png"
+    },
+    {
+      "name": "pokemon platinum version",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/pokemon.html",
+      "thumbnail": "https://larp.now/stuff/games/ppv.png"
+    },
+    {
+      "name": "mario kart ds",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/mkds.html",
+      "thumbnail": "https://larp.now/stuff/games/mkds.png"
+    },
+    {
+      "name": "cooking mama",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/cookingmama.html",
+      "thumbnail": "https://larp.now/stuff/games/cookingmama.png"
+    },
+    {
+      "name": "cooking mama 2",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/cookingmama2.html",
+      "thumbnail": "https://larp.now/stuff/games/cookingmama2.png"
+    },
+    {
+      "name": "cooking mama 3",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/cookingmama3.html",
+      "thumbnail": "https://larp.now/stuff/games/cookingmama3.png"
+    },
+    {
+      "name": "tomodachi collection",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/tomodachi.html",
+      "thumbnail": "https://larp.now/stuff/games/tomodachi.jpg"
+    },
+    {
+      "name": "super mario bros deluxe",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/smbd.html",
+      "thumbnail": "https://larp.now/stuff/games/smbd.jpg"
+    },
+    {
+      "name": "the legend of zelda links awakening dx",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/links_awakening.html",
+      "thumbnail": "https://larp.now/stuff/games/lozladx.png"
+    },
+    {
+      "name": "super mario bros",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/smb.html",
+      "thumbnail": "https://larp.now/stuff/games/smb.png"
+    },
+    {
+      "name": "kirby super star",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/kirbysuperstar.html",
+      "thumbnail": "https://larp.now/stuff/games/kirbyss.jpg"
+    },
+    {
+      "name": "super mario world",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/smw.html",
+      "thumbnail": "https://larp.now/stuff/games/smw.png"
+    },
+    {
+      "name": "super mario all stars",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/smballstars.html",
+      "thumbnail": "https://larp.now/stuff/games/smas.png"
+    },
+    {
+      "name": "sonic the hedgehog",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/sonic1.html",
+      "thumbnail": "https://larp.now/stuff/games/sonic1.png"
+    },
+    {
+      "name": "sonic the hedgehog 2",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/sonic2.html",
+      "thumbnail": "https://larp.now/stuff/games/sonic2.png"
+    },
+    {
+      "name": "sonic the hedgehog 3",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/sonic3.html",
+      "thumbnail": "https://larp.now/stuff/games/sonic3.png"
+    },
+    {
+      "name": "sonic cd",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/soniccd.html",
+      "thumbnail": "https://larp.now/stuff/games/soniccd.png"
+    },
+    {
+      "name": "advance wars",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/AdvancedWars.html",
+      "thumbnail": "https://larp.now/stuff/games/advancewars.jpg"
+    },
+    {
+      "name": "super mario advance 2",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/sma2.html",
+      "thumbnail": "https://larp.now/stuff/games/sma2.png"
+    },
+    {
+      "name": "super mario advance 4",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/sma4.html",
+      "thumbnail": "https://larp.now/stuff/games/sma4.png"
+    },
+    {
+      "name": "pokemon firered version",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/PokemonFireRed.html",
+      "thumbnail": "https://larp.now/stuff/games/pokemonfirered.jpg"
+    },
+    {
+      "name": "super monkey ball jr",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/super-monkey-ball.html",
+      "thumbnail": "https://larp.now/stuff/games/supermonkeybj.png"
+    },
+    {
+      "name": "crash bandicoot",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/crashbandi.html",
+      "thumbnail": "https://larp.now/stuff/games/crashbandi.png"
+    },
+    {
+      "name": "grand theft auto 2",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/gta2.html",
+      "thumbnail": "https://larp.now/stuff/games/gta2.png"
+    },
+    {
+      "name": "spiderman",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/spiderman.html",
+      "thumbnail": "https://larp.now/stuff/games/spiderman.jpg"
+    },
+    {
+      "name": "vib-ribbon",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/vib-ribbon.html",
+      "thumbnail": "https://larp.now/stuff/games/vib-ribbon.jpg"
+    },
+    {
+      "name": "parappa the rapper",
+      "url": "https://larp.now/stuff/selfhosted/mexiisamonkey/parappa.html",
+      "thumbnail": "https://larp.now/stuff/games/para.png"
+    }
+  ]
+}

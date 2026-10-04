@@ -1,0 +1,34 @@
+/* firefox box-sizing fix, like the old site */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--bg: #333c43;
+	--bg-deep: #293136;
+	--bg-deeper: #222a2f;
+	--border: #4d5960;
+	--text: #d3c6aa;
+	--text-dim: #9da9a0;
+	--text-muted: #859289;
+	--accent: #a7c080;
+	--tab-active-bg: #434f55;
+	--text-on-active: #d3c6aa;
+	--tabbar-h: 36px;
+	--omnibox-h: 36px;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+	}
+}

@@ -1,0 +1,8 @@
+{
+  "scripts": [
+    {
+      "inline": "console.log('injected!');" 
+      
+    }
+  ]
+}

@@ -1,0 +1,4999 @@
+{
+  "games": [
+    {
+      "name": "1",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl1.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "100RoomsOfEnemies",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl100RoomsOfEnemies.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "10bullets",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl10bullets.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "10minutestildawn",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl10minutestildawn.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "10morebullets",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl10morebullets.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "12minibattles",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl12minibattles.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "13bones",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl13bones.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "1on1soccer",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl1on1soccer.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "1v1lol",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl1v1lol.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "1v1tennis",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl1v1tennis.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "2048",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl2048.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "2048cupcakes",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl2048cupcakes.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "20smallmazes",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl20smallmazes.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "234playergame",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl234playergame.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "2Dshooting",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl2Dshooting.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "2doom",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl2doom.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "3dash",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl3dash.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "3dasheditor",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl3dasheditor.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "3dpinballspacecadet",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl3dpinballspacecadet.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "3pandas",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl3pandas.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "3pandasbrazil",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl3pandasbrazil.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "3pandasfantasy",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl3pandasfantasy.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "3pandasjapan",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl3pandasjapan.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "3pandasnight",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl3pandasnight.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "3slices2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl3slices2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "40xescape",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl40xescape.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "4thandgoal",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl4thandgoal.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "500calibercontractz",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl500calibercontractz.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "60secondsburgerrun",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl60secondsburgerrun.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "60secondssantarun",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl60secondssantarun.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "64in1nes",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl64in1nes.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "8ballclassic",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl8ballclassic.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "8ballpool",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl8ballpool.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "9007199254740992",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl9007199254740992.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "90in1nes",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl90in1nes.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "99balls",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl99balls.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "99nightsitf",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cl99nightsitf.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "A Walk in The Forest (v10)",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clA Walk in The Forest (v10).html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ADOFAI",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clADOFAI.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ADarkRoom",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clADarkRoom.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Acko_s Mach Bike Challenge (v10)",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clAcko_s Mach Bike Challenge (v10).html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "AdventureCapatalist",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clAdventureCapatalist.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Altered Beast",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clAltered Beast.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "AstrosDreamland",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clAstrosDreamland.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "AwesomePirates",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clAwesomePirates.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "B3313",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clB3313.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "BFDIBranches",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clBFDIBranches.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "BMX2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clBMX2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "BTD1",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clBTD1.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Bank Robbery",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clBank Robbery.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Big_Time_Butter_Baron",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clBig_Time_Butter_Baron.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Bonanza-Bros",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clBonanza-Bros.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "BountyOfOne",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clBountyOfOne.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Brawlstars",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clBrawlstars.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "BusterJam",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clBusterJam.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "CartoonNetworkTableTennisUltimateTournament",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clCartoonNetworkTableTennisUltimateTournament.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "CeliasStupidROMHack",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clCeliasStupidROMHack.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "CellToSingularity",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clCellToSingularity.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ChickenCS",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clChickenCS.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "CircloO2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clCircloO2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "CrystalCastles",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clCrystalCastles.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "DKNESCollection(1)",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clDKNESCollection(1).html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "DKNESCollection",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clDKNESCollection.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Dashmetry",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clDashmetry.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "DragonBallZTheLegacyofGoku",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clDragonBallZTheLegacyofGoku.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "DragonQuestIX",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clDragonQuestIX.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Dragonxclient",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clDragonxclient.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Eaglercraft-Alpha-126-Offline",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clEaglercraft-Alpha-126-Offline.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Eaglercraft-Beta-1.3-Offline",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clEaglercraft-Beta-1.3-Offline.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Eaglercraft-Beta-13-Offline",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clEaglercraft-Beta-13-Offline.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Eaglercraft-Indev-Offline (1)",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clEaglercraft-Indev-Offline (1).html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Eaglercraft-Indev-Offline(1)",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clEaglercraft-Indev-Offline(1).html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Eaglercraft-Indev-Offline(2)",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clEaglercraft-Indev-Offline(2).html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Eaglercraft-Indev-Offline",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clEaglercraft-Indev-Offline.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "EaglercraftL_19_v0_7_0_Offline_Signed(1)",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clEaglercraftL_19_v0_7_0_Offline_Signed(1).html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "EaglercraftL_19_v0_7_0_Offline_Signed",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clEaglercraftL_19_v0_7_0_Offline_Signed.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "FF3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clFF3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "FFsonic1",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clFFsonic1.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "FFsonic2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clFFsonic2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "FFsonic3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clFFsonic3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "FFsonic4",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clFFsonic4.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "FFsonic5",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clFFsonic5.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "FFsonic61",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clFFsonic61.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "FFsonic62",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clFFsonic62.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "FIFA07",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clFIFA07.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "FIFA10",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clFIFA10.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "FIFA11",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clFIFA11.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "FIFA2000(1)",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clFIFA2000(1).html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "FIFA2000(2)",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clFIFA2000(2).html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "FIFA99",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clFIFA99.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "FIFAinternationalsoccer",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clFIFAinternationalsoccer.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "FIFAroadtoworldcup98",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clFIFAroadtoworldcup98.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "FIFAsoccer06",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clFIFAsoccer06.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "FIFAsoccer95",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clFIFAsoccer95.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "FIFAsoccer96",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clFIFAsoccer96.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "FIFAsoccer97",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clFIFAsoccer97.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "FIFAstreet2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clFIFAstreet2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "FNAF",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clFNAF.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "FNAF2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clFNAF2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "FNAF3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clFNAF3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "FNAF4",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clFNAF4.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Gain Ground",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clGain Ground.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Gettothetopalthoughthereisnotop",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clGettothetopalthoughthereisnotop.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "GoldenSunTheLostAge",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clGoldenSunTheLostAge.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Haroldsbadday",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clHaroldsbadday.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Helios-Offline (1)",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clHelios-Offline (1).html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Helios-Offline",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clHelios-Offline.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "HiNoHomo",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clHiNoHomo.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "HighSpeed",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clHighSpeed.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "HoennsLastWish",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clHoennsLastWish.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Inkwell (v104)",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clInkwell (v104).html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "JUMP",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clJUMP.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "KenGriffeyJrPresentsMajorLeagueBaseball",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clKenGriffeyJrPresentsMajorLeagueBaseball.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "LSE",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clLSE.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "LearnToFly3Debug",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clLearnToFly3Debug.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "LegacyOfGoku",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clLegacyOfGoku.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "MINECRAFTTOWERDEFENSE",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clMINECRAFTTOWERDEFENSE.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Mario Party Advance",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clMario Party Advance.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "MarioisMissingDoneRight",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clMarioisMissingDoneRight.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "MarvelSuperHeroesArcade",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clMarvelSuperHeroesArcade.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "MarvelVsCapcomPS1",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clMarvelVsCapcomPS1.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "MarvelVsStreetFighter",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clMarvelVsStreetFighter.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "MetalSonicHyperdrive",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clMetalSonicHyperdrive.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Minceraft-I-NotMine_V6(1)",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clMinceraft-I-NotMine_V6(1).html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Minceraft-I-NotMine_V6",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clMinceraft-I-NotMine_V6.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Moemon Emerald Vanilla+ (v110)",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clMoemon Emerald Vanilla+ (v110).html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "NBAhangtime",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clNBAhangtime.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "NBAjam",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clNBAjam.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "NautilusOS(1)",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clNautilusOS(1).html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "NautilusOS",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clNautilusOS.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "NewSuperMarioWorld2AroundtheWorld",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clNewSuperMarioWorld2AroundtheWorld.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "NicktoonsFreezeFrameFrenzy",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clNicktoonsFreezeFrameFrenzy.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "NutsandBoltsScrewingPuzzle",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clNutsandBoltsScrewingPuzzle.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "OotMasterQuest",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clOotMasterQuest.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "OrangeRoulette",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clOrangeRoulette.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "OutrunArcade",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clOutrunArcade.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "OutrunGenesis",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clOutrunGenesis.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "PVZM",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clPVZM.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "PaperMarioDSE",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clPaperMarioDSE.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "PaperMarioPracticeHack",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clPaperMarioPracticeHack.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "PokeAmbrosia",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clPokeAmbrosia.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "PokeEmeraldRogueEX",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clPokeEmeraldRogueEX.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "PokeFusion3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clPokeFusion3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "PokeHeartgoldGenerations",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clPokeHeartgoldGenerations.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "PokeThetaEmeraldEX",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clPokeThetaEmeraldEX.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Pokemonemeraldrouge",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clPokemonemeraldrouge.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Pokemonrocketedition",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clPokemonrocketedition.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Pok\u00e9mon Emerald Rush Edition (20)",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clPok\u00e9mon Emerald Rush Edition (20).html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Pok\u00e9mon TWO (v11)",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clPok\u00e9mon TWO (v11).html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Pok\u00e9mon Trade&_Stache (V11)",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clPok\u00e9mon Trade&_Stache (V11).html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Pok\u00e9monstunningsteel",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clPok\u00e9monstunningsteel.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "QuantumClicker",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clQuantumClicker.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "SINGLEFILE",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clSINGLEFILE.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "SM64Land",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clSM64Land.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "SSF2Arcade",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clSSF2Arcade.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "SSF2TArcade",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clSSF2TArcade.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ScamptonTheGreatFightRecreate",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clScamptonTheGreatFightRecreate.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "SegaSonicTheHedgehog",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clSegaSonicTheHedgehog.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "SkyRiders",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clSkyRiders.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Smash Hit Ripoff",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clSmash Hit Ripoff.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "SnowBrosGenesis",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clSnowBrosGenesis.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Sonic & Knuckles + Sonic The Hedgehog 3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clSonic & Knuckles + Sonic The Hedgehog 3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Sonic1ScoreRush",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clSonic1ScoreRush.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Sonic1TheSuperChallenges",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clSonic1TheSuperChallenges.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Sonic2ScoreRush",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clSonic2ScoreRush.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "SonicClassics",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clSonicClassics.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "SonicHellfireSaga",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clSonicHellfireSaga.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "SonicInSM64",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clSonicInSM64.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "SonicinSMW(1)",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clSonicinSMW(1).html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "SonicinSMW",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clSonicinSMW.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Sovereignoftheskys",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clSovereignoftheskys.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "SpongebobPowerKartGrandPrix",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clSpongebobPowerKartGrandPrix.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "SportsHeadsIceHockey",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clSportsHeadsIceHockey.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "StickmanKingdomclash",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clStickmanKingdomclash.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "StreetFighter1Arcade",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clStreetFighter1Arcade.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "StreetFighter2Arcade",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clStreetFighter2Arcade.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "StreetFighter2CEArcade",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clStreetFighter2CEArcade.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "StreetFighter2HFArcade(1)",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clStreetFighter2HFArcade(1).html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "StreetFighter2HFArcade",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clStreetFighter2HFArcade.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "SuperMarioWorldThe SecretOfThe7GoldenStatues",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clSuperMarioWorldThe SecretOfThe7GoldenStatues.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "SuperPunchOutEN",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clSuperPunchOutEN.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "SupremeDuelist2019",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clSupremeDuelist2019.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "TaikonoTatsujin",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clTaikonoTatsujin.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "TheLoneRanger",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clTheLoneRanger.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "TheSunForTheVampire",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clTheSunForTheVampire.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "UZG",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clUZG.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Ultimatecardrivingsimulator",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clUltimatecardrivingsimulator.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "VSSMB",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clVSSMB.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "XMenChildrenOfTheAtomArcade",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clXMenChildrenOfTheAtomArcade.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "XMenVSStreetFighter",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clXMenVSStreetFighter.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "Xevious",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clXevious.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "YoshisStrangeQuest",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clYoshisStrangeQuest.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ZeldaIndigoch2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clZeldaIndigoch2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "abandoned3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clabandoned3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "absolutemadness",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clabsolutemadness.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "acecombat2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clacecombat2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "acecombat3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clacecombat3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "acegangstertaxi",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clacegangstertaxi.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "achievementunlocked",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clachievementunlocked.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "achievmentunlocked",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clachievmentunlocked.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "achievmentunlocked2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clachievmentunlocked2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "achievmentunlocked3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clachievmentunlocked3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "achillies",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clachillies.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "achillies2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clachillies2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "adatewithdeath",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cladatewithdeath.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "adayintheoffice",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cladayintheoffice.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "advancewars",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cladvancewars.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "advancewars2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cladvancewars2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "advancewarsdualstrike",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cladvancewarsdualstrike.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "adventneon",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cladventneon.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "adventurecapitalist",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cladventurecapitalist.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "aflac",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/claflac.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "aftertheweek",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/claftertheweek.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "agariolite",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clagariolite.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ageofwar",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clageofwar.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ageofwar2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clageofwar2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "agesofconflict",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clagesofconflict.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "agesofempire",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clagesofempire.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ahoysurvival",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clahoysurvival.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ai",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clai.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "airlinetycoonidle",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clairlinetycoonidle.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "akoopasrevenge",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clakoopasrevenge.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "akoopasrevenge2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clakoopasrevenge2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "akumanorgaiden",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clakumanorgaiden.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "aladdinsnes",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/claladdinsnes.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "alexkiddinmiracleworld",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clalexkiddinmiracleworld.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "alienhominid",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clalienhominid.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "alienhominidgba",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clalienhominidgba.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "alienskyinvasion",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clalienskyinvasion.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "alientransporter",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clalientransporter.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "alienvspredator",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clalienvspredator.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "allbossesin1",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clallbossesin1.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "allocation",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clallocation.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "amaze",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clamaze.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ambulencearush",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clambulencearush.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "amidstthesky",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clamidstthesky.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "amigopancho",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clamigopancho.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "amigopancho2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clamigopancho2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "amigopancho3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clamigopancho3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "amigopancho4",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clamigopancho4.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "amigopancho5",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clamigopancho5.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "amigopancho6",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clamigopancho6.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "amigopancho7",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clamigopancho7.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "amongus",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clamongus.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "amorphous",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clamorphous.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ancientsins",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clancientsins.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "anemonesfall",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clanemonesfall.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "angry-birdsspace",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clangry-birdsspace.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "angrybirds-space",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clangrybirds-space.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "angrybirds",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clangrybirds.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "angrybirdsshowdown",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clangrybirdsshowdown.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "angrybirdsspace",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clangrybirdsspace.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "animalcrossingwildworld",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clanimalcrossingwildworld.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "animalforestn64",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clanimalforestn64.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "annsmb",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clannsmb.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "anotherworld",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clanotherworld.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "antarttycoon",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clantarttycoon.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "antimatterdimensions",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clantimatterdimensions.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "apesvshelium",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clapesvshelium.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "apotris",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clapotris.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "appleshooter",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clappleshooter.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "appleworm",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clappleworm.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "aquaparkio",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/claquaparkio.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "arceuslegend",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clarceuslegend.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "archeryworldtour",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clarcheryworldtour.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "archesspelago",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clarchesspelago.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "arena",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clarena.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "armormayhem2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clarmormayhem2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "arsonate",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clarsonate.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "arthursnightmare",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clarthursnightmare.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ascent",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clascent.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "asdutydemands",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clasdutydemands.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "asmallworldcup",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clasmallworldcup.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "assesmentexaminationque",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/classesmentexaminationque.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "assessmentexamination",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/classessmentexamination.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "asteroids",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clasteroids.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "asteroidsALT",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clasteroidsALT.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "asteroidsarcade",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clasteroidsarcade.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "astynax",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clastynax.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "atariadventure",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clatariadventure.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "attackhole",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clattackhole.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "avalanche",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clavalanche.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "aviamasters",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/claviamasters.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "aviamastersbuggy",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/claviamastersbuggy.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "awesomeplanes",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clawesomeplanes.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "awesometanks",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clawesometanks.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "awesometanks2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clawesometanks2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "axbattler",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/claxbattler.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "axisfootballleague",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/claxisfootballleague.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "b3313unabandonedA2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clb3313unabandonedA2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "b3313v102",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clb3313v102.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "babeltower",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbabeltower.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "babychiccoadventure",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbabychiccoadventure.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "babykaizo",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbabykaizo.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "babysniperinvietnam",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbabysniperinvietnam.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "backrooms",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbackrooms.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "backrooms2D",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbackrooms2D.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "backyardbaseball",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbackyardbaseball.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "backyardbaseball09",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbackyardbaseball09.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "backyardbaseball10",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbackyardbaseball10.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "backyardfootball",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbackyardfootball.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "backyardsoccer",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbackyardsoccer.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "baconmaydie",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbaconmaydie.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "badbodyguards",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbadbodyguards.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "badicecream",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbadicecream.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "badicecream2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbadicecream2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "badicecream3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbadicecream3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "badmondaysimulator",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbadmondaysimulator.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "badparenting",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbadparenting.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "badpiggies",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbadpiggies.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "badpiggieslatest",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbadpiggieslatest.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "badtimesim",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbadtimesim.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "badtimesimulator",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbadtimesimulator.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "balatrogba",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbalatrogba.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "baldicaseoh",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbaldicaseoh.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "baldidecomp",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbaldidecomp.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "baldiepstein",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbaldiepstein.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "baldisbasics",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbaldisbasics.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "baldisbasicsremaster",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbaldisbasicsremaster.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "baldisfunnewschoolultimate",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbaldisfunnewschoolultimate.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ballblast",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clballblast.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ballistic",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clballistic.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ballsandbricks",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clballsandbricks.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ballsandbricksgood",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clballsandbricksgood.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ballz",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clballz.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bananasimulator",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbananasimulator.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "banbuds",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbanbuds.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "banditgunslingers",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbanditgunslingers.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "banjokazooie",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbanjokazooie.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "banjotooie",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbanjotooie.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bankbreakout2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbankbreakout2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bankrobbery2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbankrobbery2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "barryhasasecret",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbarryhasasecret.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bartblast",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbartblast.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bas",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbas.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "baseballbros",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbaseballbros.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "basketballfrvr",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbasketballfrvr.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "basketballlegends(1)",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbasketballlegends(1).html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "basketballlegends",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbasketballlegends.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "basketballstars",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbasketballstars.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "basketballsuperstars",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbasketballsuperstars.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "basketbattle",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbasketbattle.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "basketbros",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbasketbros.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "basketrandom",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbasketrandom.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "basketrandomgood",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbasketrandomgood.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "basketslamdunk2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbasketslamdunk2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "batterup",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbatterup.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "battlekarts",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbattlekarts.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "battles",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbattles.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "battlesim",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbattlesim.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "battlezone",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbattlezone.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bazookaboy",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbazookaboy.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bballlegend",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbballlegend.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "beachboxingsim",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbeachboxingsim.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "beamrider",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbeamrider.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bearbarians",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbearbarians.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bearsus",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbearsus.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bejeweledtwistds",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbejeweledtwistds.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bejeweledtwistflash",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbejeweledtwistflash.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ben10alienforce",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clben10alienforce.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ben10omniverse",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clben10omniverse.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ben10protector",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clben10protector.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ben10racing",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clben10racing.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ben10ultimatealien",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clben10ultimatealien.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bendrowned",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbendrowned.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bergentruck201x",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbergentruck201x.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bfdia5b",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbfdia5b.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bigflappytowertinysquare",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbigflappytowertinysquare.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bigicetowertinysquare",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbigicetowertinysquare.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bigneontowertinysquare",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbigneontowertinysquare.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bigshotboxing2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbigshotboxing2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bigtowertinysquare",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbigtowertinysquare.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bigtowertinysquare2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbigtowertinysquare2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bigtowertinysquare2good",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbigtowertinysquare2good.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bindingofisaccsheeptime",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbindingofisaccsheeptime.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bioevil4",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbioevil4.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bitlife",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbitlife.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bitlifeencrypted",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbitlifeencrypted.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bitplanes",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbitplanes.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "blackjack",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clblackjack.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "blackjackbattle",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clblackjackbattle.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "blackjackhhhh",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clblackjackhhhh.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "blackknight",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clblackknight.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "blackout",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clblackout.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "blacksmithlab",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clblacksmithlab.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "blastronaut",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clblastronaut.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "blazedrifter",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clblazedrifter.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bleachvsnaruto",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbleachvsnaruto.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "blightborne",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clblightborne.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "blobsstory2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clblobsstory2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "blockblast",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clblockblast.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "blockblastv2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clblockblastv2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "blockcraftparkour",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clblockcraftparkour.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "blockcraftshooter",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clblockcraftshooter.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "blockpost",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clblockpost.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "blockthepig",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clblockthepig.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "blockydemolitionderby",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clblockydemolitionderby.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "blockysnakes",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clblockysnakes.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "blood",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clblood.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bloodmoney",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbloodmoney.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bloodtournament",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbloodtournament.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bloons",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbloons.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bloons2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbloons2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bloonsTD1",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbloonsTD1.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bloonsTD2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbloonsTD2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bloonsTD3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbloonsTD3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bloonsTD4",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbloonsTD4.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bloonsTD5",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbloonsTD5.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bloonsTD6scratch",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbloonsTD6scratch.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bloonspp1",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbloonspp1.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bloonspp2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbloonspp2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bloonspp3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbloonspp3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bloonspp4",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbloonspp4.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bloonspp5",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbloonspp5.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bloxorz",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbloxorz.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "blumgiracers",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clblumgiracers.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "blumgirocket",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clblumgirocket.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bntts",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbntts.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bobasimulator",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbobasimulator.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bobtherobber",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbobtherobber.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bobtherobber2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbobtherobber2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bobtherobber5",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbobtherobber5.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bollybeat",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbollybeat.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bomberman",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbomberman.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bomberman2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbomberman2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bombermanhero",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbombermanhero.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bombermanworld",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbombermanworld.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bonkerssnes",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbonkerssnes.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "boomslingers",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clboomslingers.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bottlecracks",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbottlecracks.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bottleflip3d",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbottleflip3d.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "botwds",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbotwds.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bounceback",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbounceback.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bouncemasters",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbouncemasters.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bouncybasketball",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbouncybasketball.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bouncymotors",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbouncymotors.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bowlalt",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbowlalt.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bowmaster",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbowmaster.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "boxhead2playrooms",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clboxhead2playrooms.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "boxheadnightmare",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clboxheadnightmare.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "boxinglive-2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clboxinglive-2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "boxinglive2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clboxinglive2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "boxingrandom",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clboxingrandom.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "brainrot",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbrainrot.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "brawlsimulator3d",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbrawlsimulator3d.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "breadskate",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbreadskate.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bridgerace",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbridgerace.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "brotato",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbrotato.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "btd5",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbtd5.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "btts",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbtts.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "btts2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbtts2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bubbleshooter",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbubbleshooter.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bubbleshooterpirate",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbubbleshooterpirate.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bubbletanks",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbubbletanks.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bubbletanks2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbubbletanks2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bubbletanks3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbubbletanks3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bubbletanksarenas",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbubbletanksarenas.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bubbletankstd",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbubbletankstd.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bubsy",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbubsy.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "buckshotroulette",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbuckshotroulette.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "buildnowgg",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbuildnowgg.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bulletforce",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbulletforce.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bunnyland",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbunnyland.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bunzobunny",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbunzobunny.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "burgerandfrights",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clburgerandfrights.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "burgertime",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clburgertime.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "burritobison",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clburritobison.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "burritobison2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clburritobison2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "burritobisonlaunchalibre",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clburritobisonlaunchalibre.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "burritobisonrevenge",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clburritobisonrevenge.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "bushidoblade",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clbushidoblade.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cactusmccoy(1)",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcactusmccoy(1).html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cactusmccoy",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcactusmccoy.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cactusmccoy2(1)",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcactusmccoy2(1).html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cactusmccoy2(2)",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcactusmccoy2(2).html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cactusmccoy2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcactusmccoy2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "callofbattle",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcallofbattle.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "camilla",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcamilla.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "candybox1",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcandybox1.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cannonballs3d",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcannonballs3d.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cannonfodder",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcannonfodder.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "captainlang",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcaptainlang.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "captchaware",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcaptchaware.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "capybaraclicker",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcapybaraclicker.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "carcrash3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcarcrash3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cardrawing",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcardrawing.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "careatscar2deluxe",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcareatscar2deluxe.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "carkingarena",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcarkingarena.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "carmods",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcarmods.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "carrampvspolicechase",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcarrampvspolicechase.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "carstuntsdriving",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcarstuntsdriving.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "castaway",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcastaway.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "castlebloodline",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcastlebloodline.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "castlecircleofmoon",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcastlecircleofmoon.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "castlevania",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcastlevania.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "castlevania2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcastlevania2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "castlevania3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcastlevania3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "castlevaniaariaofsorrow",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcastlevaniaariaofsorrow.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "castlevaniadawnofsorrow",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcastlevaniadawnofsorrow.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "castlevanianes",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcastlevanianes.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "castlewarsmodern",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcastlewarsmodern.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "catmario",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcatmario.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "catmariogood",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcatmariogood.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "catslovecake2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcatslovecake2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cavecrawler",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcavecrawler.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cavestory",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcavestory.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "celeste",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clceleste.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "celeste2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clceleste2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "celestemariodx",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcelestemariodx.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cellardoor",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcellardoor.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "centipedearcade",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcentipedearcade.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "chainofmemories",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clchainofmemories.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "chaosfaction2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clchaosfaction2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "checkers",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcheckers.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cheesechompers3d",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcheesechompers3d.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cheeseisthereason",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcheeseisthereason.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cheeserolling",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcheeserolling.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cheshireinachatroom",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcheshireinachatroom.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "chess",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clchess.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "chessclassic",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clchessclassic.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "chibiknight",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clchibiknight.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "chickenscream",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clchickenscream.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "chickenwar",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clchickenwar.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "chipschallenge",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clchipschallenge.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "choppyorc",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clchoppyorc.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "choroqwonderful",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clchoroqwonderful.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "chronotrigger",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clchronotrigger.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "chuzzle",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clchuzzle.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "civiballs",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clciviballs.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "civiballs2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clciviballs2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "clashnslash",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clclashnslash.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "clashofvikings",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clclashofvikings.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "classof09",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clclassof09.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "claymore",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clclaymore.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "clayuncraft",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clclayuncraft.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cleanupio",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcleanupio.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "clearvision",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clclearvision.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "clearvision2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clclearvision2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "clearvision3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clclearvision3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "clearvision4",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clclearvision4.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "clearvision5",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clclearvision5.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "climbforbrainrots",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clclimbforbrainrots.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "clmadnessambulation",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clclmadnessambulation.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "clover",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clclover.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "clubbytheseal",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clclubbytheseal.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "clusterrush",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clclusterrush.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "coalllcdemo",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcoalllcdemo.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cod4",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcod4.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "codblackopp",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcodblackopp.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "coddefiance",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcoddefiance.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "codenamegordon",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcodenamegordon.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "codeorg",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcodeorg.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "codeorgbutoffline",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcodeorgbutoffline.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "codercraft",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcodercraft.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "codmodernwarfare",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcodmodernwarfare.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "codworldatwar",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcodworldatwar.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "coffeemaker",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcoffeemaker.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "coldpines",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcoldpines.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "colorburst3d",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcolorburst3d.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "colormatch",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcolormatch.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "colorwatersort3d",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcolorwatersort3d.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "combopool",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcombopool.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "commandandconquer",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcommandandconquer.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "commanderkeen4",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcommanderkeen4.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "commanderkeen5",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcommanderkeen5.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "commanderkeen6",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcommanderkeen6.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "confrontingurself",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clconfrontingurself.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "confrontingyourself",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clconfrontingyourself.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "conkersbadfurday",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clconkersbadfurday.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "contra",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcontra.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "contra3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcontra3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cookie-clicker",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcookie-clicker.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cookieclicker",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcookieclicker.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cookieclickercool",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcookieclickercool.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cookieclickergood",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcookieclickergood.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cookieclickermodmenu",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcookieclickermodmenu.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cookingmama",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcookingmama.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cookingmama2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcookingmama2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cookingmama3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcookingmama3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "coreball",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcoreball.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "coryinthehouse",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcoryinthehouse.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cotlk",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcotlk.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "countmastersstickmangames",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcountmastersstickmangames.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "coverorange",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcoverorange.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "coverorange2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcoverorange2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "coverorangejourneygangsters",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcoverorangejourneygangsters.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "coverorangejourneyknights",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcoverorangejourneyknights.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "coverorangejourneypirates",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcoverorangejourneypirates.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "coverorangejourneyspace",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcoverorangejourneyspace.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "coverorangeplayerspack",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcoverorangeplayerspack.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "coverorangeplayerspack2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcoverorangeplayerspack2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "coverorangeplayerspack3(1)",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcoverorangeplayerspack3(1).html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "coverorangeplayerspack3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcoverorangeplayerspack3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "crankit!",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcrankit!.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "crankit",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcrankit.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "crash2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcrash2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "crash3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcrash3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "crashbandicoot (1)",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcrashbandicoot (1).html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "crashbandicoot",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcrashbandicoot.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "crashbandicoot2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcrashbandicoot2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "crashteamracing",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcrashteamracing.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "crazycars",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcrazycars.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "crazycattle3d",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcrazycattle3d.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "crazychicken3D",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcrazychicken3D.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "crazyclimber",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcrazyclimber.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "crazyfrogracer",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcrazyfrogracer.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "crazymotorcycle",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcrazymotorcycle.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "crazypenguincatapult",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcrazypenguincatapult.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "crazyplanelanding",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcrazyplanelanding.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "crazytaxigba",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcrazytaxigba.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "creaturecardidle",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcreaturecardidle.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "creeperworld2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcreeperworld2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "creepyinternetstories",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcreepyinternetstories.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "creepynightfunkin",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcreepynightfunkin.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "crimsonmadness",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcrimsonmadness.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "crossyroad",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcrossyroad.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "crunchball3000",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcrunchball3000.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cs16",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcs16.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cs6",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcs6.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "csds",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcsds.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "csgoclicker",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcsgoclicker.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ctgpnitro",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clctgpnitro.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "curveball(1)",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcurveball(1).html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "curveball",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcurveball.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "customersupport",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcustomersupport.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cuttherope",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcuttherope.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cuttheropeholiday",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcuttheropeholiday.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cuttheropetimetravel",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcuttheropetimetravel.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cvooc",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcvooc.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cyberbungracing",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcyberbungracing.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "cybersensation",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clcybersensation.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dadgame",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldadgame.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dadish",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldadish.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dadnme",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldadnme.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "daggerfall",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldaggerfall.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dandysworldclicker",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldandysworldclicker.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "danktomb",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldanktomb.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dasharena",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldasharena.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dashio",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldashio.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "datewithiraq",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldatewithiraq.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dborigins",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldborigins.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dborigins2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldborigins2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dbsniper",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldbsniper.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dbzattacksaiyans",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldbzattacksaiyans.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dbzdevolution",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldbzdevolution.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dbzsuperwarriorssonic",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldbzsuperwarriorssonic.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dbzwarriors2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldbzwarriors2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ddlc64",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clddlc64.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "deadair",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldeadair.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "deadestate",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldeadestate.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "deadfrontieroutbreak",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldeadfrontieroutbreak.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "deadfrontieroutbreak2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldeadfrontieroutbreak2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "deadlydescent",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldeadlydescent.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "deadplate",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldeadplate.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "deadseat",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldeadseat.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "deadzed",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldeadzed.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "deadzed2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldeadzed2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "deathchase",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldeathchase.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "deathrun",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldeathrun.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "deblob2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldeblob2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "decision",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldecision.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "decision2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldecision2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "decision3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldecision3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "decisionmedieval",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldecisionmedieval.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "deepersleep",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldeepersleep.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "deepestsword",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldeepestsword.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "deepsleep",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldeepsleep.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "defenderarcade",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldefenderarcade.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "defendyourcastle",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldefendyourcastle.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "defendyournuts",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldefendyournuts.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "defendyournuts2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldefendyournuts2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "deltarune",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldeltarune.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "deltatraveler",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldeltatraveler.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dementium",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldementium.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "demolitionderbycrashracing",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldemolitionderbycrashracing.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "demonblade",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldemonblade.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "demonbluff",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldemonbluff.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "diablo",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldiablo.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "diamondhollow",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldiamondhollow.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "diamondhollow2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldiamondhollow2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "diddykong-racing",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldiddykong-racing.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dieinthedungeon",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldieinthedungeon.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "digdeep",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldigdeep.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "digdug",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldigdug.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "digdug2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldigdug2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "digdug26",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldigdug26.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "digtochina",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldigtochina.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dimensionalincident",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldimensionalincident.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dinodudes",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldinodudes.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dinorun",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldinorun.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dinorunenterplanetd",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldinorunenterplanetd.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dinorunmarathonofdoom",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldinorunmarathonofdoom.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "diredecks",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldiredecks.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dkccompetitioncart",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldkccompetitioncart.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "doblox",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldoblox.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dogeminer",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldogeminer.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dogeminer2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldogeminer2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dokidokiliteratureclub",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldokidokiliteratureclub.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "domeromantik",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldomeromantik.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "donkeykong",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldonkeykong.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "donkeykong64",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldonkeykong64.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "donkeykong94",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldonkeykong94.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "donkeykongcountry",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldonkeykongcountry.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "donkeykongcountry2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldonkeykongcountry2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "donkeykongcountry3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldonkeykongcountry3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "donkeykongnes",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldonkeykongnes.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dontescape",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldontescape.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dontescape2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldontescape2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dontescape3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldontescape3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dontyoulecturemehtml",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldontyoulecturemehtml.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "doodlejump",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldoodlejump.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "doodlejumpgoober",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldoodlejumpgoober.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "doom",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldoom.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "doom2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldoom2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "doom2d",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldoom2d.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "doom2dDOS",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldoom2dDOS.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "doom2dos",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldoom2dos.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "doom3pack",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldoom3pack.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "doom64",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldoom64.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "doomdos",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldoomdos.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "doomemscripten",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldoomemscripten.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "doomps",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldoomps.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "doompsalt",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldoompsalt.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "doomzio",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldoomzio.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "doorscastle",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldoorscastle.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "doswasmx",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldoswasmx.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "doubledribble",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldoubledribble.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "douchebaglife",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldouchebaglife.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "douchebagworkout",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldouchebagworkout.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "douchebagworkout2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldouchebagworkout2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "downthemountain",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldownthemountain.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dragonballadvance",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldragonballadvance.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dragonquest5ds",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldragonquest5ds.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dragonwarriormonsters",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldragonwarriormonsters.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "drawclimber",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldrawclimber.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "drawntolife",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldrawntolife.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "drawntolife2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldrawntolife2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "drawtheline",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldrawtheline.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dreader",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldreader.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dreadheadparkour",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldreadheadparkour.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "driftboss",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldriftboss.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "drifthuntersmerge",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldrifthuntersmerge.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "driftsimulator",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldriftsimulator.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "drivemady",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldrivemady.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "drivenwild",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldrivenwild.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "driverussia",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldriverussia.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "drmario",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldrmario.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "drweedgaster",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldrweedgaster.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dta6",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldta6.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dubstep",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldubstep.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "duckhunt",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clduckhunt.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ducklfe5",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clducklfe5.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ducklife",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clducklife.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ducklife2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clducklife2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ducklife3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clducklife3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ducklife4",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clducklife4.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ducklifebattle",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clducklifebattle.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ducklifespace",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clducklifespace.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ducklingsio",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clducklingsio.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ducktales",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clducktales.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ducktales2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clducktales2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dud",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldud.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dukenukem2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldukenukem2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dukenukem3d",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldukenukem3d.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dumbwaystodie",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldumbwaystodie.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dumpling",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldumpling.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dunebuggy",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldunebuggy.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dungeondeck",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldungeondeck.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dungeonraid",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldungeonraid.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dungeonsanddegenerategamblers",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldungeonsanddegenerategamblers.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dunkshot",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldunkshot.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "duskchild",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clduskchild.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dyingdreams",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldyingdreams.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "dynamiteheaddy",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cldynamiteheaddy.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "eaglercraft152",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cleaglercraft152.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "eaglercraftnebula",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cleaglercraftnebula.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "eagleride",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cleagleride.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "earntodie",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clearntodie.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "earntodie2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clearntodie2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "earthbound",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clearthbound.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "earthbound3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clearthbound3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "earthboundsnes",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clearthboundsnes.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "earthtaken",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clearthtaken.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "earthtaken2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clearthtaken2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "earthtaken3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clearthtaken3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "earthwormgg",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clearthwormgg.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "earthwormjim (1)",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clearthwormjim (1).html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "earthwormjim",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clearthwormjim.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "earthwormjim2 (1)",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clearthwormjim2 (1).html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "earthwormjim2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clearthwormjim2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "edelweiss",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cledelweiss.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "edyscarsimulator",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cledyscarsimulator.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "effinghail",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cleffinghail.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "effingmachines",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cleffingmachines.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "effingworms",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cleffingworms.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "effingzombies",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cleffingzombies.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "egg",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clegg.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "eggycar",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cleggycar.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "elasticface",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clelasticface.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "electricman2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clelectricman2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "elevatoraction",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clelevatoraction.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "elytraflight",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clelytraflight.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "emujs",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clemujs.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "enchain",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clenchain.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "endacopia",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clendacopia.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "endlesswar4",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clendlesswar4.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "endlesswar5",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clendlesswar5.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "endlesswar5wow",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clendlesswar5wow.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "endlesswar7",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clendlesswar7.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "enduro",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clenduro.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "epicbattlefantasy5",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clepicbattlefantasy5.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "escalatingduel",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clescalatingduel.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "escaperoad",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clescaperoad.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "escaperoadcity2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clescaperoadcity2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "escapeschoolduel",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clescapeschoolduel.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "et",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clet.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "etrianoddyssey",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cletrianoddyssey.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "eurovisionsim",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/cleurovisionsim.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "evilglitch",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clevilglitch.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "evolution",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clevolution.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "excitebike64",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clexcitebike64.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "exitpath",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clexitpath.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "exoobservation",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clexoobservation.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "extremerun3d",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clextremerun3d.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "factoryballs",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfactoryballs.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "factoryballs2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfactoryballs2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "factoryballs3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfactoryballs3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "factoryballs4",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfactoryballs4.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fairytalevsonepiece",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfairytalevsonepiece.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fallguys",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfallguys.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fallout",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfallout.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "famidash",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfamidash.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "famidash128",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfamidash128.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "famidashAlbum128",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfamidashAlbum128.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "famidashBSides128",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfamidashBSides128.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "famidashCSides128",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfamidashCSides128.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "famidashDSides128",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfamidashDSides128.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "familyguycorrupted",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfamilyguycorrupted.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fancypantsadventure",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfancypantsadventure.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fancypantsadventure2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfancypantsadventure2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fancypantsadventure3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfancypantsadventure3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fancysnowboarding",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfancysnowboarding.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fantasyzone",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfantasyzone.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fashionbattle",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfashionbattle.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fattygenius",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfattygenius.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fearassessment",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfearassessment.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fearstofathomhomealone",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfearstofathomhomealone.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "feedthevoid",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfeedthevoid.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "feedus",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfeedus.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "feedus2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfeedus2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "feedus3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfeedus3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "feedus4",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfeedus4.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "feedus5",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfeedus5.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ff2ws",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clff2ws.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ff6",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clff6.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ffaf",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clffaf.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "ffmysticquest",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clffmysticquest.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fifa2000",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfifa2000.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "finalearth2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfinalearth2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "finalfantasy",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfinalfantasy.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "finalfantasy2nes",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfinalfantasy2nes.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "finalfantasy3nes",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfinalfantasy3nes.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "finalfantasyII",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfinalfantasyII.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "finalfantasyIX",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfinalfantasyIX.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "finalfantasyVI",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfinalfantasyVI.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "finalfantasyVII",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfinalfantasyVII.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "finalfantasyVIId2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfinalfantasyVIId2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "finalfantasyVIId3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfinalfantasyVIId3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "finalfantasyVIItheothertetrr",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfinalfantasyVIItheothertetrr.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "finalfantasylegend2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfinalfantasylegend2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "finalfantasytactics",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfinalfantasytactics.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "finalninja",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfinalninja.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "findthealien",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfindthealien.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fireblob",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfireblob.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fireboyandwatergirl",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfireboyandwatergirl.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fireboyandwatergirl2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfireboyandwatergirl2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fireboyandwatergirl3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfireboyandwatergirl3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fireboyandwatergirl5",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfireboyandwatergirl5.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fireboyandwatergirl6",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfireboyandwatergirl6.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fireemblem",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfireemblem.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fisheatgettingbig",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfisheatgettingbig.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fisquarium",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfisquarium.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fivenightsatbaldisredone",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfivenightsatbaldisredone.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fivenightsatepsteins",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfivenightsatepsteins.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fivenightsatshreks",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfivenightsatshreks.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fivenightsatshrekshotel",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfivenightsatshrekshotel.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fivenightsatyoshis",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfivenightsatyoshis.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "flappybird",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clflappybird.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "flashsonic",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clflashsonic.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "floodrunner",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfloodrunner.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "floodrunner2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfloodrunner2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "floodrunner4",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfloodrunner4.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fluidism",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfluidism.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnac1",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnac1.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnac2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnac2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnaf3remastered",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnaf3remastered.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnaf4halloween",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnaf4halloween.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnafanimatronics",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnafanimatronics.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnafps",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnafps.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnafshooter",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnafshooter.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnafsl",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnafsl.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnafucn",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnafucn.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnafworldd",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnafworldd.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnaw",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnaw.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfTWIDDLEFINGER",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfTWIDDLEFINGER.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfaethos",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfaethos.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfagoti",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfagoti.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfakage",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfakage.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfanimation",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfanimation.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfannie",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfannie.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfasdf",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfasdf.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfbelowdepths",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfbelowdepths.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfbfdi26",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfbfdi26.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfbinarybreakdown",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfbinarybreakdown.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfblackbetrayal",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfblackbetrayal.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfbside",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfbside.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfcamelliarudeblaster",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfcamelliarudeblaster.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfcandycarrier",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfcandycarrier.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfchara",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfchara.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfcitytales",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfcitytales.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfclassified",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfclassified.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfcorrosion",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfcorrosion.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfcory",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfcory.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfcrunchin",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfcrunchin.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfdeciever",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfdeciever.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfdesolation",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfdesolation.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfdocumictxtv3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfdocumictxtv3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfdokitakeoverplus",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfdokitakeoverplus.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfdropandroll",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfdropandroll.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfdsides",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfdsides.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfdustin",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfdustin.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfdusttale",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfdusttale.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnffleetway",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnffleetway.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfflippedout",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfflippedout.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnffnaf1",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnffnaf1.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnffnaf2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnffnaf2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnffnaf3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnffnaf3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnffnatpt",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnffnatpt.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfgamebreakerbundle",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfgamebreakerbundle.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfgfmode",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfgfmode.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfgodot",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfgodot.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfgoldenapple",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfgoldenapple.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfhank",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfhank.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfheartbreakhavoc",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfheartbreakhavoc.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfherobrine",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfherobrine.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfhex",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfhex.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfholiday",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfholiday.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfhorkglorpgloop",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfhorkglorpgloop.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfhotline",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfhotline.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfhypnoslullaby",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfhypnoslullaby.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfimposter3",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfimposter3.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfimposterv4",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfimposterv4.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfindiecross",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfindiecross.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfinfernalbout",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfinfernalbout.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfinfiniteirida",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfinfiniteirida.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfironlung",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfironlung.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfjapcreepypasta",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfjapcreepypasta.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfmadnesspoop",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfmadnesspoop.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfmaginagematches",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfmaginagematches.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfmariomadnessdside",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfmariomadnessdside.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfmarioport",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfmarioport.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfmcmadness",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfmcmadness.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfmidfight",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfmidfight.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfmiku",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfmiku.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfmobmod",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfmobmod.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfneo",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfneo.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfpiggyfield",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfpiggyfield.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfplutoshi",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfplutoshi.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfpokepastaperdition",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfpokepastaperdition.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfporifera",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfporifera.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfqt",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfqt.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfremnants",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfremnants.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfretrospecter",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfretrospecter.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfrevmixed",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfrevmixed.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfrewrite",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfrewrite.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfrhythmicrev",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfrhythmicrev.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfrottensmoothie",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfrottensmoothie.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfselfpaced",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfselfpaced.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfshaggy4keys",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfshaggy4keys.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfshaggyxmatt",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfshaggyxmatt.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfshucks-v2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfshucks-v2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfshucksv2",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfshucksv2.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfsky",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfsky.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfsoft",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfsoft.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfsonicexe",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfsonicexe.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfsonicexe4",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfsonicexe4.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfstarlightmayhem",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfstarlightmayhem.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfstridentcrisis",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfstridentcrisis.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnftailsgetstrolled",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnftailsgetstrolled.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnftooslowfran",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnftooslowfran.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnftricky",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnftricky.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfundertale",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfundertale.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfvoid",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfvoid.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfvstabi",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfvstabi.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfwaltenfiles",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfwaltenfiles.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfwednesday-infedility",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfwednesday-infedility.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfwhitty",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfwhitty.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "fnfzardy",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfnfzardy.html",
+      "thumbnail": "ugs.png"
+    },
+    {
+      "name": "focus",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/UGS-Files/clfocus.html",
+      "thumbnail": "ugs.png"
+    }
+  ]
+}

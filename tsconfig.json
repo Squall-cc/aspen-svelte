@@ -1,6 +1,12 @@
 {
-  "extends": "./.svelte-kit/tsconfig.json",
-  "compilerOptions": {
-    "verbatimModuleSyntax": true
-  }
+	"compilerOptions": {
+		"verbatimModuleSyntax": true,
+		"moduleResolution": "bundler",
+		"module": "esnext",
+		"target": "esnext",
+		"allowJs": true,
+		"types": ["vite/client"],
+		"paths": { "$lib": ["./src/lib"], "$lib/*": ["./src/lib/*"] }
+	},
+	"include": ["src/**/*"]
 }

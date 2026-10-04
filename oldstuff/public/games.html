@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
+    <link rel="stylesheet" href="glass.css">
+    <script src="theme.js"></script>
+    <script src="/baremux/index.js"></script>
+    <style>
+        /* uhh i read somewhere this typa shit fixes firefox issues*/
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg: #3b4252;
+            --bg-deep: #2e3440;
+            --bg-deeper: #242933;
+            /* uhh this aint in nord color pallete but its the bg of the nord website*/
+            --border: #5e81ac;
+            --text: #eceff4;
+            --text-dim: #e5e9f0;
+            --text-muted: #d8dee9;
+            --accent: #5e81ac;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Readex Pro', sans-serif;
+        }
+
+        .top-bar,
+        .grid,
+        .section {
+            position: relative;
+            z-index: 1;
+        }
+
+        .top-bar {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 24px;
+            background: var(--bg-deep);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .top-bar h1 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-right: auto;
+        }
+
+        .top-bar input {
+            padding: 8px 14px;
+            border-radius: 10px;
+            border: 2px solid var(--border);
+            background: var(--bg);
+            color: var(--text);
+            font-size: 14px;
+            width: 220px;
+            outline: none;
+        }
+
+        .top-bar input::placeholder {
+            color: var(--text-muted);
+        }
+
+        .top-bar input:focus {
+            border-color: var(--accent);
+        }
+
+        #source {
+            padding: 8px 14px;
+            border-radius: 10px;
+            border: 2px solid var(--border);
+            background: var(--bg);
+            color: var(--text);
+            font-size: 14px;
+            cursor: pointer;
+            outline: none;
+            font-family: inherit;
+        }
+
+        #source:focus {
+            border-color: var(--accent);
+        }
+
+        #grid {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 16px;
+            padding: 24px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .card {
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform .15s;
+            text-decoration: none;
+            color: inherit;
+            border: 2px solid var(--border);
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-4px) scale(1.05);
+        }
+
+        .card:empty {
+            min-height: 160px;
+            background: var(--bg-deep);
+        }
+
+        .card img {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            display: block;
+            background: var(--bg);
+        }
+
+        .card span {
+            display: block;
+            padding: 10px 12px;
+            font-size: 13px;
+            font-weight: 500;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .fav-btn {
+            position: absolute;
+            top: 6px;
+            right: 6px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, .55);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity .15s;
+            z-index: 2;
+            padding: 0;
+        }
+
+        .card:hover .fav-btn {
+            opacity: 1;
+        }
+
+        .fav-btn.active {
+            opacity: 1;
+        }
+
+        .fav-btn i {
+            font-size: 14px;
+            color: #eceff4;
+        }
+
+        .fav-btn.active i {
+            color: #ebcb8b;
+        }
+
+        #count {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        html {
+            scroll-behavior: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="vanta-bg" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;"></div>
+
+    <div class="top-bar">
+        <h1>games</h1>
+        <span id="count"></span>
+        <input type="text" id="search" placeholder="Search games..." oninput="debouncedFilter()">
+        <select id="source" onchange="load(this.value)">
+            <option value="all.json">All Games</option>
+            <option value="__favorites__">Favorites</option>
+            <option value="3kho-lite.json">3kho</option>
+            <option value="3kho-lite.json">int-v3</option>
+            <option value="games2.json">gn-math</option>
+            <option value="selenite.json">Selenite</option>
+            <option value="ugs.json">UGS</option>
+            <option value="kru.json">Kruated Phear</option>
+            <option value="petezah.json">PeteZah non-gnmath</option>
+            <option value="vel.json">Velara</option>
+            <option value="ckv.json">Chicken King's Vault</option>
+            <option value="frog.json">Frogie's Arcade</option>
+            <option value="seraph.json">Seraph</option>
+            <option value="degloved.json">Degloved</option>
+        </select>
+    </div>
+
+    <div id="grid"></div>
+
+
+    <script>
+        const _bareConn = new BareMux.BareMuxConnection("/baremux/worker.js");
+        const _bareClient = new BareMux.BareClient("/baremux/worker.js");
+        const _thumbCache = new Map();
+        const _wispUrl = (location.protocol === "https:" ? "wss" : "ws") + "://" + location.host + "/wisp/";
+        const _transportReady = (async () => {
+            try {
+                if ((await _bareConn.getTransport()) !== "/libcurl/index.mjs") {
+                    await _bareConn.setTransport("/libcurl/index.mjs", [{ websocket: _wispUrl }]);
+                }
+            } catch (e) {
+                console.warn("libcurl transport init failed:", e);
+            }
+        })();
+
+        function isRemote(u) {
+            return /^https?:\/\//i.test(u) || u.startsWith("//");
+        }
+
+        function resolveThumbnail(url) {
+            if (!isRemote(url)) return Promise.resolve(url);
+            if (_thumbCache.has(url)) return _thumbCache.get(url);
+            const p = (async () => {
+                try {
+                    await _transportReady;
+                    const r = await _bareClient.fetch(url);
+                    if (!r.ok) throw new Error("HTTP " + r.status);
+                    const b = await r.blob();
+                    return URL.createObjectURL(b);
+                } catch (e) {
+                    console.warn("libcurl thumb fetch failed", url, e);
+                    return url;
+                }
+            })();
+            _thumbCache.set(url, p);
+            return p;
+        }
+
+        let allGames = [];
+
+        let _favsCache = null;
+
+        function getFavs() {
+            if (_favsCache) return _favsCache;
+            try {
+                _favsCache = JSON.parse(localStorage.getItem('fav-games') || '[]');
+            } catch {
+                _favsCache = [];
+            }
+            return _favsCache;
+        }
+
+        function setFavs(favs) {
+            _favsCache = favs;
+            localStorage.setItem('fav-games', JSON.stringify(favs));
+        }
+
+        function isFav(url) {
+            return getFavs().includes(url);
+        }
+
+        function toggleFav(url) {
+            let favs = getFavs().slice();
+            if (favs.includes(url)) favs = favs.filter(f => f !== url);
+            else favs.push(url);
+            setFavs(favs);
+        }
+
+        async function load(file) {
+            if (file === '__favorites__') {
+                // load games first then filter out favorites
+                try {
+                    const res = await fetch('all.json');
+                    if (!res.ok) throw new Error('HTTP ' + res.status);
+                    const data = await res.json();
+                    const all = Array.isArray(data) ? data : (data.games || []);
+                    const favs = getFavs();
+                    allGames = all.filter(g => favs.includes(g.url));
+                } catch (e) {
+                    allGames = [];
+                }
+                document.getElementById('search').value = '';
+                renderGames(allGames);
+                return;
+            }
+
+            try {
+                const res = await fetch(file);
+                if (!res.ok) throw new Error('HTTP ' + res.status);
+                const data = await res.json();
+                allGames = Array.isArray(data) ? data : (data.games || []);
+            } catch (e) {
+                allGames = [];
+                console.error('Failed to load', file, e);
+                document.getElementById('grid').innerHTML =
+                    '<p style="padding:24px;color:#bf616a;grid-column:1/-1;">Failed to load <b>' + file + '</b>: ' + e.message + '</p>';
+                document.getElementById('count').textContent = '0 games';
+                return;
+            }
+            document.getElementById('search').value = '';
+            renderGames(allGames);
+        }
+
+        let _filterTimer;
+
+        function debouncedFilter() {
+            clearTimeout(_filterTimer);
+            _filterTimer = setTimeout(filterGames, 150);
+        }
+
+        function filterGames() {
+            const q = document.getElementById('search').value.toLowerCase();
+            const filtered = allGames.filter(g => g.name.toLowerCase().includes(q));
+            renderGames(filtered, q.length > 0);
+        }
+
+        function starIcon(active) {
+            return `<i class="fa-${active ? 'solid' : 'regular'} fa-star"></i>`;
+        }
+
+        const CHUNK = 40;
+        let currentGames = [];
+        let rendered = 0;
+        let cardObserver; // perf optimization attempt 12
+        let sentinelObserver;
+
+        const FALLBACK_IMG = "none.jpg"; // i found ts on google
+
+        function armFallback(img) {
+            if (!img || img.dataset.armed) return;
+            img.dataset.armed = "2";
+            const swap = () => {
+                if (img.src && img.src.includes(FALLBACK_IMG)) return;
+                img.src = FALLBACK_IMG;
+            };
+            img.addEventListener("error", swap, { once: true });
+            setTimeout(() => {
+                if (img.complete && img.naturalWidth > 0) return;
+                swap();
+            }, 1000);
+        }
+
+        function makeCard(g) { 
+            const fav = isFav(g.url);
+            const remote = isRemote(g.thumbnail);
+            const initialSrc = remote ? "" : g.thumbnail;
+            const srcAttr = initialSrc ? ` src="${initialSrc}"` : "";
+            return `<button class="fav-btn${fav ? ' active' : ''}" data-url="${g.url.replace(/"/g, '&quot;')}" title="Toggle favorite">${starIcon(fav)}</button>` +
+                `<img${srcAttr} alt="${g.name}" loading="lazy">` +
+                `<span>${g.name}</span>`;
+        }
+
+        function hydrateCardImage(card, g) {
+            const img = card.querySelector("img");
+            if (!img) return;
+            if (isRemote(g.thumbnail)) {
+                resolveThumbnail(g.thumbnail).then(src => {
+                    if (src) img.src = src;
+                    armFallback(img);
+                });
+            } else {
+                armFallback(img);
+            }
+        }
+
+        function appendChunk() {
+            const grid = document.getElementById('grid');
+            const sentinel = document.getElementById('load-more');
+            const end = Math.min(rendered + CHUNK, currentGames.length);
+            if (rendered >= currentGames.length) return;
+            const frag = document.createDocumentFragment();
+            for (let i = rendered; i < end; i++) {
+                const g = currentGames[i];
+                const a = document.createElement('a');
+                a.className = 'card';
+                a.href = 'frame.html?url=' + encodeURIComponent(g.url);
+                a.dataset.game = JSON.stringify(g);
+                frag.appendChild(a);
+                cardObserver.observe(a);
+            }
+            if (sentinel) grid.insertBefore(frag, sentinel);
+            else grid.appendChild(frag);
+            rendered = end;
+            // hide sentinel if all loaded
+            if (sentinel) sentinel.style.display = rendered >= currentGames.length ? 'none' : '';
+            // re-observe so the next chunk triggers too
+            if (sentinelObserver && sentinel && rendered < currentGames.length) {
+                sentinelObserver.unobserve(sentinel);
+                sentinelObserver.observe(sentinel);
+            }
+        }
+
+        function renderGames(games, showAll) {
+            const grid = document.getElementById('grid');
+            document.getElementById('count').textContent = games.length + ' games';
+            currentGames = games;
+            rendered = 0;
+
+            if (cardObserver) cardObserver.disconnect();
+            if (sentinelObserver) sentinelObserver.disconnect();
+
+            cardObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (!entry.isIntersecting) return;
+                    const card = entry.target;
+                    if (card.dataset.loaded) return;
+                    card.dataset.loaded = '1';
+                    const g = JSON.parse(card.dataset.game);
+                    card.innerHTML = makeCard(g);
+                    hydrateCardImage(card, g);
+                    cardObserver.unobserve(card);
+                });
+            }, {
+                rootMargin: '200px'
+            });
+
+            grid.innerHTML = '<div id="load-more" style="grid-column:1/-1;height:1px;"></div>';
+
+            if (showAll) {
+                // searching — dump everything at once so you can scroll freely
+                currentGames = games;
+                rendered = 0;
+                const end = games.length;
+                const frag = document.createDocumentFragment();
+                for (let i = 0; i < end; i++) {
+                    const g = games[i];
+                    const a = document.createElement('a');
+                    a.className = 'card';
+                    a.href = 'frame.html?url=' + encodeURIComponent(g.url);
+                    a.dataset.game = JSON.stringify(g);
+                    frag.appendChild(a);
+                    cardObserver.observe(a);
+                }
+                const sentinel = document.getElementById('load-more');
+                grid.insertBefore(frag, sentinel);
+                sentinel.style.display = 'none';
+                rendered = end;
+                return;
+            }
+
+            appendChunk();
+
+            sentinelObserver = new IntersectionObserver(function(entries) {
+                if (entries[0].isIntersecting) appendChunk();
+            }, {
+                rootMargin: '100000px'
+            });
+            sentinelObserver.observe(document.getElementById('load-more'));
+        }
+
+        document.getElementById('grid').addEventListener('click', function(e) {
+            const btn = e.target.closest('.fav-btn');
+            if (!btn) return;
+            e.preventDefault();
+            e.stopPropagation();
+            toggleFav(btn.dataset.url);
+            btn.classList.toggle('active');
+            const nowActive = btn.classList.contains('active');
+            btn.innerHTML = starIcon(nowActive);
+        });
+
+        const hoverAudio = new Audio('hover.wav');
+        hoverAudio.volume = 0.3;
+        document.getElementById('grid').addEventListener('mouseover', function(e) {
+            const card = e.target.closest('.card');
+            if (card && localStorage.getItem('hover-sound') === 'on') {
+                hoverAudio.currentTime = 0;
+                hoverAudio.play().catch(() => {});
+            }
+        });
+
+        load('all.json');
+    </script>
+    <script>
+        // lazy-load vanta
+        function loadVanta() {
+            var s = document.createElement('script');
+            s.src = '/vanta-modified.js';
+            s.onload = function() {
+                try {
+                    var _vc = getVantaColors();
+                    window._vantaEffect = VANTA.TOPOLOGY({
+                        el: "#vanta-bg",
+                        mouseControls: true,
+                        touchControls: true,
+                        gyroControls: false,
+                        minHeight: 200,
+                        minWidth: 200,
+                        scale: 1,
+                        scaleMobile: 1,
+                        color: _vc.color,
+                        backgroundColor: _vc.backgroundColor,
+                    });
+                } catch (e) {
+                    console.warn('Vanta failed to init:', e);
+                }
+            };
+            document.head.appendChild(s);
+        }
+
+        function tryLoadVanta() {
+            if (navigator.getBattery) {
+                navigator.getBattery().then(function(b) {
+                    if (b.charging || b.level >= 0.25) loadVanta();
+                });
+            } else {
+                loadVanta();
+            }
+        }
+        if (document.readyState === 'complete') tryLoadVanta();
+        else window.addEventListener('load', tryLoadVanta);
+    </script>
+
+</body>
+
+</html>

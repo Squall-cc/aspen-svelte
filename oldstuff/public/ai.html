@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>aspen ai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="glass.css">
+<script src="theme.js"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:             #3b4252;
+    --bg-deep:        #2e3440;
+    --bg-deeper:      #242933;
+    --surface:        rgba(46, 52, 64, 0.3);
+    --border:         #5e81ac;
+    --border-glass:   rgba(94, 129, 172, 0.35);
+    --text:           #eceff4;
+    --text-dim:       #e5e9f0;
+    --text-muted:     #d8dee9;
+    --accent:         #5e81ac;
+    --accent-hover:   #81a1c1;
+    --error:          #bf616a;
+  }
+
+  html, body {
+    height: 100%;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 14px;
+  }
+
+  .app {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 100vh;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+  }
+
+  .sidebar {
+    background: rgba(46, 52, 64, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-right: 1px solid rgba(94, 129, 172, 0.35);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .sidebar-header {
+    padding: 24px 20px 16px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .logo span {
+    color: var(--accent);
+  }
+
+  .model-selector {
+    margin-top: 14px;
+  }
+
+  .model-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+  }
+
+  .model-select {
+    width: 100%;
+    background: var(--bg);
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    color: var(--text);
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 12px;
+    padding: 7px 10px;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23d8dee9'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    outline: none;
+  }
+
+  .model-select:focus { border-color: var(--accent-hover); }
+
+  .conv-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 12px 10px;
+  }
+
+  .conv-list-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--text-muted);
+    padding: 4px 10px 8px;
+  }
+
+  .conv-item {
+    padding: 9px 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 12px;
+    color: var(--text-dim);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background 0.15s, color 0.15s;
+  }
+
+  .conv-item:hover { background: rgba(94, 129, 172, 0.15); color: var(--text); }
+  .conv-item.active { background: rgba(94, 129, 172, 0.25); color: var(--accent); }
+
+  .new-chat-btn {
+    margin: 10px;
+    padding: 9px 14px;
+    background: none;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    color: var(--text-muted);
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: left;
+    transition: border-color 0.15s, color 0.15s;
+  }
+
+  .new-chat-btn:hover { border-color: var(--accent-hover); color: var(--text); }
+
+  .sidebar-footer {
+    padding: 12px;
+    border-top: 1px solid var(--border);
+  }
+
+  .setting-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 11px;
+    color: var(--text-muted);
+  }
+
+  .setting-row:last-child { margin-bottom: 0; }
+
+  .setting-input {
+    background: var(--bg);
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 11px;
+    padding: 4px 7px;
+    width: 70px;
+    text-align: right;
+    outline: none;
+  }
+
+  .setting-input:focus { border-color: var(--accent-hover); }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: rgba(59, 66, 82, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .messages::-webkit-scrollbar { width: 4px; }
+  .messages::-webkit-scrollbar-track { background: transparent; }
+  .messages::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+  .message {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: 0 16px;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(94, 129, 172, 0.15);
+    animation: fadeSlide 0.2s ease both;
+  }
+
+  @keyframes fadeSlide {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .message:last-child { border-bottom: none; }
+
+  .msg-role {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 2px;
+    text-align: right;
+    padding-right: 0;
+    line-height: 1.6;
+  }
+
+  .message.user .msg-role { color: var(--accent); }
+  .message.assistant .msg-role { color: var(--text-muted); }
+
+  .msg-content {
+    font-size: 14px;
+    line-height: 1.75;
+    color: var(--text);
+    min-width: 0;
+  }
+
+  .message.user .msg-content {
+    color: var(--text-dim);
+  }
+
+  .msg-content pre {
+    background: var(--bg-deeper);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin: 12px 0;
+    overflow-x: auto;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .msg-content code {
+    background: rgba(46, 52, 64, 0.6);
+    padding: 1px 5px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 12.5px;
+    color: #81a1c1;
+  }
+
+  .msg-content pre code {
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    color: var(--text-dim);
+  }
+
+  .empty-state {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    opacity: 0.35;
+    user-select: none;
+  }
+
+  .empty-state .big-logo {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--accent);
+  }
+
+  .empty-state p {
+    font-size: 12px;
+    color: var(--text-muted);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .typing {
+    display: inline-flex;
+    gap: 4px;
+    align-items: center;
+    height: 20px;
+  }
+
+  .typing span {
+    width: 5px;
+    height: 5px;
+    background: var(--accent);
+    border-radius: 50%;
+    animation: blink 1.2s infinite;
+  }
+
+  .typing span:nth-child(2) { animation-delay: 0.2s; }
+  .typing span:nth-child(3) { animation-delay: 0.4s; }
+
+  @keyframes blink {
+    0%, 80%, 100% { opacity: 0.2; transform: scale(0.8); }
+    40% { opacity: 1; transform: scale(1); }
+  }
+
+  .input-area {
+    padding: 16px 24px 20px;
+    border-top: 1px solid var(--border);
+    background: rgba(46, 52, 64, 0.6);
+  }
+
+  .input-wrap {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+  }
+
+  .input-box {
+    flex: 1;
+    background: var(--bg);
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    color: var(--text);
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 14px;
+    padding: 12px 14px;
+    resize: none;
+    line-height: 1.5;
+    min-height: 44px;
+    max-height: 180px;
+    overflow-y: auto;
+    transition: border-color 0.15s;
+    outline: none;
+  }
+
+  .input-box:focus { border-color: var(--accent-hover); }
+  .input-box::placeholder { color: var(--text-muted); }
+
+  .send-btn {
+    background: var(--accent);
+    border: none;
+    border-radius: 10px;
+    color: var(--bg-deeper);
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 12px 18px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.15s, transform 0.1s;
+    align-self: flex-end;
+    height: 44px;
+    white-space: nowrap;
+  }
+
+  .send-btn:hover { background: var(--accent-hover); }
+  .send-btn:active { transform: scale(0.97); }
+  .send-btn:disabled { background: #4c566a; color: var(--text-muted); cursor: not-allowed; transform: none; }
+
+  .input-hint {
+    margin-top: 8px;
+    font-size: 10px;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+  }
+
+  .conv-list::-webkit-scrollbar { width: 3px; }
+  .conv-list::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+</style>
+</head>
+<body>
+
+<div id="vanta-bg" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;"></div>
+
+<div class="app">
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <div class="logo">aspen <span>ai</span></div>
+
+      <div class="model-selector">
+        <div class="model-label">Model</div>
+        <select class="model-select" id="model-select">
+          <option value="">Loading…</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="conv-list">
+      <div class="conv-list-label">History</div>
+      <div id="conv-list"></div>
+    </div>
+
+    <button class="new-chat-btn" onclick="newChat()">+ New conversation</button>
+
+    <div class="sidebar-footer">
+      <div class="setting-row" style="margin-bottom:14px;flex-direction:column;align-items:flex-start;gap:4px">
+        <span style="font-size:10px;text-transform:uppercase;letter-spacing:2px">Endpoint</span>
+        <span id="endpoint-display" style="color:var(--text-muted);font-size:11px;word-break:break-all"></span>
+      </div>
+      <div class="setting-row">
+        <span>Creativity</span>
+        <input class="setting-input" id="temp-input" type="number" min="0" max="2" step="0.1" value="0.7">
+      </div>
+      <div class="setting-row">
+        <span>Max tokens</span>
+        <input class="setting-input" id="ctx-input" type="number" min="512" max="32768" step="512" value="4096">
+      </div>
+    </div>
+  </aside>
+  <script>alert("boost our discord server/donate and ill turn the ai on again");</script>
+  <main class="main">
+    <div class="messages" id="messages">
+      <div class="empty-state" id="empty-state">
+        <div class="big-logo">aspen</div>
+        <p>Start a conversation</p>
+        <p style="font-size:11px;color:var(--text-muted);margin-top:8px;">Only one person can be using the AI at a time, so be patient for a response</p>
+      </div>
+    </div>
+
+    <div class="input-area">
+      <div class="input-wrap">
+        <textarea class="input-box" id="input-box" placeholder="Send a message…" rows="1"></textarea>
+        <button class="send-btn" id="send-btn" onclick="sendMessage()">Send</button>
+      </div>
+      <div class="input-hint">Enter to send &nbsp;·&nbsp; Shift+Enter for newline</div>
+    </div>
+  </main>
+</div>
+
+<script>
+  let conversations = JSON.parse(localStorage.getItem('aspen_convs') || '[]');
+  let activeConvId = null;
+  let abortController = null;
+
+  function getHost() {
+    return window.location.origin.replace(/\/$/, '') + '/ai/v1';
+  }
+
+  function renderConvList() {
+    const el = document.getElementById('conv-list');
+    if (!conversations.length) { el.innerHTML = '<div style="padding:6px 10px;font-size:11px;color:#4c566a">No history yet</div>'; return; }
+    el.innerHTML = conversations.map(c =>
+      `<div class="conv-item${c.id === activeConvId ? ' active' : ''}" onclick="loadConv('${c.id}')">
+        ${escHtml(c.title || 'Untitled')}
+      </div>`
+    ).join('');
+  }
+
+  function saveConvs() {
+    localStorage.setItem('aspen_convs', JSON.stringify(conversations));
+  }
+
+  function newChat() {
+    if (abortController) { abortController.abort(); abortController = null; }
+    activeConvId = null;
+    document.getElementById('messages').innerHTML = `
+      <div class="empty-state" id="empty-state">
+        <div class="big-logo">aspen</div>
+        <p>Start a conversation</p>
+      </div>`;
+    renderConvList();
+  }
+
+  function loadConv(id) {
+    if (abortController) { abortController.abort(); abortController = null; }
+    const conv = conversations.find(c => c.id === id);
+    if (!conv) return;
+    activeConvId = id;
+    const messagesEl = document.getElementById('messages');
+    messagesEl.innerHTML = '';
+    conv.messages.forEach(m => appendMessage(m.role, m.content, false));
+    messagesEl.scrollTop = messagesEl.scrollHeight;
+    renderConvList();
+  }
+
+  async function loadModels() {
+    const sel = document.getElementById('model-select');
+    const res = await fetch(`${getHost()}/models`);
+    const data = await res.json();
+    const models = data.data || [];
+    sel.innerHTML = models.map(m => `<option value="${m.id}">${m.id}</option>`).join('');
+  }
+
+  function appendMessage(role, content, animate = true) {
+    const empty = document.getElementById('empty-state');
+    if (empty) empty.remove();
+
+    const div = document.createElement('div');
+    div.className = `message ${role}`;
+    div.innerHTML = `
+      <div class="msg-role">${role === 'user' ? 'you' : 'ai'}</div>
+      <div class="msg-content">${renderContent(content)}</div>`;
+    if (!animate) div.style.animation = 'none';
+    document.getElementById('messages').appendChild(div);
+    return div;
+  }
+
+  function renderContent(text) {
+    return escHtml(text)
+      .replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>')
+      .replace(/`([^`]+)`/g, '<code>$1</code>')
+      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+      .replace(/\n/g, '<br>');
+  }
+
+  function escHtml(s) {
+    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  async function sendMessage() {
+    const input = document.getElementById('input-box');
+    const text = input.value.trim();
+    if (!text) return;
+
+    const model = document.getElementById('model-select').value;
+    if (!model) return;
+
+    if (!activeConvId) {
+      activeConvId = Date.now().toString(36) + Math.random().toString(36).slice(2);
+      conversations.unshift({ id: activeConvId, title: text.slice(0, 40), messages: [] });
+    }
+
+    const conv = conversations.find(c => c.id === activeConvId);
+    conv.messages.push({ role: 'user', content: text });
+    saveConvs();
+
+    input.value = '';
+    input.style.height = '';
+    appendMessage('user', text);
+
+    const sendBtn = document.getElementById('send-btn');
+    sendBtn.disabled = true;
+
+    const empty = document.getElementById('empty-state');
+    if (empty) empty.remove();
+    const typingDiv = document.createElement('div');
+    typingDiv.className = 'message assistant';
+    typingDiv.innerHTML = `<div class="msg-role">ai</div><div class="msg-content"><div class="typing"><span></span><span></span><span></span></div></div>`;
+    document.getElementById('messages').appendChild(typingDiv);
+    scrollBottom();
+
+    abortController = new AbortController();
+    let fullResponse = '';
+
+    try {
+      const temp = parseFloat(document.getElementById('temp-input').value) || 0.7;
+      const maxTokens = parseInt(document.getElementById('ctx-input').value) || 4096;
+
+      const res = await fetch(`${getHost()}/chat/completions`, {
+        method: 'POST',
+        signal: abortController.signal,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          model,
+          messages: conv.messages,
+          stream: true,
+          temperature: temp,
+          max_tokens: maxTokens
+        })
+      });
+
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      const contentEl = typingDiv.querySelector('.msg-content');
+      contentEl.innerHTML = '';
+      let buffer = '';
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split('\n');
+        buffer = lines.pop();
+        for (const line of lines) {
+          if (!line.startsWith('data: ')) continue;
+          const payload = line.slice(6);
+          if (payload === '[DONE]') break;
+          try {
+            const obj = JSON.parse(payload);
+            const chunk = obj.choices?.[0]?.delta?.content || '';
+            fullResponse += chunk;
+            contentEl.innerHTML = renderContent(fullResponse);
+            scrollBottom();
+          } catch {}
+        }
+      }
+
+      conv.messages.push({ role: 'assistant', content: fullResponse });
+      saveConvs();
+      renderConvList();
+
+    } catch (e) {
+      if (e.name !== 'AbortError') {
+        typingDiv.querySelector('.msg-content').innerHTML = `<span style="color:#bf616a">Error: ${escHtml(e.message)}</span>`;
+      } else {
+        if (fullResponse) {
+          conv.messages.push({ role: 'assistant', content: fullResponse });
+          saveConvs();
+        }
+        typingDiv.remove();
+      }
+    } finally {
+      sendBtn.disabled = false;
+      abortController = null;
+      input.focus();
+    }
+  }
+
+  function scrollBottom() {
+    const el = document.getElementById('messages');
+    el.scrollTop = el.scrollHeight;
+  }
+
+  const inputBox = document.getElementById('input-box');
+  inputBox.addEventListener('input', () => {
+    inputBox.style.height = 'auto';
+    inputBox.style.height = Math.min(inputBox.scrollHeight, 180) + 'px';
+  });
+
+  inputBox.addEventListener('keydown', e => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      sendMessage();
+    }
+  });
+
+  document.getElementById('endpoint-display').textContent = getHost();
+
+
+  renderConvList();
+  loadModels();
+</script>
+<script>
+  function loadVanta() {
+      var s = document.createElement('script');
+      s.src = '/vanta-modified.js';
+      s.onload = function() {
+          try {
+              var _vc = getVantaColors();
+              window._vantaEffect = VANTA.TOPOLOGY({
+                  el: "#vanta-bg",
+                  mouseControls: true,
+                  touchControls: true,
+                  gyroControls: false,
+                  minHeight: 200,
+                  minWidth: 200,
+                  scale: 1,
+                  scaleMobile: 1,
+                  color: _vc.color,
+                  backgroundColor: _vc.backgroundColor,
+              });
+          } catch(e) { console.warn('Vanta failed to init:', e); }
+      };
+      document.head.appendChild(s);
+  }
+  function tryLoadVanta() {
+    if (navigator.getBattery) {
+      navigator.getBattery().then(function(b) {
+        if (b.charging || b.level >= 0.25) loadVanta();
+      });
+    } else { loadVanta(); }
+  }
+  if (document.readyState === 'complete') tryLoadVanta();
+  else window.addEventListener('load', tryLoadVanta);
+</script>
+</body>
+</html>

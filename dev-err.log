@@ -1,0 +1,43 @@
+[2m9:50:29 AM[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mI -> b detected quirky document structure parsing @ https://www.google.com/?gws_rd=ssl!
+[2m9:53:24 AM[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mI -> b detected quirky document structure parsing @ https://accounts.google.com/v3/signin/identifier?continue=https://mail.google.com/mail/?service%3Dmail%26flowName%3DGlifWebSignIn%26flowEntry%3DAccountChooser%26ec%3Dasw-gmail-globalnav-signin&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S622652674:1791122004399015!
+[2m9:53:25 AM[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mI -> b detected quirky document structure parsing @ https://accounts.google.com/_/bscframe!
+[2m9:55:44 AM[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mI -> b detected quirky document structure parsing @ https://accounts.google.com/v3/signin/identifier?continue=https://mail.google.com/mail/?service%3Dmail%26flowName%3DGlifWebSignIn%26flowEntry%3DAccountChooser%26ec%3Dasw-gmail-globalnav-signin&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1977580724:1791122144154512!
+[2m9:55:45 AM[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mI -> b detected quirky document structure parsing @ https://accounts.google.com/_/bscframe!
+[2m9:55:47 AM[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mI -> b detected quirky document structure parsing @ https://accounts.google.com/v3/signin/identifier?continue=https://mail.google.com/mail/?service%3Dmail%26flowName%3DGlifWebSignIn%26flowEntry%3DAccountChooser%26ec%3Dasw-gmail-globalnav-signin&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-66742244:1791122147488541!
+[2m9:55:48 AM[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mI -> b detected quirky document structure parsing @ https://accounts.google.com/_/bscframe!
+[2m9:56:03 AM[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mI -> b detected quirky document structure parsing @ https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fsignin_passive%26feature%3Dpassive&hl=en!
+[2m10:10:31 AM[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [31m[Unhandled error] [1mReferenceError[22m: installOpenUrlHandler is not defined
+
+	in $effect
+	in App.svelte
+	in undefined
+
+[39m > src/App.svelte:570:2
+    568 |  	onMount(() => {
+    569 |  		if (tabs.length === 0) newTab();
+    570 |  		installOpenUrlHandler(openUrlInNewTab);
+        |    ^
+    571 |  	});
+    572 |  </script>
+ > untrack node_modules/svelte/src/internal/client/runtime.js:759:9
+ > $effect node_modules/svelte/src/index-client.js:100:19
+ > update_reaction node_modules/svelte/src/internal/client/runtime.js:259:15
+ > update_effect node_modules/svelte/src/internal/client/runtime.js:468:17
+ > flush_queued_effects node_modules/svelte/src/internal/client/reactivity/batch.js:1082:3
+ > #process node_modules/svelte/src/internal/client/reactivity/batch.js:379:2
+ > Batch.flush node_modules/svelte/src/internal/client/reactivity/batch.js:596:17
+ > Array.<anonymous> node_modules/svelte/src/internal/client/reactivity/batch.js:841:12
+ > run_all node_modules/svelte/src/internal/shared/utils.js:47:9
+ > run_micro_tasks node_modules/svelte/src/internal/client/dom/task.js:10:1
+ > node_modules/svelte/src/internal/client/dom/task.js:28:30
+
+[2m10:18:38 AM[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mI -> b detected quirky document structure parsing @ https://accounts.google.com/v3/signin/identifier?continue=https://mail.google.com/mail/?service%3Dmail%26flowName%3DGlifWebSignIn%26flowEntry%3DAccountChooser%26ec%3Dasw-gmail-globalnav-signin&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1523424920:1791123517838372!
+[2m10:18:39 AM[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mI -> b detected quirky document structure parsing @ https://accounts.google.com/_/bscframe!
+[2m10:18:41 AM[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mError: No frame found for request
+    at Object.request (blob:http://localhost:5173/76e24c13-b4a3-4071-a1d8-a997fdd2a917:1:8540)
+    at o.recieve (blob:http://localhost:5173/76e24c13-b4a3-4071-a1d8-a997fdd2a917:1:987)
+    at MessagePort.onTabChannelMessage (blob:http://localhost:5173/76e24c13-b4a3-4071-a1d8-a997fdd2a917:1:7966)
+[2m10:18:44 AM[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mError: No frame found for request
+    at Object.request (blob:http://localhost:5173/76e24c13-b4a3-4071-a1d8-a997fdd2a917:1:8540)
+    at o.recieve (blob:http://localhost:5173/76e24c13-b4a3-4071-a1d8-a997fdd2a917:1:987)
+    at MessagePort.onTabChannelMessage (blob:http://localhost:5173/76e24c13-b4a3-4071-a1d8-a997fdd2a917:1:7966)

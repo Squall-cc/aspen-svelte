@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <script>
+        if (window.location.href !== 'about:blank' && localStorage.getItem('ab-cloak') !== 'off' && window.self === window.top && !window.opener) { // waiting for david to start yapping about "ohh u couldve js put == "on"!!!!!!!!!!! yeh how bout u acc contribute lil bro"
+            try {
+                var win = window.open();
+                if (!win || win.closed) throw new Error('blocked');
+                var url = window.location.href;
+                var iframe = win.document.createElement('iframe');
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.border = 'none';
+                iframe.style.position = 'fixed';
+                iframe.style.top = '0';
+                iframe.style.left = '0';
+                iframe.src = url;
+                win.document.body.style.margin = '0';
+                win.document.body.appendChild(iframe);
+                win.document.title = 'New Tab'; // about:blank cant have a favicon so yk it looks less sussy when i js say New Tab 
+                window.location.replace('https://google.com');
+            } catch (e) {
+                document.addEventListener('DOMContentLoaded', function() {
+                    alert("Click the button on the left of the Chrome address bar and click allow popups to hide from blocker and history");
+                });
+            }
+        }
+        if (window.self !== window.top) {
+            document.title = 'New Tab'; // failsafe for blobs mayb
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
+    <link rel="stylesheet" href="glass.css">
+    <script src="theme.js"></script>
+    <style>
+        /* uhh i read somewhere this typa shit fixes firefox issues*/
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg: #3b4252;
+            --bg-deep: #2e3440;
+            --bg-deeper: #242933;
+            /* uhh this aint in nord color pallete but its the bg of the nord website*/
+            --border: #5e81ac;
+            --tab-active-bg: #434c5e;
+            --text: #eceff4;
+            --text-dim: #e5e9f0;
+            --text-muted: #d8dee9;
+            --text-on-active: #eceff4;
+            --accent: #5e81ac;
+            --tabbar-h: 36px;
+            --omnibox-h: 36px;
+        }
+
+
+        /* actual content*/
+        html,
+        body {
+            height: 100%;
+            overflow: hidden;
+            background: var(--bg);
+            font-family: 'Readex Pro', sans-serif;
+            color: var(--text);
+        }
+
+        #app {
+            display: grid;
+            grid-template-rows: var(--tabbar-h) var(--omnibox-h) 1fr;
+            height: 100vh;
+            position: relative;
+            z-index: 1;
+        }
+
+
+        #sidebar {
+            background: var(--bg-deep);
+            border-bottom: 1px solid var(--border);
+            overflow: hidden;
+            z-index: 10;
+        }
+
+        #tab-list {
+            flex: 1;
+            overflow-x: auto;
+            overflow-y: hidden;
+            display: flex;
+            flex-direction: row;
+            scrollbar-width: none;
+        }
+
+        #tab-list::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* apparently that one kid at bsa who used a proxy to watch yt shorts on his phone still exists*/
+
+        .tab-item,
+        #add-tab-btn {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 0 10px;
+            cursor: pointer;
+            border: none;
+            border-right: 1px solid var(--border);
+            height: var(--tabbar-h);
+            min-width: 120px;
+            max-width: 200px;
+            text-align: left;
+            font-family: 'Readex Pro', sans-serif;
+            background: transparent;
+            flex-shrink: 0;
+        }
+
+        .tab-item.active {
+            background: var(--tab-active-bg);
+        }
+
+        .tab-icon {
+            width: 14px;
+            height: 14px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-top: 1px;
+        }
+
+        .tab-icon img {
+            width: 14px;
+            height: 14px;
+            display: block;
+        }
+
+        .tab-icon i {
+            font-size: 11px;
+            color: var(--text-dim);
+        }
+
+        .tab-item.active .tab-icon i {
+            color: var(--accent);
+        }
+
+        .tab-title {
+            flex: 1;
+            font-size: 11px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: var(--text-dim);
+            position: relative;
+            top: 1px;
+        }
+
+        .tab-item.active .tab-title {
+            color: var(--text-on-active);
+            font-weight: 600;
+        }
+
+        .tab-close {
+            width: 16px;
+            height: 16px;
+            border: none;
+            background: transparent;
+            color: var(--text-dim);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            padding: 0;
+            opacity: 0;
+            font-size: 10px;
+        }
+
+        .tab-item:hover .tab-close {
+            opacity: 1;
+        }
+
+        .tab-item.active .tab-close {
+            color: var(--accent);
+            opacity: 0;
+        }
+
+        .tab-item.active:hover .tab-close {
+            opacity: 1;
+        }
+
+        #add-tab-btn {
+            min-width: unset;
+            max-width: unset;
+            padding: 0 12px;
+            border-right: none;
+            font-size: 12px;
+            flex-shrink: 0;
+            position: relative;
+            top: 1px;
+        }
+
+        #add-tab-btn .tab-icon i {
+            font-size: 11px;
+            color: var(--text-dim);
+        }
+
+
+        #content {
+            position: relative;
+            background: transparent;
+            overflow: hidden;
+        }
+
+        .iframe-pane {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        /* }, a reminder of the hard dsay fought against my laptop keyboard */
+
+        .iframe-pane.visible {
+            pointer-events: all;
+        }
+
+        .iframe-pane iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+
+        .newtab-overlay {
+            position: absolute;
+            inset: 0;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 5;
+            overflow: hidden;
+        }
+
+        .newtab-overlay.hidden {
+            display: none;
+        }
+
+
+        .newtab-center {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: translateY(-12%);
+            width: 100%;
+        }
+
+        .newtab-overlay input[type=text] {
+            width: 100%;
+            max-width: 480px;
+            padding: 10px 14px;
+            border: 2px solid var(--border);
+            border-radius: 10px;
+            color: var(--text);
+            font-family: 'Readex Pro', sans-serif;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .newtab-overlay input[type=text]::placeholder {
+            color: var(--text-muted);
+        }
+
+        .newtab-overlay input[type=text]:focus {
+            border-color: var(--accent);
+        }
+
+        .shortcut-row {
+            display: flex;
+            gap: 12px;
+            margin-top: 14px;
+        }
+
+        .shortcut-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            padding: 10px 18px;
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            color: var(--text-muted);
+            font-family: 'Readex Pro', sans-serif;
+            font-size: 11px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: border-color 0.15s, color 0.15s, transform 0.15s;
+        }
+
+        .shortcut-btn:hover {
+            border-color: var(--accent);
+            color: var(--text);
+            transform: scale(1.08);
+        }
+
+        .shortcut-btn img {
+            width: 20px;
+            height: 20px;
+            display: block;
+        }
+
+        #omnibox {
+            background: var(--bg-deep);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            padding: 0 8px;
+            gap: 4px;
+            z-index: 10;
+        }
+
+        #omnibox button {
+            background: none;
+            border: none;
+            color: var(--text-dim);
+            cursor: pointer;
+            padding: 4px 7px;
+            font-size: 13px;
+            line-height: 1;
+        }
+
+        #omnibox button:hover {
+            color: var(--text);
+        }
+
+        #omnibox button:disabled {
+            opacity: 0.3;
+            cursor: default;
+        }
+
+        #omnibox-input {
+            flex: 1;
+            border: 2px solid var(--border);
+            color: var(--text);
+            font-family: 'Readex Pro', sans-serif;
+            font-size: 13px;
+            padding: 4px 10px;
+            border-radius: 10px;
+            outline: none;
+        }
+
+        #omnibox-input:focus {
+            border-color: var(--accent);
+        }
+
+        #no-tabs {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            pointer-events: none;
+        }
+
+        #no-tabs-icon {
+            font-size: 48px;
+            color: var(--accent);
+        }
+
+        #no-tabs-hint {
+            font-size: 11px;
+            color: var(--text-muted);
+            letter-spacing: 0.06em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="vanta-bg" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;"></div>
+    <div id="app">
+        <aside id="sidebar">
+            <div id="tab-list">
+                <button id="add-tab-btn">
+                    <div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
+                </button>
+            </div>
+        </aside>
+
+        <div id="omnibox">
+            <button id="omni-back" disabled><i class="fa-solid fa-arrow-left"></i></button>
+            <button id="omni-fwd" disabled><i class="fa-solid fa-arrow-right"></i></button>
+            <input id="omnibox-input" type="text" placeholder="search or enter url...">
+        </div>
+
+        <main id="content">
+            <div id="no-tabs">
+                <div id="no-tabs-icon"><i class="fa-regular fa-window-restore"></i></div>
+                <div id="no-tabs-hint">no tabs open</div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // restore extension scripts to sw from localstorgae
+        try {
+            var saved = localStorage.getItem('inject-scripts');
+            if (saved && navigator.serviceWorker && navigator.serviceWorker.controller) {
+                navigator.serviceWorker.controller.postMessage({
+                    type: 'set-ext-scripts',
+                    scripts: JSON.parse(saved)
+                });
+            }
+        } catch (e) {}
+    </script>
+
+    <script type="text/javascript">
+        (function(c, l, a, r, i, t, y) {
+            c[a] = c[a] || function() {
+                (c[a].q = c[a].q || []).push(arguments)
+            };
+            t = l.createElement(r);
+            t.async = 1;
+            t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0];
+            y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "vdqfqjbu3l");
+    </script>
+
+    <script src="https://unpkg.com/motion@12.36.0/dist/motion.js"></script> /* bro*/
+    <script>
+        // lazy load vanta for perf
+        function loadVanta() {
+            var s = document.createElement('script');
+            s.src = '/vanta-modified.js';
+            s.onload = function() {
+                try {
+                    var _vc = getVantaColors();
+                    window._vantaEffect = VANTA.TOPOLOGY({
+                        el: "#vanta-bg",
+                        mouseControls: true,
+                        touchControls: true,
+                        gyroControls: false,
+                        minHeight: 200,
+                        minWidth: 200,
+                        scale: 1,
+                        scaleMobile: 1,
+                        color: _vc.color,
+                        backgroundColor: _vc.backgroundColor,
+                    });
+                } catch (e) {
+                    console.warn('Vanta failed to init:', e);
+                }
+            };
+            document.head.appendChild(s);
+        }
+
+        function tryLoadVanta() {
+            if (navigator.getBattery) {
+                navigator.getBattery().then(function(b) {
+                    if (b.charging || b.level >= 0.25) loadVanta();
+                });
+            } else {
+                loadVanta();
+            }
+        }
+        if (document.readyState === 'complete') tryLoadVanta();
+        else window.addEventListener('load', tryLoadVanta);
+    </script>
+    <script>
+        const {
+            animate
+        } = Motion;
+
+        let tabs = [];
+        let activeId = null;
+        let idCounter = 0;
+        let searchEngine = "https://duckduckgo.com?q="
+        const tabList = document.getElementById('tab-list'); // why dont js and html/css just share naming conventions broskino
+        const content = document.getElementById('content');
+        const noTabs = document.getElementById('no-tabs');
+        const addBtn = document.getElementById('add-tab-btn');
+        const omniInput = document.getElementById('omnibox-input');
+        const omniBack = document.getElementById('omni-back');
+        const omniFwd = document.getElementById('omni-fwd');
+
+        function getDisplayUrl(proxyUrl) {
+            if (!proxyUrl) return '';
+            if (proxyUrl.startsWith('/404.html?q=')) {
+                try {
+                    return decodeURIComponent(proxyUrl.slice('/404.html?q='.length));
+                } catch (e) {}
+            }
+            return proxyUrl;
+        }
+
+        function navigateTo(tab, proxyUrl) {
+            // truncate url
+            tab.history.splice(tab.histIdx + 1);
+            tab.history.push(proxyUrl);
+            tab.histIdx = tab.history.length - 1;
+            tab.iframe.style.display = '';
+            tab.iframe.src = proxyUrl;
+            tab.url = proxyUrl;
+            if (tab.id === activeId) updateOmnibox();
+        }
+
+        function updateOmnibox() { //sybau now david bazucki
+            const tab = tabs.find(t => t.id === activeId);
+            const omnibox = document.getElementById('omnibox');
+            const app = document.getElementById('app');
+            if (!tab) {
+                omniInput.value = '';
+                omniBack.disabled = true;
+                omniFwd.disabled = true;
+                omnibox.style.display = 'none';
+                app.style.gridTemplateRows = 'var(--tabbar-h) 1fr';
+                return;
+            }
+            omnibox.style.display = '';
+            app.style.gridTemplateRows = '';
+            omniInput.value = getDisplayUrl(tab.url);
+            omniBack.disabled = tab.histIdx <= 0;
+            omniFwd.disabled = tab.histIdx >= tab.history.length - 1;
+        }
+
+        omniBack.addEventListener('click', () => {
+            const tab = tabs.find(t => t.id === activeId);
+            if (!tab || tab.histIdx <= 0) return;
+            tab.histIdx--;
+            tab.url = tab.history[tab.histIdx];
+            tab.iframe.src = tab.url;
+            updateOmnibox();
+        });
+
+        omniFwd.addEventListener('click', () => {
+            const tab = tabs.find(t => t.id === activeId);
+            if (!tab || tab.histIdx >= tab.history.length - 1) return;
+            tab.histIdx++;
+            tab.url = tab.history[tab.histIdx];
+            tab.iframe.src = tab.url;
+            updateOmnibox();
+        });
+
+        omniInput.addEventListener('keydown', (e) => {
+            if (e.key !== 'Enter' || !omniInput.value.trim()) return;
+            const tab = tabs.find(t => t.id === activeId);
+            if (!tab) return;
+            const proxyUrl = resolveInput(omniInput.value.trim());
+            tab.title = omniInput.value.trim();
+            tab.searched = true;
+            const overlay = document.getElementById('overlay-' + tab.id);
+            if (overlay) overlay.style.display = 'none';
+            navigateTo(tab, proxyUrl);
+            updateTabs();
+        });
+
+        function resolveInput(input) {
+            if (/^[^\s]+\.[^\s]+/.test(input)) {
+                const withProtocol = /^https?:\/\//i.test(input) ? input : 'https://' + input;
+                return '/404.html?q=' + encodeURIComponent(withProtocol);
+            }
+            return '/404.html?q=' + encodeURIComponent(searchEngine + encodeURIComponent(input));
+        }
+
+        function createNewTabOverlay(tabThing) {
+            const overlay = document.createElement('div');
+            overlay.id = 'overlay-' + tabThing.id;
+            overlay.className = 'newtab-overlay';
+
+            const input = document.createElement('input');
+            input.id = 'search-' + tabThing.id;
+            input.type = 'text';
+            input.placeholder = 'search the web freely'; // ohhh lowercase text is so tuff gng
+
+            input.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' && input.value.trim()) {
+                    const query = input.value.trim();
+                    const proxyUrl = resolveInput(query); // fixed
+
+                    tabThing.title = query;
+                    tabThing.searched = true;
+
+                    overlay.style.display = 'none';
+                    navigateTo(tabThing, proxyUrl);
+
+                    updateTabs();
+                }
+            });
+
+            //const logo = document.createElement('img');
+            //logo.src = '/squalllogo.png';
+            //logo.style.cssText = 'width:100%;max-width:480px;height:auto;margin-bottom:24px;';
+
+            const branding = document.createElement('div');
+            branding.textContent = 'aspen';
+            branding.style.cssText = 'font-family:"Readex Pro",sans-serif;font-size:42px;font-weight:700;color:var(--accent);margin-bottom:4px;letter-spacing:-0.5px;';
+
+            const splashes = [
+                'the trees are talking',
+                'now with animations for extra dopamine',
+                'trust',
+                'never hop off, never WHAT?',
+                'bloxmath is the opp',
+                'works on my machine, lil bro',
+                'made by middle schoolers for addicted high schoolers',
+                'no thoughts, just colors',
+                'join discord',
+                'blake is a larp',
+                'ctrl+shift+q twice for free robux',
+                'faster than your blocker',
+                'clankers in paris',
+                "will should wear his nike tech",
+                'share links',
+                'dont gatekeep',
+                'gn-math is ai slop, anyone can port',
+                "all my homies love karl marx",
+                'we ball, gangalang',
+                'made by linux powerusers'
+            ];
+
+            const splash = document.createElement('div');
+            splash.textContent = splashes[Math.floor(Math.random() * splashes.length)];
+            splash.style.cssText = 'font-family:"Readex Pro",sans-serif;font-size:13px;color:var(--text-muted);margin-bottom:14px;cursor:pointer;user-select:none;transition:opacity 0.15s;';
+            splash.addEventListener('click', () => {
+                splash.style.opacity = '0';
+                setTimeout(() => {
+                    splash.textContent = splashes[Math.floor(Math.random() * splashes.length)];
+                    splash.style.opacity = '1';
+                }, 150);
+            });
+
+            const center = document.createElement('div');
+            center.className = 'newtab-center';
+            center.appendChild(branding);
+            center.appendChild(splash);
+            center.appendChild(input);
+
+            const shortcuts = [{
+                    label: 'apps',
+                    url: '/apps.html',
+                    fa: 'fa-solid fa-table-cells'
+                },
+                {
+                    label: 'games',
+                    url: '/games.html',
+                    fa: 'fa-solid fa-gamepad'
+                },
+                {
+                    label: 'ai',
+                    url: '/ai.html',
+                    fa: 'fa-solid fa-robot'
+                },
+                {
+                    label: 'chat',
+                    url: '/chat.html',
+                    fa: 'fa-solid fa-message'
+                },
+                {
+                    label: 'settings',
+                    url: '/settings.html',
+                    fa: 'fa-solid fa-gear'
+                },
+                {
+                    label: 'movies/tv',
+                    url: '/movies/',
+                    fa: 'fa-solid fa-film'
+                },
+                {
+                    label: 'music',
+                    url: '/music.html',
+                    fa: 'fa-solid fa-music'
+                },
+                {
+                    label: 'leaderboard',
+                    url: '/mc.html',
+                    fa: 'fa-solid fa-trophy'
+                },
+            ];
+
+            const row = document.createElement('div');
+            row.className = 'shortcut-row';
+
+            shortcuts.forEach(s => {
+                const btn = document.createElement('button');
+                btn.className = 'shortcut-btn';
+
+                const iconEl = Object.assign(document.createElement('i'), {
+                    className: s.fa,
+                    style: 'font-size:20px'
+                });
+
+                const label = document.createElement('span');
+                label.textContent = s.label;
+
+                btn.appendChild(iconEl);
+                btn.appendChild(label);
+                btn.addEventListener('click', () => {
+                    const proxyUrl = (s.url === '/movies/' || s.url === '/games.html' || s.url === '/apps.html' || s.url === '/chat.html' || s.url === '/settings.html' || s.url === '/ai.html' || s.url === '/mc.html' || s.url === '/music.html') ? s.url : '/404.html?q=' + encodeURIComponent(s.url);
+                    tabThing.title = s.label;
+                    tabThing.searched = true;
+                    overlay.style.display = 'none';
+                    navigateTo(tabThing, proxyUrl);
+                    updateTabs();
+                });
+
+                row.appendChild(btn);
+            });
+
+            center.appendChild(row);
+            overlay.appendChild(center);
+            tabThing.focusSearch = () => document.getElementById('search-' + tabThing.id)?.focus();
+
+            return overlay;
+        }
+
+        function buildTabEl(tab) {
+            const el = document.createElement('div');
+            el.id = 'tab-' + tab.id;
+            el.className = 'tab-item' + (tab.id === activeId ? ' active' : '');
+
+            const tabicon = document.createElement('div');
+            tabicon.id = 'tab-icon-' + tab.id;
+            tabicon.className = 'tab-icon';
+            tabicon.innerHTML = '<i class="fa-solid fa-globe"></i>'; // we love font aweseome
+
+            const titleEl = document.createElement('span');
+            titleEl.id = 'tab-title-' + tab.id;
+            titleEl.className = 'tab-title';
+            titleEl.textContent = tab.title;
+
+            const closeBtn = document.createElement('button');
+            closeBtn.id = 'tab-close-' + tab.id;
+            closeBtn.className = 'tab-close';
+            closeBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>'; // fontawesome is best
+            closeBtn.title = 'close tab';
+            closeBtn.addEventListener('click', e => {
+                e.stopPropagation();
+                closeTab(tab.id);
+            });
+
+            el.appendChild(tabicon);
+            el.appendChild(titleEl);
+            el.appendChild(closeBtn);
+            el.addEventListener('click', () => setActive(tab.id));
+            return el;
+        }
+
+        function updateTabs() {
+            tabs.forEach(tab => {
+                if (!tab.el) return;
+                tab.el.className = 'tab-item' + (tab.id === activeId ? ' active' : '');
+
+                const titleEl = document.getElementById('tab-title-' + tab.id);
+                if (titleEl) titleEl.textContent = tab.title;
+
+                const iconEl = document.getElementById('tab-icon-' + tab.id);
+                if (iconEl) {
+                    iconEl.innerHTML = '<i class="fa-solid fa-globe"></i>'; // WE glaze fontawesome
+                }
+            });
+        }
+
+        function createTab() {
+            const id = ++idCounter;
+
+            const pane = document.createElement('div');
+            pane.id = 'pane-' + id;
+            pane.className = 'iframe-pane';
+
+            const iframe = document.createElement('iframe');
+            iframe.id = 'iframe-' + id;
+            iframe.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-forms allow-popups allow-top-navigation');
+            iframe.setAttribute('credentialless', '');
+            iframe.style.display = 'none';
+            pane.appendChild(iframe);
+
+            const tabThing = {
+                id,
+                url: null,
+                title: 'new tab',
+                pane,
+                iframe,
+                searched: false,
+                focusSearch: null,
+                el: null,
+                history: [],
+                histIdx: -1
+            };
+
+            const overlay = createNewTabOverlay(tabThing);
+            pane.appendChild(overlay);
+            content.appendChild(pane);
+
+            // animate new tab overlay w/ apps and stuff in
+            const searchInput = pane.querySelector('input[type=text]');
+            const shortcutRow = pane.querySelector('.shortcut-row');
+            if (searchInput) animate(searchInput, {
+                opacity: [0, 1],
+                y: [18, 0]
+            }, {
+                duration: 0.35,
+                easing: 'ease-out',
+                delay: 0.05
+            });
+            if (shortcutRow) animate(shortcutRow, {
+                opacity: [0, 1],
+                y: [18, 0]
+            }, {
+                duration: 0.35,
+                easing: 'ease-out',
+                delay: 0.15
+            });
+
+            const el = buildTabEl(tabThing);
+            tabThing.el = el;
+            tabs.push(tabThing);
+            tabList.insertBefore(el, addBtn);
+
+            // animate tab emerging from under the tab to its left (skip for first tab)
+            if (tabs.length > 1) {
+                el.style.zIndex = '0';
+                el.style.clipPath = 'inset(0 100% 0 0)';
+                animate(el, {
+                        clipPath: ['inset(0 100% 0 0)', 'inset(0 0% 0 0)']
+                    }, {
+                        duration: 0.2,
+                        easing: 'ease-out'
+                    })
+                    .then(() => {
+                        el.style.clipPath = '';
+                        el.style.zIndex = '';
+                    });
+            }
+
+            setActive(id);
+        }
+
+        function closeTab(id) {
+            const idx = tabs.findIndex(t => t.id === id);
+            if (idx === -1) return;
+
+            const tab = tabs[idx];
+
+            // capture positions BEFORE any DOM changes
+            const closingLeft = tab.el.getBoundingClientRect().left;
+            const pane = document.getElementById('pane-' + id);
+            if (pane) pane.style.pointerEvents = 'none';
+            const oldPositions = new Map();
+            tabs.forEach(t => {
+                if (t.el && t.id !== id) oldPositions.set(t.el, t.el.getBoundingClientRect().left);
+            });
+            const addBtnOldLeft = addBtn.getBoundingClientRect().left;
+
+            // pull closing tab out of flow at its original position
+            tab.el.style.position = 'absolute';
+            tab.el.style.left = closingLeft + 'px';
+            tab.el.style.top = '0';
+            tab.el.style.zIndex = '0';
+            animate(tab.el, {
+                opacity: [1, 0],
+                y: [0, 40]
+            }, {
+                duration: 0.2,
+                easing: 'ease-in'
+            });
+
+            // now remove from data and update
+            tabs.splice(idx, 1);
+            if (activeId === id) {
+                activeId = null;
+                if (tabs.length > 0) setActive(tabs[Math.max(0, idx - 1)].id);
+            }
+            updateTabs();
+            updateEmpty();
+
+            // now remaining tabs + add button reflow — animate from old to new position
+            requestAnimationFrame(() => {
+                tabs.forEach(t => {
+                    if (!t.el || !oldPositions.has(t.el)) return;
+                    const oldLeft = oldPositions.get(t.el);
+                    const newLeft = t.el.getBoundingClientRect().left;
+                    const delta = oldLeft - newLeft;
+                    if (Math.abs(delta) > 0.5) {
+                        animate(t.el, {
+                            x: [delta, 0]
+                        }, {
+                            duration: 0.2,
+                            easing: 'ease-out'
+                        });
+                    }
+                });
+                // animate add button sliding with the tabs
+                const addBtnNewLeft = addBtn.getBoundingClientRect().left;
+                const addBtnDelta = addBtnOldLeft - addBtnNewLeft;
+                if (Math.abs(addBtnDelta) > 0.5) {
+                    animate(addBtn, {
+                        x: [addBtnDelta, 0]
+                    }, {
+                        duration: 0.2,
+                        easing: 'ease-out'
+                    });
+                }
+            });
+
+            setTimeout(() => {
+                tab.el.remove();
+                pane?.remove();
+            }, 220);
+        }
+
+        function setActive(id) {
+            activeId = id;
+            tabs.forEach(t => {
+                const pane = document.getElementById('pane-' + t.id);
+                if (!pane) return;
+                if (t.id === id) {
+                    pane.style.opacity = '0';
+                    pane.style.pointerEvents = 'all';
+                    animate(pane, {
+                        opacity: [0, 1]
+                    }, {
+                        duration: 0.15,
+                        easing: 'ease-out'
+                    });
+                } else {
+                    pane.style.pointerEvents = 'none';
+                    pane.style.opacity = '0';
+                }
+            });
+
+            const tab = tabs.find(t => t.id === id);
+            if (tab && !tab.searched && tab.focusSearch) {
+                setTimeout(() => tab.focusSearch(), 50);
+            }
+
+            updateTabs();
+            updateEmpty();
+            updateOmnibox();
+        }
+
+        let noTabsTimer = null;
+
+        function updateEmpty() {
+            if (tabs.length === 0) {
+                if (noTabsTimer) clearTimeout(noTabsTimer);
+                noTabsTimer = setTimeout(() => {
+                    noTabs.style.display = 'flex';
+                    noTabs.style.opacity = '0';
+                    animate(noTabs, {
+                        opacity: [0, 1],
+                        y: [10, 0]
+                    }, {
+                        duration: 0.3,
+                        easing: 'ease-out'
+                    });
+                }, 200);
+            } else {
+                if (noTabsTimer) {
+                    clearTimeout(noTabsTimer);
+                    noTabsTimer = null;
+                }
+                noTabs.style.display = 'none';
+            }
+        }
+
+
+        addBtn.addEventListener('click', () => createTab());
+        createTab();
+        updateEmpty();
+        updateOmnibox();
+
+        window.addEventListener('message', (e) => {
+            if (e.data?.type === 'theme-change') {
+                applyTheme(e.data.theme || localStorage.getItem('theme'));
+                return;
+            }
+            console.log('[index] title received:', e.data, 'from ', e.origin);
+            if (e.data?.type !== 'tab-title') return;
+            const tab = tabs.find(t => t.iframe.contentWindow === e.source);
+            console.log('[index] source match:', tab ? `tab ${tab.id}` : 'no match', '| tabs:', tabs.map(t => t.id));
+            if (!tab) return;
+            tab.title = e.data.title;
+            updateTabs();
+        });
+    </script>
+
+</body>
+
+</html>

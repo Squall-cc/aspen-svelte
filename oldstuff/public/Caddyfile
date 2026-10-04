@@ -1,0 +1,17 @@
+{
+	on_demand_tls {
+		ask http://localhost:8080/check-tls-domain
+	}
+}
+
+:443 {
+	tls {
+		on_demand
+	}
+
+	reverse_proxy localhost:8080
+}
+
+:80 {
+	redir https://{host}{uri} permanent
+}

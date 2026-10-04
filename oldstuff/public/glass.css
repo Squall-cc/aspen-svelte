@@ -1,0 +1,11 @@
+.glass,
+.newtab-overlay input[type=text],
+.shortcut-btn,
+#omnibox-input,
+.card,
+.setting-row {
+  background: rgba(46, 52, 64, 0.3);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-color: rgba(94, 129, 172, 0.35);
+}
