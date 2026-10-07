@@ -19,7 +19,6 @@
 
   let inputValue = $state('')
   let focused = $state(false)
-  let spin = $state(0)
 
   $effect(() => {
     if (!focused) inputValue = currentUrl
@@ -34,26 +33,25 @@
 
 <div class="flex items-center gap-1 px-2 py-1 bg-ef-bg-deep border-b border-ef-border min-h-[36px]">
   <button
-    class="px-4 py-1 border-2 border-ef-text-dim rounded-lg text-ef-text-dim transition-all duration-150 hover:border-ef-accent hover:text-ef-accent active:scale-90 disabled:opacity-30 disabled:active:scale-100 disabled:cursor-default"
+    class="px-4 py-1 border-2 border-ef-text-dim rounded-lg text-ef-text-dim hover:border-ef-accent hover:text-ef-accent disabled:opacity-30 disabled:cursor-default"
     disabled={!canGoBack}
     onclick={onback}
     aria-label="back"
   ><i class="fa-solid fa-arrow-left text-sm"></i></button>
 
   <button
-    class="px-4 py-1 border-2 border-ef-text-dim rounded-lg text-ef-text-dim transition-all duration-150 hover:border-ef-accent hover:text-ef-accent active:scale-90 disabled:opacity-30 disabled:active:scale-100 disabled:cursor-default"
+    class="px-4 py-1 border-2 border-ef-text-dim rounded-lg text-ef-text-dim hover:border-ef-accent hover:text-ef-accent disabled:opacity-30 disabled:cursor-default"
     disabled={!canGoForward}
     onclick={onforward}
     aria-label="forward"
   ><i class="fa-solid fa-arrow-right text-sm"></i></button>
 
   <button
-    class="px-3 py-1 border-2 border-ef-text-dim rounded-lg text-ef-text-dim transition-all duration-150 hover:border-ef-accent hover:text-ef-accent active:scale-90"
-    onclick={() => { spin += 360; onreload?.() }}
+    class="px-3 py-1 border-2 border-ef-text-dim rounded-lg text-ef-text-dim hover:border-ef-accent hover:text-ef-accent"
+    onclick={() => { onreload?.() }}
     aria-label="reload"
   ><i
-    class="fa-solid fa-rotate-right text-sm transition-transform duration-500 ease-out"
-    style="transform: rotate({spin}deg)"
+    class="fa-solid fa-rotate-right text-sm"
   ></i></button>
 
   <form
@@ -66,7 +64,7 @@
       onfocus={() => { focused = true; inputValue = currentUrl }}
       onblur={() => { focused = false; inputValue = currentUrl }}
       placeholder="search or url"
-      class="w-full px-4 py-1 bg-ef-bg-deep border-2 border-ef-text-dim rounded-lg text-ef-text-dim text-sm placeholder-ef-text-muted outline-none transition-colors duration-150 focus:border-ef-accent focus:text-ef-text"
+      class="w-full px-4 py-1 bg-ef-bg-deep border-2 border-ef-text-dim rounded-lg text-ef-text-dim text-sm placeholder-ef-text-muted outline-none focus:border-ef-accent focus:text-ef-text"
     />
   </form>
 </div>
