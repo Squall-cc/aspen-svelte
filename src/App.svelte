@@ -1,977 +1,445 @@
-<script>
-	import { onMount } from 'svelte';
-	import { fade } from 'svelte/transition';
-	import { flip } from 'svelte/animate';
-	import { cubicOut } from 'svelte/easing';
-	import { search } from '$lib/search.js';
-	import { getProxy } from '$lib/proxy.js';
-	import { getZoneHtml, writeZone } from '$lib/zones.js';
-	import Omnibox from '$lib/Omnibox.svelte';
-	import NewTab from '$lib/NewTab.svelte';
-	import Games from '$lib/Games.svelte';
-	import VantaBg from '$lib/VantaBg.svelte';
-	import loadingGif from '$lib/assets/loading.gif';
+<script lang="civet">
+  import { search } from '$lib/search.js'
+  import { getProxy } from '$lib/proxy.js'
+  import { getZones, getZoneHtml, writeZone } from '$lib/zones.js'
+  import svelteTilt from 'vanilla-tilt-svelte'
+  import Toolbar from '$lib/Toolbar.svelte'
+  import bgSrc from '$lib/assets/bg.png'
+  import { assetUrl } from '$lib/assetUrl.js'
+  import { fly, fade, scale } from 'svelte/transition'
+  import { flip } from 'svelte/animate'
+  import { cubicOut, backOut } from 'svelte/easing'
 
-	let tabs = $state([]);
-	let openTab = $state(null);
-	let frameContainer;
+  bg := assetUrl(bgSrc)
 
-	// one message listener per page (survives hmr), latest component wins
-	const openUrlHandlerKey = Symbol.for('aspen-open-url-listener');
-	function installOpenUrlHandler(fn) {
-		const w = window;
-		if (!w[openUrlHandlerKey]) {
-			w[openUrlHandlerKey] = true;
-			w.addEventListener('message', (e) => {
-				if (e.origin !== location.origin || !e.data?.$aspenOpen) return;
-				const url = e.data.$aspenOpen.url;
-				if (typeof url !== 'string' || !/^https?:/.test(url)) return;
-				w.__aspenOpenUrlHandler?.(url);
-			});
-		}
-		w.__aspenOpenUrlHandler = fn;
-	}
+  let tabs = $state([])
+  let openTab = $state(null)
+  let frameContainer: HTMLDivElement
+  let frameLoading = $state(false)
 
-	// one iframe per tab, kept alive while the tab is open
-	const views = new Map();
-	// scramjet frames for browser tabs
-	const frames = new Map();
-	// plain iframes for same-origin pages (scramjet can't proxy same origin)
-	const directs = new Map();
-	// per-tab history: Map<tabId, { stack: string[], idx: number }>
-	const tabHistories = new Map();
-	// per-tab timeouts that stop the spinner if a frame never fires load
-	const loadWatchdogs = new Map();
+  // one iframe per tab, kept alive while the tab is open
+  views := new Map<number, HTMLIFrameElement>()
+  // scramjet frames for browser tabs
+  frames := new Map<number, any>()
 
-	const PROXY_INIT_TIMEOUT = 30_000;
-	const LOAD_TIMEOUT = 60_000;
+  // games
+  let zones = $state([])
+  let zonesLoading = $state(false)
+  let zonesError = $state('')
+  let gamesSearch = $state('')
+  let gamesPage = $state(1)
 
-	let currentUrl = $state('');
-	let canGoBack = $state(false);
-	let canGoForward = $state(false);
+  gamesPerPage := 40
 
-	const searchEngine = 'https://duckduckgo.com/?q=%s';
-	// regex from stack overflow
-	const linkRegex =
-		/^(([a-z]+:\/\/)?(([a-z0-9\-]+\.)+([a-z]{2}|aero|arpa|biz|com|coop|edu|gov|info|int|jobs|mil|museum|name|nato|net|org|pro|travel|local|internal))(:[0-9]{1,5})?(\/[a-z0-9_\-\.~]+)*(\/([a-z0-9_\-\.]*)(\?[a-z0-9+_\-\.%=&]*)?)?(#[a-zA-Z0-9!$&'()*+.=\-_~:@\/?]*)?)$/i;
-	const searxUrl = 'https://www.metacrawler.com/serp?q=';
+  filteredZones := $derived(
+    if gamesSearch.trim()
+      zones.filter (z: any) => z.name.toLowerCase().includes(gamesSearch.trim().toLowerCase())
+    else
+      zones
+  )
 
-	const splashes = [
-		'the trees are talking',
-		'now with animations for extra dopamine',
-		'trust',
-		'never hop off, never WHAT?',
-		'bloxmath is the opp',
-		'works on my machine, lil bro',
-		'made by middle schoolers for addicted high schoolers',
-		'no thoughts, just colors',
-		'join discord',
-		'blake is a larp',
-		'ctrl+shift+q twice for free robux',
-		'faster than your blocker',
-		'clankers in paris',
-		'will should wear his nike tech',
-		'share links',
-		'dont gatekeep',
-		'gn-math is ai slop, anyone can port',
-		'all my homies love karl marx',
-		'we ball, gangalang',
-		'made by linux powerusers'
-	];
+  pagedZones := $derived(do
+    start := (gamesPage - 1) * gamesPerPage
+    filteredZones.slice(start, start + gamesPerPage)
+  )
 
-	function splashFor(tab) {
-		return splashes[tab.splash];
-	}
+  totalPages := $derived(Math.max(1, Math.ceil(filteredZones.length / gamesPerPage)))
 
-	function rotateSplash(tab) {
-		tab.splash = Math.floor(Math.random() * splashes.length);
-	}
+  // per-tab history: Map<tabId, { stack: string[], idx: number }>
+  let tabHistories = new Map<number, { stack: string[], idx: number }>()
+  let currentUrl = $state('')
+  let canGoBack = $state(false)
+  let canGoForward = $state(false)
 
-	function setDraft(tab, value) {
-		tab.searchDraft = value;
-	}
+  searchEngine := 'https://duckduckgo.com/?q=%s'
 
-	const makeTab = (partial) => ({
-		searchDraft: '',
-		splash: Math.floor(Math.random() * splashes.length),
-		loading: false,
-		error: '',
-		...partial
-	});
+  showFrame := (tabId: number | null) =>
+    for [id, view] of views
+      view.style.display = if id is tabId then '' else 'none'
 
-	const activeTab = $derived(tabs.find((t) => t.id === openTab));
-	const canReload = $derived(!!activeTab?.content && activeTab.type !== 'games');
+  syncNav := (tabId: number) =>
+    return unless tabId is openTab
+    h := tabHistories.get(tabId)
+    currentUrl = h?.stack[h.idx] ?? ''
+    canGoBack = !!h and h.idx > 0
+    canGoForward = !!h and h.idx < h.stack.length - 1
 
-	// same-domain urls are shown as internal://, like the old site's internal pages
-	function getDisplayUrl(url) {
-		if (!url) return '';
-		try {
-			const u = new URL(url);
-			if (u.origin === location.origin)
-				return `internal://${u.pathname.replace(/^\//, '')}${u.search}${u.hash}`;
-			return url;
-		} catch {
-			return url;
-		}
-	}
+  // update history on in-page navigation
+  onUrlChange := (tabId: number, url: string) =>
+    h := tabHistories.get(tabId)
+    return unless h
+    if url isnt h.stack[h.idx]
+      h.stack = h.stack.slice(0, h.idx + 1)
+      h.stack.push(url)
+      h.idx = h.stack.length - 1
+    tab := tabs.find (t) => t.id is tabId
+    tab.label = labelFor(url) if tab
+    syncNav(tabId)
 
-	function isSameOrigin(url) {
-		try {
-			return new URL(url).origin === location.origin;
-		} catch {
-			return false;
-		}
-	}
+  loadProxy := async (rawUrl: string) =>
+    tabId := openTab
+    return if tabId is null
+    url := search(rawUrl, searchEngine)
 
-	// internal://x -> <current domain>/x, internal://games -> the games tab, otherwise the old logic
-	function resolveInput(raw) {
-		const trimmed = raw.trim();
-		if (trimmed.startsWith('internal://')) {
-			const path = trimmed.slice('internal://'.length).replace(/^\/+/, '');
-			if (path === 'games' || path === 'games/') {
-				openGamesTab();
-				return null;
-			}
-			return new URL(`/${path}`, location.origin).toString();
-		}
-		if (linkRegex.test(trimmed)) return trimmed;
-		return `${searxUrl}${encodeURIComponent(trimmed)}`;
-	}
+    // push to this tabs history
+    h := tabHistories.get(tabId) ?? { stack: [], idx: -1 }
+    h.stack = h.stack.slice(0, h.idx + 1)
+    h.stack.push(url)
+    h.idx = h.stack.length - 1
+    tabHistories.set(tabId, h)
+    syncNav(tabId)
 
-	const reveal = (node, { duration = 200 } = {}) => ({
-		duration,
-		easing: cubicOut,
-		css: (t) => `clip-path: inset(0 ${100 * (1 - t)}% 0 0)`
-	});
-	const drop = (node, { duration = 200 } = {}) => ({
-		duration,
-		easing: (t) => t * t,
-		css: (t, u) => `opacity: ${u}; transform: translateY(${40 * t}px)`
-	});
-	const fadeUp = (node, { duration = 300, delay = 0, y = 10 } = {}) => ({
-		duration,
-		delay,
-		easing: cubicOut,
-		css: (t) => `opacity: ${t}; transform: translateY(${y * (1 - t)}px)`
-	});
+    frameLoading = true
+    { controller, UrlWatcherPlugin } := await getProxy()
+    return unless tabs.some (t) => t.id is tabId
 
-	function showFrame(tabId) {
-		for (const [id, view] of views) view.style.display = id === tabId ? '' : 'none';
-	}
+    // tab was a game before
+    destroyView(tabId) if views.has(tabId) and not frames.has(tabId)
 
-	function syncNav(tabId) {
-		if (tabId !== openTab) return;
-		const tab = tabs.find((t) => t.id === tabId);
-		// the games list isn't a proxied page, so it has no history
-		if (tab?.type === 'games') {
-			currentUrl = 'internal://games';
-			canGoBack = false;
-			canGoForward = false;
-			return;
-		}
-		const h = tabHistories.get(tabId);
-		currentUrl = getDisplayUrl(h?.stack[h.idx] ?? '');
-		canGoBack = !!h && h.idx > 0;
-		canGoForward = !!h && h.idx < h.stack.length - 1;
-	}
+    frame .= frames.get(tabId)
+    unless frame
+      iframe := makeIframe(tabId)
+      iframe.addEventListener 'load', =>
+        frameLoading = false if openTab is tabId
+      frame = controller.createFrame iframe,
+        plugins: [new UrlWatcherPlugin (u: string) => onUrlChange(tabId, u)]
+      frames.set(tabId, frame)
+    showFrame(openTab)
+    frame.go(url)
 
-	// update history on in-page navigation
-	function onUrlChange(tabId, url) {
-		const h = tabHistories.get(tabId);
-		if (!h) return;
-		if (url !== h.stack[h.idx]) {
-			h.stack = h.stack.slice(0, h.idx + 1);
-			h.stack.push(url);
-			h.idx = h.stack.length - 1;
-		}
-		const tab = tabs.find((t) => t.id === tabId);
-		if (tab) tab.label = labelFor(url);
-		syncNav(tabId);
-	}
+  makeIframe := (tabId: number) =>
+    iframe := document.createElement('iframe')
+    iframe.className = 'absolute inset-0 w-full h-full border-none'
+    iframe.allow = 'fullscreen; autoplay; gamepad'
+    frameContainer.appendChild(iframe)
+    views.set(tabId, iframe)
+    iframe
 
-	async function loadProxy(rawUrl) {
-		const tabId = openTab;
-		if (tabId === null) return;
-		const tab = tabs.find((t) => t.id === tabId);
-		if (!tab) return;
-		const url = search(rawUrl, searchEngine);
+  destroyView := async (tabId: number) =>
+    views.get(tabId)?.remove()
+    views.delete(tabId)
+    frame := frames.get(tabId)
+    return unless frame
+    frames.delete(tabId)
+    { controller } := await getProxy()
+    controller.frames = controller.frames.filter (f: any) => f isnt frame
 
-		// push to this tabs history
-		const h = tabHistories.get(tabId) ?? { stack: [], idx: -1 };
-		h.stack = h.stack.slice(0, h.idx + 1);
-		h.stack.push(url);
-		h.idx = h.stack.length - 1;
-		tabHistories.set(tabId, h);
-		syncNav(tabId);
-		await loadUrl(tabId, url);
-	}
+  activeFrame := => if openTab is null then undefined else frames.get(openTab)
 
-	async function loadUrl(tabId, url) {
-		const tab = tabs.find((t) => t.id === tabId);
-		if (!tab) return;
+  goBack := =>
+    return unless openTab is not null
+    h := tabHistories.get(openTab)
+    return unless h and h.idx > 0
+    h.idx--
+    syncNav(openTab)
+    activeFrame()?.back()
 
-		// same-origin pages (internal://) load straight into the iframe, no proxy
-		if (isSameOrigin(url)) {
-			if (views.has(tabId)) await destroyView(tabId);
-			if (!tabs.some((t) => t.id === tabId)) return;
-			loadDirect(tabId, url);
-			return;
-		}
+  goForward := =>
+    return unless openTab is not null
+    h := tabHistories.get(openTab)
+    return unless h and h.idx < h.stack.length - 1
+    h.idx++
+    syncNav(openTab)
+    activeFrame()?.forward()
 
-		tab.loading = true;
-		tab.error = '';
-		try {
-			const { controller, UrlWatcherPlugin } = await Promise.race([
-				getProxy(),
-				new Promise((_, rej) =>
-					setTimeout(() => rej(new Error('proxy init timed out')), PROXY_INIT_TIMEOUT)
-				)
-			]);
-			if (!tabs.some((t) => t.id === tabId)) return;
+  reload := =>
+    tab := tabs.find (t) => t.id is openTab
+    if tab?.type is 'game'
+      loadGame(tab.id, tab.zone)
+    else
+      activeFrame()?.reload()
 
-			// tab was a game before
-			if (views.has(tabId) && !frames.has(tabId)) await destroyView(tabId);
+  nextId := => (Math.max(0, ...tabs.map (t) => t.id)) + 1
 
-			let frame = frames.get(tabId);
-			if (!frame) {
-				const iframe = makeIframe(tabId, tab);
-				frame = controller.createFrame(iframe, {
-					plugins: [new UrlWatcherPlugin((u) => onUrlChange(tabId, u))]
-				});
-				frames.set(tabId, frame);
-			}
-			showFrame(openTab);
-			frame.go(url);
-			// if the frame's load event never fires (wisp blackholed etc) stop the spinner anyway
-			clearTimeout(loadWatchdogs.get(tabId));
-			loadWatchdogs.set(
-				tabId,
-				setTimeout(() => {
-					loadWatchdogs.delete(tabId);
-					if (tabs.some((t) => t.id === tabId)) tab.loading = false;
-				}, LOAD_TIMEOUT)
-			);
-		} catch (e) {
-			console.error(e);
-			if (!tabs.some((t) => t.id === tabId)) return;
-			tab.loading = false;
-			tab.error = e?.message || String(e);
-		}
-	}
+  loadZones := async =>
+    return if zones.length or zonesLoading
+    zonesLoading = true
+    zonesError = ''
+    try
+      zones = await getZones()
+    catch e
+      zonesError = String(e)
+    zonesLoading = false
 
-	function makeIframe(tabId, tab) {
-		const iframe = document.createElement('iframe');
-		iframe.className = 'frame';
-		iframe.allow = 'fullscreen; autoplay; gamepad';
-		iframe.addEventListener('load', () => {
-			clearTimeout(loadWatchdogs.get(tabId));
-			loadWatchdogs.delete(tabId);
-			if (tabs.some((t) => t.id === tabId)) tab.loading = false;
-			hookFrame(iframe);
-		});
-		frameContainer.appendChild(iframe);
-		views.set(tabId, iframe);
-		// hook the initial about:blank window too (it survives doc.write in game zones)
-		hookFrame(iframe);
-		return iframe;
-	}
+  openGamesTab := =>
+    tab := tabs.find (t) => t.id is openTab
+    if tab and not tab.content
+      tab.type = 'games'
+      tab.label = 'games'
+    else
+      id := nextId()
+      tabs.push { id, label: 'games', content: null, type: 'games' }
+      toggle(id)
+    loadZones()
 
-	// window features that mark a window.open call as a popup; anything without them
-	// is a "new window" and gets turned into an aspen tab
-	const POPUP_FEATURES =
-		/\b(width|height|innerWidth|innerHeight|outerWidth|outerHeight|left|top|screenX|screenY|menubar|toolbar|location|personalbar|resizable|scrollbars|status|dependent|fullscreen|movable|proxying)\s*=/;
+  // games get written straight into a fresh iframe, no proxy
+  loadGame := async (tabId: number, zone: any) =>
+    destroyView(tabId)
+    frameLoading = true if openTab is tabId
+    try
+      html := await getZoneHtml(zone)
+      return unless tabs.some (t) => t.id is tabId
+      writeZone(makeIframe(tabId), html)
+      showFrame(openTab)
+    catch e
+      tab := tabs.find (t) => t.id is tabId
+      tab.label = 'failed to load' if tab
+      console.error(e)
+    frameLoading = false if openTab is tabId
 
-	// scramjet rewrites page urls to /~/sj/<ctrl>/<frame>/<encoded-url>; recover the original
-	function deproxyUrl(raw) {
-		try {
-			const u = new URL(raw, location.origin);
-			if (u.origin !== location.origin) return null;
-			const m = u.pathname.match(/^\/~\/sj\/[^/]+\/[^/]+\/(.+)$/);
-			return m ? decodeURIComponent(m[1]) : null;
-		} catch {
-			return null;
-		}
-	}
+  openGame := (zone: any) =>
+    // some zones are just links
+    if zone.external
+      id := nextId()
+      tabs.push { id, label: labelFor(zone.url), content: zone.url, type: 'browser' }
+      toggle(id)
+      loadProxy(zone.url)
+      return
+    id := nextId()
+    tabs.push { id, label: zone.name.slice(0, 20), content: zone.name, type: 'game', zone }
+    toggle(id)
+    loadGame(id, zone)
 
-	function forwardToNewTab(url) {
-		window.postMessage({ $aspenOpen: { url } }, location.origin);
-	}
+  // toolbar searchbar
+  navigateToolbar := (raw: string) =>
+    url := if linkRegex.test(raw) then raw else `${searxUrl}${encodeURIComponent(raw)}`
+    tab := tabs.find (t) => t.id is openTab
+    if tab
+      tab.content = url
+      tab.label = labelFor(url)
+      tab.type = 'browser'
+    loadProxy(url) if frameContainer
+  
+  logHistory := (entry: string) => // would cookies/localstorage bes faster or somethn
+    existing := JSON.parse(localStorage.getItem('history') ?? '[]')
+    existing.push(entry)
+    localStorage.setItem('history', JSON.stringify(existing))
 
-	// runs on every frame document; turns "new window" navigations into aspen tabs
-	// while sized popups keep opening as real browser windows
-	function hookFrame(iframe) {
-		let win;
-		try {
-			win = iframe.contentWindow;
-		} catch {
-			return;
-		}
-		if (win && !win.__aspenOpenHooked) {
-			win.__aspenOpenHooked = true;
-			const origOpen = win.open;
-			win.open = function (url, target, features) {
-				let isPopup = false;
-				if (typeof features === 'string') isPopup = POPUP_FEATURES.test(features);
-				else if (features && typeof features === 'object')
-					isPopup = Object.keys(features).length > 0;
-				const tgt = typeof target === 'string' ? target.toLowerCase() : '';
-				const isNewWindow = tgt === '' || tgt === '_blank' || tgt === '_new' || tgt === 'new';
-				let abs = '';
-				if (url != null && String(url).trim() !== '') {
-					try {
-						abs = new URL(String(url), win.location.href).href;
-					} catch {}
-				}
-				if (!isPopup && isNewWindow && /^https?:/.test(abs)) {
-					forwardToNewTab(deproxyUrl(abs) ?? abs);
-					return null;
-				}
-				return origOpen.call(win, url, target, features);
-			};
-		}
-		let doc;
-		try {
-			doc = iframe.contentDocument;
-		} catch {
-			doc = null;
-		}
-		if (doc && !doc.__aspenAnchorHooked) {
-			doc.__aspenAnchorHooked = true;
-			doc.addEventListener(
-				'click',
-				(e) => {
-					const a = e.target?.closest?.('a[href][target]');
-					if (!a) return;
-					const target = (a.getAttribute('target') || '').toLowerCase();
-					if (target !== '_blank' && target !== '_new' && target !== 'new') return;
-					if (a.hasAttribute('download')) return;
-					let abs;
-					try {
-						abs = new URL(a.getAttribute('href'), doc.baseURI || doc.location.href).href;
-					} catch {
-						return;
-					}
-					if (!/^https?:/.test(abs)) return;
-					e.preventDefault();
-					forwardToNewTab(deproxyUrl(abs) ?? abs);
-				},
-				true
-			);
-		}
-	}
+    
+  toggle := (id: number) =>
+    openTab = if openTab is id then null else id
+    frameLoading = false
+    showFrame(openTab)
+    if openTab is null
+      currentUrl = ''
+      canGoBack = false
+      canGoForward = false
+    else
+      syncNav(openTab)
+  // regex from stack overflow
+  linkRegex := /^(([a-z]+:\/\/)?(([a-z0-9\-]+\.)+([a-z]{2}|aero|arpa|biz|com|coop|edu|gov|info|int|jobs|mil|museum|name|nato|net|org|pro|travel|local|internal))(:[0-9]{1,5})?(\/[a-z0-9_\-\.~]+)*(\/([a-z0-9_\-\.]*)(\?[a-z0-9+_\-\.%=&]*)?)?(#[a-zA-Z0-9!$&'()*+.=\-_~:@\/?]*)?)$/i
 
-	// same-origin pages don't go through scramjet, just point a plain iframe at them
-	function loadDirect(tabId, url) {
-		const tab = tabs.find((t) => t.id === tabId);
-		if (!tab) return;
-		tab.loading = true;
-		tab.error = '';
-		let iframe = directs.get(tabId);
-		if (!iframe) {
-			iframe = makeIframe(tabId, tab);
-			directs.set(tabId, iframe);
-		}
-		iframe.src = url;
-		showFrame(openTab);
-	}
+  searxUrl := 'https://www.metacrawler.com/serp?q='
 
-	async function destroyView(tabId) {
-		views.get(tabId)?.remove();
-		views.delete(tabId);
-		directs.delete(tabId);
-		const frame = frames.get(tabId);
-		if (!frame) return;
-		frames.delete(tabId);
-		try {
-			const { controller } = await getProxy();
-			controller.frames = controller.frames.filter((f) => f !== frame);
-		} catch {
-			// controller is unreachable anyway, nothing to deregister
-		}
-	}
+  let searchInput = $state('')
 
-	function goBack() {
-		if (openTab === null) return;
-		const h = tabHistories.get(openTab);
-		if (!h || h.idx <= 0) return;
-		h.idx--;
-		syncNav(openTab);
-		navHistory(openTab, 'back');
-	}
+  activeTab := $derived(tabs.find (t) => t.id is openTab)
 
-	function goForward() {
-		if (openTab === null) return;
-		const h = tabHistories.get(openTab);
-		if (!h || h.idx >= h.stack.length - 1) return;
-		h.idx++;
-		syncNav(openTab);
-		navHistory(openTab, 'forward');
-	}
+  labelFor := (raw: string) =>
+    normalized := if /^https?:\/\//.test(raw) then raw else `https://${raw}`
+    try
+      host := new URL(normalized).hostname.replace(/^www\./, '')
+      host.slice(0, 20) or 'new tab'
+    catch
+      raw.slice(0, 20) or 'new tab'
 
-	function reload() {
-		const tab = tabs.find((t) => t.id === openTab);
-		if (!tab || !tab.content || tab.type === 'games') return;
-		if (tab.type === 'game') return loadGame(tab.id, tab.zone);
-		tab.loading = true;
-		clearTimeout(loadWatchdogs.get(tab.id));
-		loadWatchdogs.set(
-			tab.id,
-			setTimeout(() => {
-				loadWatchdogs.delete(tab.id);
-				if (tabs.some((t) => t.id === tab.id)) tab.loading = false;
-			}, LOAD_TIMEOUT)
-		);
-		const frame = frames.get(tab.id);
-		if (frame) return frame.reload();
-		directs.get(tab.id)?.contentWindow?.location.reload();
-	}
+  newTab := =>
+    id := nextId()
+    tabs.push { id, label: 'new tab', content: null, type: 'browser' }
+    toggle(id)
 
-	// same-origin history entries are plain iframes, everything else is a scramjet frame;
-	// switching page kinds means reloading the entry through the normal path
-	function navHistory(tabId, dir) {
-		const h = tabHistories.get(tabId);
-		const url = h?.stack[h.idx];
-		if (!url) return;
-		const direct = directs.get(tabId);
-		const same = isSameOrigin(url);
-		if (same && direct) {
-			direct.src = url;
-			return;
-		}
-		if (same !== !!direct) return loadUrl(tabId, url);
-		if (dir === 'back') frames.get(tabId)?.back();
-		else frames.get(tabId)?.forward();
-	}
+  submitSearch := =>
+    raw := searchInput.trim()
+    return unless raw
+    url := if linkRegex.test(raw) then raw else `${searxUrl}${encodeURIComponent(raw)}`
+    if openTab is null
+      id := nextId()
+      tabs.push { id, label: labelFor(url), content: url, type: 'browser' }
+      openTab = id
+    else
+      tab := tabs.find (t) => t.id is openTab
+      if tab
+        tab.content = url
+        tab.label = labelFor url
+        tab.type = 'browser'
+    loadProxy(url) if frameContainer
+    searchInput = ''
 
-	function nextId() {
-		return (tabs.length ? Math.max(...tabs.map((t) => t.id)) : 0) + 1;
-	}
-
-	// internal:// pages open in the current tab, so this converts it instead of adding one
-	async function openGamesTab() {
-		const tab = tabs.find((t) => t.id === openTab);
-		if (tab) {
-			if (tab.type === 'games') return;
-			if (views.has(tab.id) || frames.has(tab.id)) await destroyView(tab.id);
-			if (!tabs.some((t) => t.id === tab.id)) return;
-			tab.type = 'games';
-			tab.label = 'games';
-			tab.content = null;
-			tab.zone = undefined;
-			tab.loading = false;
-			tab.error = '';
-			tabHistories.delete(tab.id);
-			syncNav(tab.id);
-		} else {
-			const id = nextId();
-			tabs.push(makeTab({ id, label: 'games', content: null, type: 'games' }));
-			selectTab(id);
-		}
-	}
-
-	// games get written straight into a fresh iframe, no proxy
-	async function loadGame(tabId, zone) {
-		const tab = tabs.find((t) => t.id === tabId);
-		if (!tab) return;
-		tab.loading = true;
-		tab.error = '';
-		try {
-			await destroyView(tabId);
-			if (!tabs.some((t) => t.id === tabId)) return;
-			const html = await getZoneHtml(zone);
-			if (!tabs.some((t) => t.id === tabId)) return;
-			const iframe = makeIframe(tabId, tab);
-			writeZone(iframe, html);
-			hookFrame(iframe);
-			showFrame(openTab);
-		} catch (e) {
-			console.error(e);
-			if (!tabs.some((t) => t.id === tabId)) return;
-			tab.error = e?.message || String(e);
-		} finally {
-			if (tabs.some((t) => t.id === tabId)) tab.loading = false;
-		}
-	}
-
-	function openGame(zone) {
-		// some zones are just links
-		if (zone.external) {
-			const id = nextId();
-			tabs.push(makeTab({ id, label: labelFor(zone.url), content: zone.url, type: 'browser' }));
-			selectTab(id);
-			loadProxy(zone.url);
-			return;
-		}
-		const id = nextId();
-		tabs.push(
-			makeTab({ id, label: zone.name.slice(0, 20), content: zone.name, type: 'game', zone })
-		);
-		selectTab(id);
-		loadGame(id, zone);
-	}
-
-	// omnibox input
-	function navigateOmnibox(raw) {
-		const target = resolveInput(raw);
-		if (target === null) return; // internal://games handled by openGamesTab
-		const tab = tabs.find((t) => t.id === openTab);
-		if (tab) {
-			tab.content = target;
-			tab.label = labelFor(target);
-			tab.type = 'browser';
-		}
-		if (frameContainer) loadProxy(target);
-	}
-
-	// newtab overlay search
-	function submitSearch(query) {
-		const target = resolveInput(query);
-		if (target === null) return;
-		if (openTab === null) {
-			const id = nextId();
-			tabs.push(makeTab({ id, label: labelFor(target), content: target, type: 'browser' }));
-			openTab = id;
-		} else {
-			const tab = tabs.find((t) => t.id === openTab);
-			if (tab) {
-				tab.content = target;
-				tab.label = labelFor(target);
-				tab.type = 'browser';
-			}
-		}
-		if (frameContainer) loadProxy(target);
-	}
-
-	function selectTab(id) {
-		if (openTab === id) return;
-		openTab = id;
-		showFrame(openTab);
-		syncNav(openTab);
-	}
-
-	function labelFor(raw) {
-		try {
-			const u = new URL(/^https?:\/\//.test(raw) ? raw : `https://${raw}`);
-			// same-origin pages are labeled by path, like internal://<path>
-			if (u.origin === location.origin) {
-				const path = u.pathname.replace(/^\/+|\/+$/g, '');
-				return path ? path.slice(0, 20) : 'aspen';
-			}
-			return u.hostname.replace(/^www\./, '').slice(0, 20) || 'new tab';
-		} catch {
-			return raw.slice(0, 20) || 'new tab';
-		}
-	}
-
-	function newTab() {
-		const id = nextId();
-		tabs.push(makeTab({ id, label: 'new tab', content: null, type: 'browser' }));
-		selectTab(id);
-	}
-
-	// "new window" requests from frames (window.open / target=_blank) open as aspen tabs
-	function openUrlInNewTab(url) {
-		const id = nextId();
-		tabs.push(makeTab({ id, label: labelFor(url), content: url, type: 'browser' }));
-		selectTab(id);
-		loadProxy(url);
-	}
-
-	function closeTab(id) {
-		clearTimeout(loadWatchdogs.get(id));
-		loadWatchdogs.delete(id);
-		tabHistories.delete(id);
-		destroyView(id).catch(() => {});
-		const idx = tabs.findIndex((t) => t.id === id);
-		tabs = tabs.filter((t) => t.id !== id);
-		if (openTab === id) {
-			// open the nearest surviving tab, or drop to no-tabs if none left
-			const neighbor = tabs[idx - 1] ?? tabs[idx] ?? null;
-			openTab = neighbor ? neighbor.id : null;
-			showFrame(openTab);
-			if (openTab === null) {
-				currentUrl = '';
-				canGoBack = false;
-				canGoForward = false;
-			} else {
-				syncNav(openTab);
-			}
-		}
-	}
-
-	// the old ui always starts with a fresh tab
-	onMount(() => {
-		if (tabs.length === 0) newTab();
-		installOpenUrlHandler(openUrlInNewTab);
-	});
+  closeTab := (id: number) =>
+    tabHistories.delete(id)
+    destroyView(id)
+    tabs = tabs.filter (t) => t.id is not id
+    if openTab is id
+      openTab = null
+      frameLoading = false
+      currentUrl = ''
+      canGoBack = false
+      canGoForward = false
 </script>
 
-<VantaBg />
+<div class="flex flex-col h-screen bg-ef-bg text-ef-text">
+  <!-- tab bar -->
+  <div class="flex gap-1 p-2 bg-ef-bg-deep items-center border-b border-ef-border min-h-[60px]">
+    {#each tabs as tab (tab.id)}
+      <div
+        class="flex border-2 border-ef-text-dim rounded-lg overflow-hidden"
+        animate:flip={{ duration: 200, easing: cubicOut }}
+        in:fly={{ y: -24, duration: 200, opacity: 0 }}
+        out:fly={{ x: -30, duration: 150, opacity: 0 }}
+      >
+        <button
+          class="px-4 py-2 font-medium text-ef-text-dim transition-colors duration-200"
+          class:bg-ef-tab-active={openTab === tab.id}
+          class:text-ef-text={openTab === tab.id}
+          class:bg-ef-bg={openTab !== tab.id}
+          onclick={() => toggle(tab.id)}
+        >
+          {#if tab.type === 'games' || tab.type === 'game'}
+            <i class="fa-solid fa-gamepad mr-1.5"></i>
+          {/if}
+          {tab.label}
+        </button>
+        <button
+          class="px-2 py-2 bg-ef-bg border-l-2 border-ef-text-dim text-ef-red font-bold leading-none transition-colors duration-150 hover:bg-ef-red hover:text-ef-bg"
+          onclick={() => closeTab(tab.id)}
+          aria-label="close tab"
+        >×</button>
+      </div>
+    {/each}
+    <button
+      class="ml-auto w-9 h-9 -translate-y-px flex items-center justify-center bg-ef-bg border-2 border-ef-text-dim rounded-lg text-ef-text-dim font-medium leading-none transition-all duration-150 hover:border-ef-accent hover:text-ef-accent hover:rotate-90 active:scale-90"
+      onclick={newTab}
+    >+</button>
+  </div>
 
-<div id="app" style:grid-template-rows={openTab === null ? 'var(--tabbar-h) 1fr' : undefined}>
-	<aside id="sidebar">
-		<div id="tab-list">
-			{#each tabs as tab (tab.id)}
-				<div
-					class="tab-item {tab.id === openTab ? 'active' : ''}"
-					animate:flip={{ duration: 200, easing: cubicOut }}
-					in:reveal
-					out:drop
-					role="tab"
-					aria-selected={tab.id === openTab}
-					tabindex={0}
-					onclick={() => selectTab(tab.id)}
-					onkeydown={(e) => {
-						if (e.key === 'Enter' || e.key === ' ') {
-							e.preventDefault();
-							selectTab(tab.id);
-						}
-					}}
-				>
-					<div class="tab-icon">
-						<i class={tab.type === 'browser' ? 'fa-solid fa-globe' : 'fa-solid fa-gamepad'}></i>
-					</div>
-					<span class="tab-title">{tab.label}</span>
-					<button
-						class="tab-close"
-						title="close tab"
-						aria-label="close tab"
-						onclick={(e) => {
-							e.stopPropagation();
-							closeTab(tab.id);
-						}}><i class="fa-solid fa-xmark"></i></button
-					>
-				</div>
-			{/each}
-			<button id="add-tab-btn" aria-label="new tab" onclick={newTab}>
-				<div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
-			</button>
-		</div>
-	</aside>
+  <Toolbar
+    {currentUrl}
+    {canGoBack}
+    {canGoForward}
+    onback={goBack}
+    onforward={goForward}
+    onreload={reload}
+    onnavigate={navigateToolbar}
+  />
 
-	{#if openTab !== null}
-		<Omnibox
-			url={currentUrl}
-			canBack={canGoBack}
-			canForward={canGoForward}
-			{canReload}
-			onBack={goBack}
-			onForward={goForward}
-			onReload={reload}
-			onNavigate={navigateOmnibox}
-		/>
-	{/if}
+  <!-- content area -->
+  <div class="grow relative bg-cover bg-center" style="background-image: url({bg})">
 
-	<main id="content">
-		{#if tabs.length === 0}
-			<div id="no-tabs" in:fadeUp>
-				<div id="no-tabs-icon"><i class="fa-regular fa-window-restore"></i></div>
-				<div id="no-tabs-hint">no tabs open</div>
-			</div>
-		{/if}
+    <!-- scramjet containe -->
+    <div bind:this={frameContainer} class="absolute inset-0 bg-ef-bg" class:hidden={!activeTab?.content}></div>
+    {#if frameLoading && activeTab?.content}
+      <div
+        class="absolute inset-0 flex items-center justify-center bg-ef-bg text-ef-accent text-3xl font-bold pointer-events-none"
+        transition:fade={{ duration: 150 }}
+      ><span class="animate-pulse">loading...</span></div>
+    {/if}
 
-		{#if activeTab && activeTab.type !== 'games' && activeTab.content}
-			<div class="page-backdrop"></div>
-		{/if}
+    <!-- games list -->
+    {#if activeTab?.type === 'games'}
+      <div class="absolute inset-0 flex flex-col z-10 bg-ef-bg" transition:fade={{ duration: 150 }}>
+        <div class="flex items-center gap-3 px-4 py-3 bg-ef-bg-deep border-b border-ef-border shrink-0">
+          <h2 class="text-lg font-bold text-ef-accent"><i class="fa-solid fa-gamepad mr-2"></i>games</h2>
+          <input
+            type="text"
+            bind:value={gamesSearch}
+            oninput={() => gamesPage = 1}
+            placeholder="search games..."
+            class="ml-2 px-3 py-1.5 bg-ef-bg border-2 border-ef-text-dim rounded-lg text-ef-text placeholder-ef-text-muted outline-none transition-colors duration-150 focus:border-ef-accent text-sm w-56"
+          />
+          <span class="text-sm text-ef-text-muted">{filteredZones.length}</span>
+          {#if totalPages > 1}
+            <div class="ml-auto flex items-center gap-2 text-sm">
+              <button
+                class="px-2 py-1 bg-ef-bg border-2 border-ef-text-dim rounded text-ef-text-dim transition-colors duration-150 hover:border-ef-accent hover:text-ef-accent disabled:opacity-40"
+                disabled={gamesPage <= 1}
+                onclick={() => gamesPage--}
+                aria-label="previous page"
+              ><i class="fa-solid fa-chevron-left"></i></button>
+              <span class="text-ef-text-muted">{gamesPage} / {totalPages}</span>
+              <button
+                class="px-2 py-1 bg-ef-bg border-2 border-ef-text-dim rounded text-ef-text-dim transition-colors duration-150 hover:border-ef-accent hover:text-ef-accent disabled:opacity-40"
+                disabled={gamesPage >= totalPages}
+                onclick={() => gamesPage++}
+                aria-label="next page"
+              ><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+          {/if}
+        </div>
+        <div class="grow overflow-y-auto p-4">
+          {#if zonesLoading}
+            <div class="flex items-center justify-center h-full text-ef-accent text-3xl font-bold"><span class="animate-pulse">loading...</span></div>
+          {:else if zonesError}
+            <div class="flex flex-col items-center justify-center gap-3 h-full text-ef-red text-lg">
+              {zonesError}
+              <button
+                class="px-4 py-2 bg-ef-bg border-2 border-ef-text-dim rounded-lg text-ef-text-dim text-base transition-colors duration-150 hover:border-ef-accent hover:text-ef-accent"
+                onclick={loadZones}
+              >retry</button>
+            </div>
+          {:else}
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+              {#each pagedZones as zone (zone.id)}
+                <button
+                  use:svelteTilt={{ max: 10, perspective: 800, scale: 1.04, speed: 300, glare: true, "max-glare": 0.2 }}
+                  class="flex flex-col rounded-xl overflow-hidden border-2 border-ef-text-dim hover:border-ef-accent bg-ef-bg-deep transition-colors text-left"
+                  onclick={() => openGame(zone)}
+                >
+                  <img src={zone.cover} alt={zone.name} loading="lazy" class="w-full aspect-video object-cover bg-ef-bg" />
+                  <div class="px-2 py-1.5 text-sm font-medium text-ef-text truncate">{zone.name}</div>
+                </button>
+              {/each}
+            </div>
+          {/if}
+        </div>
+      </div>
+    {/if}
 
-		<div class="frames" bind:this={frameContainer}></div>
-
-		{#if activeTab && !activeTab.content && activeTab.type !== 'games'}
-			<NewTab
-				draft={activeTab.searchDraft ?? ''}
-				splashText={splashFor(activeTab)}
-				onSearch={submitSearch}
-				onShortcut={(s) => s === 'games' && openGamesTab()}
-				onDraftChange={(v) => setDraft(activeTab, v)}
-				onSplashClick={() => rotateSplash(activeTab)}
-			/>
-		{/if}
-
-		{#if activeTab?.type === 'games'}
-			<Games onOpenZone={openGame} />
-		{/if}
-
-		{#if activeTab?.loading}
-			<div class="loading-overlay" transition:fade={{ duration: 150 }}>
-				<span><img class="loader-gif" src={loadingGif} alt="loader" />Loading...</span>
-			</div>
-		{/if}
-
-		{#if activeTab?.error}
-			<div class="load-error" transition:fade={{ duration: 150 }}>
-				<div class="load-error-box">
-					<i class="fa-solid fa-triangle-exclamation"></i>
-					<span>{activeTab.error}</span>
-					<button
-						type="button"
-						onclick={() =>
-							activeTab.type === 'game'
-								? loadGame(activeTab.id, activeTab.zone)
-								: loadProxy(activeTab.content)}
-					>
-						try again
-					</button>
-				</div>
-			</div>
-		{/if}
-	</main>
+    <!-- new tab or no tabs -->
+    {#if openTab === null}
+      <div
+        class="absolute inset-0 flex items-center justify-center"
+        in:scale={{ start: 0.9, duration: 250, easing: backOut }}
+        out:fade={{ duration: 120 }}
+      >
+        <div
+          use:svelteTilt={{ max: 15, perspective: 1000, scale: 1.03, speed: 400, glare: true, "max-glare": 0.3 }}
+          class="px-10 py-8 bg-ef-bg-deep border-3 border-ef-text-dim rounded-2xl shadow-2xl text-ef-text-dim text-xl font-medium"
+        >
+          no tab open
+        </div>
+      </div>
+    {:else if !activeTab?.content && activeTab?.type !== 'games'}
+      <div
+        class="absolute inset-0 flex items-center justify-center"
+        in:scale={{ start: 0.9, duration: 250, easing: backOut }}
+        out:fade={{ duration: 120 }}
+      >
+        <div
+          use:svelteTilt={{ max: 15, perspective: 1000, scale: 1.03, speed: 400, glare: true, "max-glare": 0.3 }}
+          class="px-10 py-8 bg-ef-bg-deep border-2 border-ef-text-dim rounded-2xl shadow-2xl text-ef-text flex flex-col items-center gap-6"
+        >
+          <h1 class="text-5xl font-bold tracking-tight text-ef-accent">aspen</h1>
+          <form onsubmit={(e) => { e.preventDefault(); submitSearch(); }} class="flex gap-2 w-80">
+            <input
+              type="text"
+              bind:value={searchInput}
+              placeholder="search or url"
+              class="grow px-3 py-2 bg-ef-bg border-2 border-ef-text-dim rounded-lg text-ef-text placeholder-ef-text-muted outline-none transition-colors duration-150 focus:border-ef-accent"
+            />
+            <button
+              type="submit"
+              class="px-4 py-2 bg-ef-bg border-2 border-ef-accent text-ef-accent font-medium rounded-lg transition-all duration-150 hover:bg-ef-accent hover:text-ef-bg active:scale-95"
+            >go</button>
+          </form>
+          <button
+            class="flex items-center gap-2 px-5 py-2.5 bg-ef-bg border-2 border-ef-text-dim text-ef-text-dim rounded-xl font-medium transition-all duration-150 hover:border-ef-accent hover:text-ef-accent active:scale-95"
+            onclick={openGamesTab}
+          >
+            <i class="fa-solid fa-gamepad text-lg"></i>
+            games
+          </button>
+        </div>
+      </div>
+    {/if}
+  </div>
 </div>
-
-<style>
-	#app {
-		display: grid;
-		grid-template-rows: var(--tabbar-h) var(--omnibox-h) 1fr;
-		height: 100vh;
-		position: relative;
-		z-index: 1;
-	}
-
-	#sidebar {
-		background: var(--bg-deep);
-		border-bottom: 1px solid var(--border);
-		overflow: hidden;
-		z-index: 10;
-		display: flex;
-	}
-
-	#tab-list {
-		flex: 1;
-		overflow-x: auto;
-		overflow-y: hidden;
-		display: flex;
-		flex-direction: row;
-		scrollbar-width: none;
-	}
-
-	#tab-list::-webkit-scrollbar {
-		display: none;
-	}
-
-	.tab-item,
-	#add-tab-btn {
-		display: flex;
-		align-items: center;
-		gap: 6px;
-		padding: 0 10px;
-		cursor: pointer;
-		border: none;
-		border-right: 1px solid var(--border);
-		height: var(--tabbar-h);
-		min-width: 120px;
-		max-width: 200px;
-		text-align: left;
-		font-family: inherit;
-		color: inherit;
-		background: transparent;
-		flex-shrink: 0;
-	}
-
-	.tab-item.active {
-		background: var(--tab-active-bg);
-	}
-
-	.tab-icon {
-		width: 14px;
-		height: 14px;
-		flex-shrink: 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		overflow: hidden;
-		margin-top: 1px;
-	}
-
-	.tab-icon i {
-		font-size: 11px;
-		color: var(--text-dim);
-	}
-
-	.tab-item.active .tab-icon i {
-		color: var(--accent);
-	}
-
-	.tab-title {
-		flex: 1;
-		font-size: 11px;
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		color: var(--text-dim);
-		position: relative;
-		top: 1px;
-	}
-
-	.tab-item.active .tab-title {
-		color: var(--text-on-active);
-		font-weight: 600;
-	}
-
-	.tab-close {
-		width: 16px;
-		height: 16px;
-		border: none;
-		background: transparent;
-		color: var(--text-dim);
-		cursor: pointer;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-shrink: 0;
-		padding: 0;
-		opacity: 0;
-		font-size: 10px;
-	}
-
-	.tab-item:hover .tab-close {
-		opacity: 1;
-	}
-
-	.tab-item.active .tab-close {
-		color: var(--accent);
-		opacity: 0;
-	}
-
-	.tab-item.active:hover .tab-close {
-		opacity: 1;
-	}
-
-	#add-tab-btn {
-		min-width: unset;
-		max-width: unset;
-		padding: 0 12px;
-		border-right: none;
-		font-size: 12px;
-		position: relative;
-		top: 1px;
-	}
-
-	#add-tab-btn .tab-icon i {
-		font-size: 11px;
-		color: var(--text-dim);
-	}
-
-	#content {
-		position: relative;
-		background: transparent;
-		overflow: hidden;
-	}
-
-	/* white sheet behind frames so transparent pages stay readable */
-	.page-backdrop {
-		position: absolute;
-		inset: 0;
-		background: #fff;
-	}
-
-	.frames {
-		position: absolute;
-		inset: 0;
-	}
-
-	/* the iframes are created outside of svelte, so they carry no scoping hash */
-	:global(.frames iframe.frame) {
-		position: absolute;
-		inset: 0;
-		width: 100%;
-		height: 100%;
-		border: none;
-		background: transparent;
-	}
-
-	.loading-overlay {
-		position: absolute;
-		inset: 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		color: var(--accent);
-		font-size: 24px;
-		font-weight: 700;
-		pointer-events: none;
-		z-index: 6;
-	}
-
-	.loading-overlay .pulse {
-		animation: pulse 1.5s ease-in-out infinite;
-	}
-
-	.loading-overlay .loader-gif {
-		width: 28px;
-		height: 28px;
-		margin-right: 8px;
-	}
-
-	.load-error {
-		position: absolute;
-		inset: 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		pointer-events: none;
-		z-index: 6;
-	}
-
-	.load-error-box {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 12px;
-		padding: 20px 28px;
-		border: 2px solid var(--border);
-		border-radius: 12px;
-		background: var(--bg-deep);
-		color: var(--red);
-		font-size: 14px;
-		max-width: 80%;
-		text-align: center;
-		pointer-events: auto;
-	}
-
-	.load-error-box i {
-		font-size: 24px;
-	}
-
-	.load-error-box button {
-		padding: 6px 16px;
-		border-radius: 10px;
-		border: 2px solid var(--border);
-		background: var(--bg);
-		color: var(--text);
-		font-family: inherit;
-		font-size: 13px;
-		cursor: pointer;
-	}
-
-	.load-error-box button:hover {
-		border-color: var(--accent);
-		color: var(--accent);
-	}
-
-	@keyframes pulse {
-		50% {
-			opacity: 0.4;
-		}
-	}
-
-	#no-tabs {
-		position: absolute;
-		inset: 0;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		gap: 10px;
-		pointer-events: none;
-	}
-
-	#no-tabs-icon {
-		font-size: 48px;
-		color: var(--accent);
-	}
-
-	#no-tabs-hint {
-		font-size: 11px;
-		color: var(--text-muted);
-		letter-spacing: 0.06em;
-	}
-</style>

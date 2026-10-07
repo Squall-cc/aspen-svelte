@@ -11,15 +11,9 @@ export async function registerSW() {
 	if (!navigator.serviceWorker.controller) {
 		// wait for clients.claim(), but don't hang forever (e.g. after a hard reload)
 		await Promise.race([
-			new Promise((r) =>
-				navigator.serviceWorker.addEventListener('controllerchange', r, { once: true })
-			),
+			new Promise((r) => navigator.serviceWorker.addEventListener('controllerchange', r, { once: true })),
 			navigator.serviceWorker.ready.then(() => new Promise((r) => setTimeout(r, 1000)))
 		]);
 	}
-	return (
-		navigator.serviceWorker.controller ??
-		(await navigator.serviceWorker.ready).active ??
-		registration.active
-	);
+	return navigator.serviceWorker.controller ?? (await navigator.serviceWorker.ready).active ?? registration.active;
 }

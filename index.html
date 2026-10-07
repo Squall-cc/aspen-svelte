@@ -30,40 +30,26 @@
 			}
 		</script>
 		<title>aspen</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<!-- XML-safe: svg build needs attribute values -->
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-		/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 	</head>
 	<body>
 		<script>
-			setInterval(() => {
-				const scripts = document.querySelectorAll('script');
-
-				scripts.forEach((script) => {
-					if (script.innerHTML.includes('wappalyzer') || script.src.includes('wappalyzer')) {
-						script.remove();
-					}
-				});
-
-				// Block message events related to Wappalyzer
-				window.addEventListener(
-					'message',
-					(event) => {
-						if (event.data && event.data.wappalyzer) {
-							event.stopImmediatePropagation();
-						}
-					},
-					true
-				);
-			}, 1000);
+		setInterval(() => {
+			const scripts = document.querySelectorAll("script");
+			
+			scripts.forEach(script => {
+				if (script.innerHTML.includes("wappalyzer") || script.src.includes("wappalyzer")) {
+					script.remove();
+				}
+			});
+			
+			// Block message events related to Wappalyzer
+			window.addEventListener("message", (event) => {
+				if (event.data && event.data.wappalyzer) {
+					event.stopImmediatePropagation();
+				}
+			}, true);
+		}, 1000);
 		</script>
 		<div id="app" style="display: contents"></div>
 		<script type="module" src="./src/main.js"></script>

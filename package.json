@@ -5,13 +5,11 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"dev:bg": "pwsh -NoProfile -File scripts/dev-bg.ps1",
 		"build": "vite build && node scripts/postbuild.js",
 		"build:single": "vite build --mode single && node scripts/postbuild.js",
 		"preview": "vite preview",
 		"lint": "prettier --check .",
-		"format": "prettier --write .",
-		"sync:vendor": "node scripts/sync-vendor.js"
+		"format": "prettier --write ."
 	},
 	"devDependencies": {
 		"@iconify/json": "^2.2.473",
@@ -25,12 +23,14 @@
 		"vite-plugin-singlefile": "^2.3.3"
 	},
 	"dependencies": {
+		"@danielx/civet": "^0.11.9",
 		"@fontsource/inter": "^5.2.8",
 		"@fontsource/jetbrains-mono": "^5.2.8",
 		"@mercuryworkshop/epoxy-transport": "^3.0.1",
 		"@mercuryworkshop/scramjet": "2.0.67-alpha.2",
 		"@mercuryworkshop/scramjet-controller": "0.0.14",
 		"@mercuryworkshop/scramjet-utils": "0.0.3",
+		"svelte-preprocess-with-civet": "^6.0.41",
 		"vanilla-tilt-svelte": "^1.0.4"
 	}
 }

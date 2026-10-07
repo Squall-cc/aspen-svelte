@@ -1,12 +1,13 @@
 import { mount } from 'svelte';
 import 'virtual:uno.css';
-import { initTheme } from './lib/theme.js';
+import '@fontsource/inter/latin-400.css';
+import '@fontsource/inter/latin-500.css';
+import '@fontsource/inter/latin-600.css';
+import '@fontsource/jetbrains-mono/latin-400.css';
+import '@fontsource/jetbrains-mono/latin-500.css';
 import './app.css';
 import favicon from './lib/assets/favicon.svg';
 import App from './App.svelte';
-
-// apply the saved theme before mounting so there's no flash
-initTheme();
 
 const icon = document.createElement('link');
 icon.rel = 'icon';

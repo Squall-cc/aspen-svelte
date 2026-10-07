@@ -7,10 +7,7 @@ const ZONE_URLS = [
 const COVER_URL = 'https://cdn.jsdelivr.net/gh/daknux/covers@main';
 const HTML_URL = 'https://cdn.jsdelivr.net/gh/daknux/html@main';
 
-const fill = (s) =>
-	String(s ?? '')
-		.replace('{COVER_URL}', COVER_URL)
-		.replace('{HTML_URL}', HTML_URL);
+const fill = (s) => String(s ?? '').replace('{COVER_URL}', COVER_URL).replace('{HTML_URL}', HTML_URL);
 
 let zones;
 export function getZones() {
@@ -23,17 +20,10 @@ export function getZones() {
 				const json = await res.json();
 				const list = Array.isArray(json) ? json : (json.zones ?? []);
 				// negative ids are the comments / discord entries, not games
-				return (
-					list
-						.filter((z) => z.id >= 0)
-						// zones with a plain http url are links, not html to write into a frame
-						.map((z) => ({
-							...z,
-							external: /^https?:/.test(z.url),
-							cover: fill(z.cover),
-							url: fill(z.url)
-						}))
-				);
+				return list
+					.filter((z) => z.id >= 0)
+					// zones with a plain http url are links, not html to write into a frame
+					.map((z) => ({ ...z, external: /^https?:/.test(z.url), cover: fill(z.cover), url: fill(z.url) }));
 			} catch (e) {
 				lastError = e;
 			}
