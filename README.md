@@ -1,4 +1,6 @@
-new repo at: https://github.com/squall-cc/aspen-svelte/
+vibecoding: yeah idont rlly give a shit anymore, im doing java dev rn
+i might rewrite it no ai once https://github.com/a1pl/liquidjs is finished (gonna be called walkway)
+iframeos used to be better but it looked buns
 
 
 uhh
